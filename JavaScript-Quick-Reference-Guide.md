@@ -1,5 +1,5 @@
 <h1 style="display: flex; align-items: center;">
-  <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="JavaScript" style="margin-right: 10px; margin-top: 2px;"/>
+  <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="JavaScript" style="margin-right: 10px; transform: translateY(4px);"/>
   JavaScript Quick Reference Guide
 </h1>
 
