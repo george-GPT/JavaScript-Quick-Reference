@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center;">
-  <img src="https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png" alt="JavaScript Quick Reference Guide Cover Image" style="width: 100px; height: 100px;">
-  <h1>JavaScript Quick Reference Guide</h1>
+  <img src="https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png" alt="JavaScript Quick Reference Guide Cover Image" style="width: 100px; height: 100px; margin-right: 20px;">
+  <h1 style="margin: 0;">JavaScript Quick Reference Guide</h1>
 </div>
 
 ![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
