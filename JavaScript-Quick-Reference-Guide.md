@@ -1,7 +1,4 @@
-<h1 style="display: flex; align-items: center;">
-  <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="JavaScript" style="margin-right: 10px; transform: translateY(4px);"/>
-  JavaScript Quick Reference Guide
-</h1>
+![JavaScript](https://imgur.com/izOrIMy) # JavaScript Quick Reference Guide
 
 ![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
