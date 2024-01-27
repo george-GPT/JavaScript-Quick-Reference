@@ -72,7 +72,7 @@ A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed
   - Supporting dynamic typing for variables with varying data types.
   - Embracing multiple programming paradigms: event-driven, functional, and imperative.
 
-![JavaScript Core Features](https://img.icons8.com/color/48/000000/code-file.png) **Core Features**
+![JavaScript Core Features](https://img.icons8.com/color/48/000000/automatic.png) **Core Features**
 
   Discover how JavaScript enhances user interaction on web pages by manipulating HTML and CSS. Learn how it handles asynchronous operations to make web applications more responsive.
 
