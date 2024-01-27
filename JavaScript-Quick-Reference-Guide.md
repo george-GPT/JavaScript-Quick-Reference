@@ -167,7 +167,7 @@ A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed
 
 - **Function Declaration:** Standard way to define a function with parameters
 
-```
+```javascript
 function greet(name) {
 return `Hello, ${name}!`;
 }
@@ -197,7 +197,7 @@ function say(message = "Hi") {
 
 - **Rest Parameters (ES6):** Handle an indefinite number of parameters
 
-```
+```javascript
 function sumAll(...numbers) {
 return numbers.reduce((acc, num) => acc + num, 0);
 }
@@ -209,7 +209,7 @@ Outputs 6
 - **Arrow Functions (ES6):** Concise way to write functions
   - (parameters) => expression
 
-```
+```javascript
 const multiply = (x, y) => x \* y;
 console.log(multiply(2, 3));
 ```
@@ -218,7 +218,7 @@ Outputs 6
 
 - **IIFE (Immediately Invoked Function Expression):** Function that runs as soon as it is defined
 
-```
+```javascript
 (function() {
 console.log("This function runs right away!");
 })();
@@ -456,7 +456,7 @@ for (const key in myObject) {
 
 - **try...catch statement:** Handles exceptions by testing a block of code for errors
 
-```
+```javascript
 try {
 // Code that may throw an error
 } catch (error) {
@@ -531,7 +531,7 @@ try {
 
 - **Multi-line Strings using Template Literals**
 
-```
+```javascript
 const multiLineString = `This is a string
 that spans across
 multiple lines`;
@@ -776,7 +776,7 @@ list.insertBefore(newItem, list.firstChild); // Inserts a new item at the beginn
 
 - **Adding an Event Listener**
 
-```
+```javascript
 document.getElementById("myButton").addEventListener("click", function() {
 alert("Button clicked!");
 });
@@ -821,13 +821,13 @@ event.preventDefault(); // Cancels the event if it is cancelable, without stoppi
 
 - **Basic Example of a Callback**
 
-```
+```javascript
 function greeting(name) {
 alert('Hello ' + name);
 }
 ```
 
-```
+```javascript
 function processUserInput(callback) {
 let name = prompt('Please enter your name.');
 callback(name);
@@ -854,7 +854,8 @@ fs.readFile("/path/to/file", "utf8", (err, data) => {
 - **Handling Errors in Callbacks**
   - It is a common pattern to pass the error as the first argument to the callback.
 
-```function errorCallback(err, result) {
+```javascript
+function errorCallback(err, result) {
 if (err) {
 console.error('Error: ', err);
 return;
@@ -900,7 +901,7 @@ myPromise
 
 - **Example of an Async Function**
 
-```
+```javascript
 async function fetchData() {
 try {
 const response = await fetch('https://api.example.com/data');
@@ -936,7 +937,8 @@ fetchData()
 - **Callbacks (Traditional Approach)**
   - Callbacks are a common way to handle asynchronous operations.
 
-```function fetchData(callback) {
+```javascript
+function fetchData(callback) {
 setTimeout(() => {
 
 const data = 'Async data';
@@ -997,7 +999,7 @@ Promise.all([promise1, promise2, promise3])
 
 - **Fetch API (Modern way of making HTTP requests)**
 
-```
+```javascript
 fetch("https://api.example.com/data")
 .then(response => response.json())
 .then(data => console.log(data))
@@ -1006,7 +1008,8 @@ fetch("https://api.example.com/data")
 
 - **Fetch API with error handling**
 
-```fetch("https://api.example.com/data")
+```javascript
+fetch("https://api.example.com/data")
 .then(response => {
 if (!response.ok) {
 throw new Error(`HTTP error! status: ${response.status}`);
@@ -1019,7 +1022,7 @@ return response.json();
 
 - **Async/Await with Fetch API**
 
-```
+```javascript
 async function fetchData() {
 try {
 const response = await fetch("https://api.example.com/data");
@@ -1041,7 +1044,7 @@ fetchData();
 
 - **Parsing JSON Data**
 
-```
+```javascript
 const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
 
 try {
@@ -1054,7 +1057,7 @@ console.error('JSON Parsing Error:', error);
 
 - **Converting JavaScript Objects to JSON**
 
-```
+```javascript
 const person = {
 name: 'Alice',
 age: 25,
@@ -1186,7 +1189,7 @@ const dog1 = new Dog("Buddy", "Golden Retriever");
 a common superclass. It enables flexibility and dynamic behavior based on the specific object type.
 
 - **Polymorphism Example**
-```
+```javascript
 const animals = [new Dog("Buddy", "Golden Retriever"), new Animal("Kitty")];
 
 for (const animal of animals) {
