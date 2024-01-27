@@ -89,7 +89,7 @@ A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed
 
   Understand JavaScript's integral role in web development, including its interactivity, DOM manipulation, and server-side capabilities.
 
-![Integration with Web Technologies](https://img.icons8.com/color/48/000000/html-filetype.png) **Integration with Web Technologies**
+![Integration with Web Technologies](https://img.icons8.com/color/48/000000/html.png) **Integration with Web Technologies**
 
   Learn how JavaScript collaborates with HTML and CSS to deliver complete web page functionality. Discover its use of AJAX for asynchronous web tasks.
 
