@@ -1,4 +1,4 @@
-![JavaScript](https://imgur.com/izOrIMy) # JavaScript Quick Reference Guide
+![JavaScript](https://imgur.com/izOrIMy) JavaScript Quick Reference Guide
 
 ![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
