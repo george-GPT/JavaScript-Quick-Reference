@@ -80,7 +80,7 @@ Explore the JavaScript language and its versatile capabilities, including:
 
   Explore JavaScript's versatility in both client-side (browser) and server-side (Node.js) development. See how it empowers the creation of dynamic web page content and back-end applications.
 
-![JavaScript Role in Web Development](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/webdev.png)**Role in Web Development**
+![JavaScript Role in Web Development](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/webdev.png) **Role in Web Development**
 
   Understand JavaScript's integral role in web development, including its interactivity, DOM manipulation, and server-side capabilities.
 
