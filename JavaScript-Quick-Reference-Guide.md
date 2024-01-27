@@ -3,7 +3,7 @@
   <h1 style="margin: 0;">JavaScript Quick Reference Guide</h1>
 </div>
 
-![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
+[![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
 
