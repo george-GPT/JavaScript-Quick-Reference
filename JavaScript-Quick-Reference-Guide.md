@@ -1,15 +1,11 @@
-<center>
-  <h1>
-    <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="JavaScript" style="vertical-align:middle; margin-right:10px;"/>
-    JavaScript Quick Reference Guide
-  </h1>
-</center>
+<h1 style="display: flex; align-items: center;">
+  <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="JavaScript" style="margin-right: 10px;"/>
+  JavaScript Quick Reference Guide
+</h1>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow" alt="JavaScript Version" />
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" />
-  <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg" alt="Contributions Welcome" />
-</p>
+![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
 
 A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed as both an efficient learning tool and a rapid reference. This guide bridges the gap between learning and practical application, making JavaScript more accessible.
 
