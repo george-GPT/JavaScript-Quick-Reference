@@ -1,11 +1,14 @@
-# JavaScript Quick Reference Guide
+<center>
+  <h1>
+    <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="JavaScript" style="vertical-align:middle; margin-right:10px;"/>
+    JavaScript Quick Reference Guide
+  </h1>
+</center>
 
-![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
-
-<p align="left">
-  <img src="https://raw.githubusercontent.com/george-GPT/JavaScript-Quick-Reference-Guide/main/JS-icon.png" alt="JavaScript Icon">
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow" alt="JavaScript Version" />
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" />
+  <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg" alt="Contributions Welcome" />
 </p>
 
 A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed as both an efficient learning tool and a rapid reference. This guide bridges the gap between learning and practical application, making JavaScript more accessible.
@@ -67,33 +70,33 @@ A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed
 ---
 
 ### 1.1 Overview of JavaScript
-- Explore the JavaScript language and its versatile capabilities, including:
+Explore the JavaScript language and its versatile capabilities, including:
   - Being a high-level, interpreted programming language.
   - Supporting dynamic typing for variables with varying data types.
   - Embracing multiple programming paradigms: event-driven, functional, and imperative.
 
-![JavaScript Core Features](https://img.icons8.com/color/48/000000/automatic.png) **Core Features**
+![JavaScript Core Features](https://img.icons8.com/color/32/000000/automatic.png) **Core Features**
 
   Discover how JavaScript enhances user interaction on web pages by manipulating HTML and CSS. Learn how it handles asynchronous operations to make web applications more responsive.
 
-![JavaScript Environments](https://img.icons8.com/color/48/000000/javascript.png)
+![JavaScript Environments](https://img.icons8.com/color/32/000000/javascript.png)
  **JavaScript and ECMAScript**
 
   Understand JavaScript's adherence to ECMAScript (ES) standards, including significant updates introduced in ES6/ES2015, such as let/const, arrow functions, and classes.
 
-![JavaScript Environments](https://img.icons8.com/color/48/000000/world-map.png) **Environments**
+![JavaScript Environments](https://img.icons8.com/color/32/000000/world-map.png) **Environments**
 
   Explore JavaScript's versatility in both client-side (browser) and server-side (Node.js) development. See how it empowers the creation of dynamic web page content and back-end applications.
 
-![JavaScript Role in Web Development](https://img.icons8.com/color/48/000000/web.png) **Role in Web Development**
+![JavaScript Role in Web Development](https://img.icons8.com/color/32/000000/web.png) **Role in Web Development**
 
   Understand JavaScript's integral role in web development, including its interactivity, DOM manipulation, and server-side capabilities.
 
-![Integration with Web Technologies](https://img.icons8.com/color/48/000000/html.png) **Integration with Web Technologies**
+![Integration with Web Technologies](https://img.icons8.com/color/32/000000/html.png)  **Integration with Web Technologies**
 
   Learn how JavaScript collaborates with HTML and CSS to deliver complete web page functionality. Discover its use of AJAX for asynchronous web tasks.
 
-![JavaScript Libraries and Frameworks](https://img.icons8.com/color/48/000000/react-native.png) **Libraries and Frameworks**
+![JavaScript Libraries and Frameworks](https://img.icons8.com/color/32/000000/react-native.png) **Libraries and Frameworks**
 
   Explore libraries like React and frameworks like Angular, Vue.js, and Ember.js that simplify common tasks and provide robust tools for building complex applications.
 
@@ -102,7 +105,7 @@ A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed
 ---
 
 ### 2.1 VARIABLES AND DECLARATIONS
-  - Understanding variable declaration and scope in JavaScript.
+Understanding variable declaration and scope in JavaScript.
 
 - **'var':** Function-scoped variable declaration (less used in modern JS)
   - `var oldVar = "I am old";` Avoid using 'var' when possible
@@ -117,7 +120,7 @@ A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed
 ---
 
 ### 2.2 BASIC DATA TYPES
-  - Overview of primitive data types in JavaScript.
+Overview of primitive data types in JavaScript.
 
 - **Number:** Represents both integers and floats
   - `let score = 75;` Integer
@@ -136,7 +139,7 @@ A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed
   - `let data = null;`
 
 ### 2.3 SYNTAX AND EXAMPLES
-  - Examples illustrating syntax for variable declarations and data types.
+Examples illustrating syntax for variable declarations and data types.
 
 - **Declaring multiple variables**
   - `let x = 5, y = 10; // Multiple variables in one line`
@@ -163,7 +166,7 @@ A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed
 ---
 
 ### 3.1 FUNCTIONS
-  - Detailed exploration of functions in JavaScript, including parameters and advanced concepts.
+Detailed exploration of functions in JavaScript, including parameters and advanced concepts.
 
 - **Function Declaration:** Standard way to define a function with parameters
 
@@ -238,7 +241,7 @@ function applyOperation(a, b, operation) {
 ---
 
 ### 3.2 LOOPS
-  - Comprehensive exploration of loop structures in JavaScript, including array iteration.
+Comprehensive exploration of loop structures in JavaScript, including array iteration.
 
 - **For Loop:** Repeatedly runs a block of code a certain number of times
 
@@ -298,7 +301,7 @@ numbers.forEach((number) => {
 ---
 
 ### 3.3 CONDITIONAL STATEMENTS
-  - Quick reference for using conditional logic in JavaScript.
+Quick reference for using conditional logic in JavaScript.
 
 - **if statement:** Executes code block if condition is true
 
@@ -349,7 +352,7 @@ switch (expression) {
 ---
 
 ### 3.4 ARRAYS
-  - Detailed guide on JavaScript Arrays, covering array manipulation methods, iteration, and array-specific operations.
+Detailed guide on JavaScript Arrays, covering array manipulation methods, iteration, and array-specific operations.
 
 - **Global object: properties**
   - `Array.length` Reflects the number of elements in an array.
@@ -403,7 +406,7 @@ switch (expression) {
 ---
 
 ### 3.5 OBJECTS
-  - Overview of JavaScript Object, its properties, and methods.
+Overview of JavaScript Object, its properties, and methods.
 
 - **Creating an object**
   - `const myObject = { key1: 'value1', key2: 'value2' };` Object literal with two properties
@@ -452,7 +455,7 @@ for (const key in myObject) {
 ---
 
 ### 3.6 ERROR HANDLING
-  - Overview of error handling mechanisms in JavaScript.
+Overview of error handling mechanisms in JavaScript.
 
 - **try...catch statement:** Handles exceptions by testing a block of code for errors
 
@@ -500,7 +503,7 @@ try {
 ---
 
 ### 4.1 STRINGS
-  - Overview of commonly used methods of the String object.
+Overview of commonly used methods of the String object.
 
 - **Properties**
   - `str.length` Returns the length of the string.
@@ -542,7 +545,7 @@ console.log(multiLineString);
 ---
 
 ### 4.2 NUMBERS
-  - Fundamental number-related functionalities in JavaScript
+Fundamental number-related functionalities in JavaScript
 
 - **parseInt(string, radix)**
   - `parseInt("10", 10);` Converts the string "10" to an integer (base 10).
@@ -590,7 +593,7 @@ console.log(morePrimes); // [7, 2, 3, 5, 11]
 ---
 
 ### 4.3 MATH
-  - Essential guide to JavaScript's Math object, covering basic constants and mathematical functions.
+Essential guide to JavaScript's Math object, covering basic constants and mathematical functions.
 
 - **Math Constants**
   - `Math.PI; π:` Approximately 3.14159
@@ -623,7 +626,7 @@ console.log(morePrimes); // [7, 2, 3, 5, 11]
 ---
 
 ### 4.4 DATES
-  - Introduction to JavaScript's Date object, focusing on creating, manipulating, and formatting dates.
+Introduction to JavaScript's Date object, focusing on creating, manipulating, and formatting dates.
 
 - **Creating Date Objects**
   - `const now = new Date();` Current date and time
@@ -666,7 +669,7 @@ console.log(morePrimes); // [7, 2, 3, 5, 11]
 ---
 
 ### 5.1 THE DOCUMENT OBJECT MODEL (DOM) AND WINDOW/DOCUMENT OBJECTS
-  - Basic understanding of the DOM in JavaScript and the fundamental roles of window and document objects.
+Basic understanding of the DOM in JavaScript and the fundamental roles of window and document objects.
 
 - **Introduction to the DOM**
   - The DOM (Document Object Model) is a programming interface for web documents. It represents the page
@@ -699,7 +702,7 @@ window.onload = function () {
 ---
 
 ### 5.2 ACCESSING AND MODIFYING DOM ELEMENTS
-  - Methods for selecting, creating, and modifying DOM elements.
+Methods for selecting, creating, and modifying DOM elements.
 
 - **Accessing elements**
   - `document.getElementById(id);` Gets an element by its ID.
@@ -733,7 +736,7 @@ window.onload = function () {
 ---
 
 ### 5.3 DOM NODE PROPERTIES AND METHODS
-  - Overview of properties and methods specific to DOM nodes.
+Overview of properties and methods specific to DOM nodes.
 
 - **Node properties**
   - `node.childNodes;` A live NodeList containing all the children of this node.
@@ -766,7 +769,7 @@ list.insertBefore(newItem, list.firstChild); // Inserts a new item at the beginn
 ---
 
 ### 5.4 DOM EVENT HANDLING  
-  - Methods for attaching, handling, and removing event listeners on DOM elements.
+Methods for attaching, handling, and removing event listeners on DOM elements.
 
 - **Adding and Removing Event Listeners**
   - `element.addEventListener(event, function, useCapture);` Attaches an event handler to the element.
@@ -814,7 +817,7 @@ event.preventDefault(); // Cancels the event if it is cancelable, without stoppi
 ---
 
 ### 6.1 UNDERSTANDING CALLBACKS
-  - Exploring the concept of callbacks in asynchronous JavaScript.
+Exploring the concept of callbacks in asynchronous JavaScript.
 
 - **Callbacks: An Overview**
   - A callback is a function passed into another function as an argument, which is then executed inside the outer function.
@@ -868,7 +871,7 @@ console.log('Result: ', result);
 ---
 
 ### 6.2 PROMISES AND ASYNC/AWAIT
-  - Handling asynchronous operations using Promises and async/await.
+Handling asynchronous operations using Promises and async/await.
 
 - **Promises:** An Overview
   - Promises are a way to handle asynchronous operations in a structured manner.
@@ -929,7 +932,7 @@ fetchData()
 ---
 
 ### 6.3 HANDLING ASYNCHRONOUS OPERATIONS
-  - Strategies for managing asynchronous operations in JavaScript.
+Strategies for managing asynchronous operations in JavaScript.
 
 - **Asynchronous Operations: An Overview**
   - JavaScript often deals with asynchronous tasks like network requests, timers, and events.
@@ -995,7 +998,7 @@ Promise.all([promise1, promise2, promise3])
 ---
 
 ### 7.1 MAKING API REQUESTS
-  - Using JavaScript to interact with web APIs
+Using JavaScript to interact with web APIs
 
 - **Fetch API (Modern way of making HTTP requests)**
 
@@ -1040,7 +1043,7 @@ fetchData();
 ---
 
 ### 7.2 HANDLING JSON DATA
-  - Working with JSON (JavaScript Object Notation) data in JavaScript
+Working with JSON (JavaScript Object Notation) data in JavaScript
 
 - **Parsing JSON Data**
 
@@ -1095,7 +1098,7 @@ console.log(updatedJsonData);
 ---
 
 ### 8.1 OBJECT-ORIENTED PROGRAMMING (OOP) IN JAVASCRIPT
-  - Overview of Object-Oriented Programming (OOP) concepts in JavaScript.
+Overview of Object-Oriented Programming (OOP) concepts in JavaScript.
 
 - **Object-Oriented Programming (OOP)** 
   - OOP is a programming paradigm that uses objects and classes
