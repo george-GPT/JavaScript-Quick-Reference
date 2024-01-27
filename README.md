@@ -5,7 +5,7 @@
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
 
 <p align="center">
-  <img src="https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-cover-photo.png" alt="JavaScript Quick Reference Guide Cover Image">
+  <img src="https://imgur.com/oF1aU1u" alt="JavaScript Quick Reference Guide Cover Image">
 </p>
 
 A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed as both an efficient learning tool and a rapid reference. This guide bridges the gap between learning and practical application, making JavaScript more accessible.
