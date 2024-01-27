@@ -1,4 +1,4 @@
-![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png) # JavaScript Quick Reference Guide
+# ![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png) JavaScript Quick Reference Guide
 
 [![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
