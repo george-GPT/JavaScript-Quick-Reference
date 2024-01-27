@@ -1,6 +1,6 @@
-# ![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png) JavaScript Quick Reference Guide
+# ![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/JS-icon.png) JavaScript Quick Reference Guide
 
-[![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png)
+![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
 
@@ -68,28 +68,27 @@ Explore the JavaScript language and its versatile capabilities, including:
   - Supporting dynamic typing for variables with varying data types.
   - Embracing multiple programming paradigms: event-driven, functional, and imperative.
 
-![JavaScript Core Features](https://img.icons8.com/color/32/000000/automatic.png) **Core Features**
+![JavaScript Core Features](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/gear.png) **Core Features**
 
   Discover how JavaScript enhances user interaction on web pages by manipulating HTML and CSS. Learn how it handles asynchronous operations to make web applications more responsive.
 
-![JavaScript Environments](https://img.icons8.com/color/32/000000/javascript.png)
- **JavaScript and ECMAScript**
+![JavaScript and ECMAScript](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/js.png) **JavaScript and ECMAScript**
 
   Understand JavaScript's adherence to ECMAScript (ES) standards, including significant updates introduced in ES6/ES2015, such as let/const, arrow functions, and classes.
 
-![JavaScript Environments](https://img.icons8.com/color/32/000000/world-map.png) **Environments**
+![JavaScript Environments](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/globe.png) **Environments**
 
   Explore JavaScript's versatility in both client-side (browser) and server-side (Node.js) development. See how it empowers the creation of dynamic web page content and back-end applications.
 
-![JavaScript Role in Web Development](https://img.icons8.com/color/32/000000/web.png) **Role in Web Development**
+![JavaScript Role in Web Development](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/webdev.png)**Role in Web Development**
 
   Understand JavaScript's integral role in web development, including its interactivity, DOM manipulation, and server-side capabilities.
 
-![Integration with Web Technologies](https://img.icons8.com/color/32/000000/html.png)  **Integration with Web Technologies**
+![Integration with Web Technologies](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/html.png) **Integration with Web Technologies**
 
   Learn how JavaScript collaborates with HTML and CSS to deliver complete web page functionality. Discover its use of AJAX for asynchronous web tasks.
 
-![JavaScript Libraries and Frameworks](https://img.icons8.com/color/32/000000/react-native.png) **Libraries and Frameworks**
+![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/react.png) **Libraries and Frameworks**
 
   Explore libraries like React and frameworks like Angular, Vue.js, and Ember.js that simplify common tasks and provide robust tools for building complex applications.
 
