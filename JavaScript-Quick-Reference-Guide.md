@@ -1,7 +1,5 @@
-<div style="display: flex; align-items: center;">
-  <img src="https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png" alt="JavaScript Icon" width="48" height="48" style="margin-right: 10px;">
-  <h1>Introduction to JavaScript</h1>
-</div>
+![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png){: style="float: left; margin-right: 10px;" width="48" height="48"}
+# JavaScript Quick Reference Guide
 
 [![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/JS-icon.png)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
