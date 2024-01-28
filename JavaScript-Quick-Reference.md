@@ -1102,11 +1102,15 @@ Using Fetch() API to interact with web APIs and update web page content.
 
 ```javascript
 // Define the API URL
-const apiUrl = "https://api.example.com/data";
+const apiUrl = `https://api.example.com/data?api_key=${apiKey}&search=${userInput}`;
 
 // Initialize variables to store elements on the web page
 const dataContainer = document.getElementById('dataContainer');
 const errorMessage = document.getElementById('errorMessage');
+const userSearchValue = document.getElementById('userSearchValue'); 
+
+// Display user input on the web page
+userSearchValue.textContent = `User Input: ${userInput}`;
 
 // Make an HTTP request using the Fetch API with error handling
 fetch(apiUrl)
@@ -1118,12 +1122,14 @@ fetch(apiUrl)
   })
   .then(data => {
     // Update the web page content with the fetched data
-    dataContainer.textContent = `Data from API: ${data.value}`;
+    dataContainer.textContent = `Data for ${userInput}: ${data.value}`;
   })
   .catch(error => {
     // Display an error message on the web page
     errorMessage.textContent = `Error: ${error.message}`;
   });
+
+
 ```
 
 ### Fetch API with Async/Await
@@ -1133,7 +1139,7 @@ fetch(apiUrl)
 async function fetchData() {
   try {
     // Make an HTTP request using the Fetch API
-    const response = await fetch("https://api.example.com/data");
+    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput}`);
     
     // Check if the response is successful
     if (!response.ok) {
@@ -1146,9 +1152,13 @@ async function fetchData() {
     // Initialize variables to store elements on the web page
     const dataContainer = document.getElementById('dataContainer');
     const errorMessage = document.getElementById('errorMessage');
+    const userSearchValue = document.getElementById('userSearchValue'); 
+    
+    // Display user input on the web page
+    userSearchValue.textContent = `User Input: ${userInput}`;
     
     // Update the web page content with the fetched data
-    dataContainer.textContent = `Data from API: ${data.value}`;
+    dataContainer.textContent = `Data for ${userInput}: ${data.value}`;
   } catch (error) {
     // Display an error message on the web page
     const errorMessage = document.getElementById('errorMessage');
@@ -1156,7 +1166,6 @@ async function fetchData() {
   }
 }
 
-// Call the async function to fetch data
 fetchData();
 ```
 

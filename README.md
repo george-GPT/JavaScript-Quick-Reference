@@ -12,7 +12,7 @@ A comprehensive yet concise overview and quick-reference to JavaScript fundament
 
 ## Key Benefits of the Guide
 
-- **Rapid Syntax Lookup**: Quick reference for JavaScript syntax, functions and structure.
+- **Rapid Syntax Lookup**: Quick reference for JavaScript syntax and structure.
 - **Efficient Learning**: Streamline JavaScript complexities into core concepts.
 - **Consolidated Resource:** Navigate through JavaScript fundamentals, all in one place.
 - **Community Driven**: Collaborate with fellow developers to enhance this guide.
