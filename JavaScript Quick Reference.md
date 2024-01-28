@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-# ![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/JS-icon.png)  JavaScript Quick Reference Guide
+# ![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/JS-icon.png)  JavaScript Quick Reference Guide
 
 ![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -8,7 +8,7 @@
 
 A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed as both an efficient learning tool and a rapid reference. This guide bridges the gap between learning and practical application, making JavaScript more accessible.
 
-[Back to README](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/blob/main/README.md)
+[Back to README](https://github.com/george-GPT/JavaScript-Quick-Reference/blob/main/README.md)
 
 ## Introduction to JavaScript
 - [1.1 Overview of JavaScript](#11-overview-of-javascript)
@@ -55,22 +55,22 @@ Explore the JavaScript language and its versatile capabilities, including:
   - Supporting dynamic typing for variables with varying data types.
   - Embracing multiple programming paradigms: event-driven, functional, and imperative.
 
-### ![JavaScript Core Features](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/gear.png) Core Features
+### ![JavaScript Core Features](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/gear.png) Core Features
 Discover how JavaScript enhances user interaction on web pages by manipulating HTML and CSS. Learn how it handles asynchronous operations to make web applications more responsive.
 
-### ![JavaScript and ECMAScript](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/js.png)  JavaScript and ECMAScript
+### ![JavaScript and ECMAScript](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/js.png)  JavaScript and ECMAScript
 Understand JavaScript's adherence to ECMAScript (ES) standards, including significant updates introduced in ES6/ES2015, such as let/const, arrow functions, and classes.
 
-### ![JavaScript Environments](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/globe.png)  Environments
+### ![JavaScript Environments](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/globe.png)  Environments
 Explore JavaScript's versatility in both client-side (browser) and server-side (Node.js) development. See how it empowers the creation of dynamic web page content and back-end applications.
 
-### ![JavaScript Role in Web Development](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/webdev.png)  Role in Web Development
+### ![JavaScript Role in Web Development](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/webdev.png)  Role in Web Development
 Understand JavaScript's integral role in web development, including its interactivity, DOM manipulation, and server-side capabilities.
 
-### ![Integration with Web Technologies](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/html.png)  Integration with Web Technologies
+### ![Integration with Web Technologies](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/html.png)  Integration with Web Technologies
 Learn how JavaScript collaborates with HTML and CSS to deliver complete web page functionality. Discover its use of AJAX for asynchronous web tasks.
 
-### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/react.png)  Libraries and Frameworks
+### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/react.png)  Libraries and Frameworks
 Explore libraries like React and frameworks like Angular, Vue.js, and Ember.js that simplify common tasks and provide robust tools for building complex applications.
 
 [🔝 Back to Top](#top)

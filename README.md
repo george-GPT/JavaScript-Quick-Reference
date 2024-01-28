@@ -5,7 +5,7 @@
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
 
 <p align="center">
-  <img src="https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/raw/main/images/JS-cover-photo.png" alt="JavaScript Quick Reference Guide Cover Image">
+  <img src="https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/JS-cover-photo.png" alt="JavaScript Quick Reference Guide Cover Image">
 </p>
 
 A comprehensive yet concise overview and quick-reference to JavaScript fundamentals. Designed as both an efficient learning tool and a rapid reference. This guide bridges the gap between learning and practical application, making JavaScript more accessible.
@@ -19,7 +19,7 @@ A comprehensive yet concise overview and quick-reference to JavaScript fundament
 
 ## Access the Guide
 
-[Start Learning Now](https://github.com/george-GPT/JavaScript-Quick-Reference-Guide/blob/main/JavaScript-Quick-Reference-Guide.md)
+[Start Learning Now](https://github.com/george-GPT/JavaScript-Quick-Reference/blob/main/JavaScript-Quick-Reference-Guide.md)
 
 ## License
 This JavaScript Quick Reference Guide is made available under the [MIT License](https://opensource.org/licenses/MIT). 
