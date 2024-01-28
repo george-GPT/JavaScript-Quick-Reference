@@ -19,7 +19,7 @@ A comprehensive yet concise overview and quick-reference to JavaScript fundament
 
 ## Access the Guide
 
-[Start Learning Now](https://github.com/george-GPT/JavaScript-Quick-Reference/blob/main/JavaScript-Quick-Reference-Guide.md)
+[Start Learning Now](https://github.com/george-GPT/JavaScript-Quick-Reference/blob/main/JavaScript-Quick-Reference.md)
 
 ## License
 This JavaScript Quick Reference Guide is made available under the [MIT License](https://opensource.org/licenses/MIT). 
