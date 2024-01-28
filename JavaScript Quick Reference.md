@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-# ![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/JS-icon.png)  JavaScript Quick Reference Guide
+# ![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/JS-icon.png)  JavaScript Simplified: An Efficient Learning Guide
 
 ![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
