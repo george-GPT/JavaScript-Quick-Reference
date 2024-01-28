@@ -429,17 +429,17 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 Overview of JavaScript Object, its properties, and methods.
 
 ### Creating an Object
-`const myObject = { key1: 'value1', key2: 'value2' };` Object literal with two properties
+- `const myObject = { key1: 'value1', key2: 'value2' };` Object literal with two properties
 
 ### Accessing Properties
 - `console.log(myObject.key1);` 'value1'
 - `console.log(myObject['key2']);` 'value2'
 
 ### Adding Properties
-`myObject.key3 = 'value3';` Adding a new property 'key3'
+- `myObject.key3 = 'value3';` Adding a new property 'key3'
 
 ### Deleting Properties
-`delete myObject.key2;` Removing property 'key2'
+- `delete myObject.key2;` Removing property 'key2'
 
 ### Methods of the Object Constructor
 - `Object.assign(target, ...sources)` Copies values from source to target objects.
@@ -643,7 +643,7 @@ Essential guide to JavaScript's Math object, covering basic constants and mathem
 - `Math.sqrt(16);` Square root of 16: Returns 4
 
 ### Random Number Generation
-`Math.random();` Generates a random number between 0 (inclusive) and 1 (exclusive)
+- `Math.random();` Generates a random number between 0 (inclusive) and 1 (exclusive)
 
 [🔝 Back to Top](#top)
 ---
@@ -738,7 +738,7 @@ Methods for selecting, creating, and modifying DOM elements.
 - `element.appendChild(newElement);` Appends the new element as the last child of the parent element.
 
 ### Removing elements
-`element.removeChild(child);` Removes a child node from the DOM.
+- `element.removeChild(child);` Removes a child node from the DOM.
 
 ### Modifying elements
 - `element.innerHTML = '<p>New HTML content</p>';` Changes the HTML content of an element.
