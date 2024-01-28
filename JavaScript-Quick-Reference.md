@@ -150,23 +150,23 @@ Overview of primitive data types in JavaScript.
 Examples illustrating syntax for variable declarations and data types.
 
 ### Declaring Multiple Variables
-- `let x = 5, y = 10; // Multiple variables in one line`
+`let x = 5, y = 10; // Multiple variables in one line`
 
 ### String Concatenation
-- `let greeting = "Hello " + name; // "Hello Alice"`
+`let greeting = "Hello " + name; // "Hello Alice"`
 
 ### Template Literals (ES6)
-- `` `let greetingTemplate = `Hello ${name}`; // "Hello Alice"` ``
+`` `let greetingTemplate = `Hello ${name}`; // "Hello Alice"` ``
 
 ### Arithmetic Operations
 - `let sum = x + y;` Addition (15)
 - `let diff = y - x;` Subtraction (5)
 
 ### Boolean Logic
-- `let isGreater = x > y;` false
+`let isGreater = x > y;` false
 
 ### Type Coercion
-- `let total = "3" + 4;` "34", number 4 becomes a string
+`let total = "3" + 4;` "34", number 4 becomes a string
 
 [🔝 Back to Top](#top)
 ---
@@ -432,17 +432,17 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 Overview of JavaScript Object, its properties, and methods.
 
 ### Creating an object
-- `const myObject = { key1: 'value1', key2: 'value2' };` Object literal with two properties
+`const myObject = { key1: 'value1', key2: 'value2' };` Object literal with two properties
 
 ### Accessing properties
 - `console.log(myObject.key1);` 'value1'
 - `console.log(myObject['key2']);` 'value2'
 
 ### Adding properties
-- `myObject.key3 = 'value3';` Adding a new property 'key3'
+`myObject.key3 = 'value3';` Adding a new property 'key3'
 
 ### Deleting properties
-- `delete myObject.key2;` Removing property 'key2'
+`delete myObject.key2;` Removing property 'key2'
 
 ### Methods of the Object constructor
 - `Object.assign(target, ...sources)` Copies values from source to target objects.
@@ -578,7 +578,7 @@ Fundamental number-related functionalities in JavaScript.
 - `parseInt("10", 2);` Converts the string "10" to an integer (base 2, binary).
 
 ### parseFloat(string)
-- `parseFloat("3.14");` Converts the string "3.14" to a floating-point number.
+`parseFloat("3.14");` Converts the string "3.14" to a floating-point number.
 
 ### toFixed(digits)
 
@@ -646,7 +646,7 @@ Essential guide to JavaScript's Math object, covering basic constants and mathem
 - `Math.sqrt(16);` Square root of 16: Returns 4
 
 ### Random Number Generation
-- `Math.random();` Generates a random number between 0 (inclusive) and 1 (exclusive)
+`Math.random();` Generates a random number between 0 (inclusive) and 1 (exclusive)
 
 [🔝 Back to Top](#top)
 ---
@@ -741,7 +741,7 @@ Methods for selecting, creating, and modifying DOM elements.
 - `element.appendChild(newElement);` Appends the new element as the last child of the parent element.
 
 ### Removing elements
-- `element.removeChild(child);` Removes a child node from the DOM.
+`element.removeChild(child);` Removes a child node from the DOM.
 
 ### Modifying elements
 - `element.innerHTML = '<p>New HTML content</p>';` Changes the HTML content of an element.
@@ -770,7 +770,7 @@ Methods for selecting, creating, and modifying DOM elements.
 
 
 ### Cloning elements
-- `const clone = element.cloneNode(true); ` Clones the element and its descendants.
+`const clone = element.cloneNode(true); ` Clones the element and its descendants.
 
 [🔝 Back to Top](#top)
 ---
@@ -1078,9 +1078,7 @@ APIs (Application Programming Interfaces) are like connectors, allowing your cod
 For many APIs, you'll need an API key for authentication and usage tracking:
 
 1. **Sign Up:** Create an account on the API provider's website.
-
 2. **Generate Key:** In your account settings, generate an API key.
-
 3. **Usage Guidelines:** Check the provider's documentation for usage instructions, rate limits, and any costs.
 
 ### JSON Simplified
