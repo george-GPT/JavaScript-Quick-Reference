@@ -6,7 +6,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
 
-A comprehensive yet concise quick-reference to JavaScript fundamentals. Designed as both an efficient learning tool and a rapid reference. This guide bridges the gap between learning and practical application, making JavaScript more accessible.
+A comprehensive yet concise quick-reference and overview of JavaScript fundamentals. Designed as both an efficient learning tool and a rapid reference. This guide bridges the gap between learning and practical application, making JavaScript more accessible.
 
 [Back to README](https://github.com/george-GPT/JavaScript-Quick-Reference/blob/main/README.md)
 
