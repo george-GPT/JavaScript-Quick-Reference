@@ -39,7 +39,7 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [6.2 Promises and Async/Await](#62-promises-and-asyncawait)
 - [6.3 Handling Asynchronous Operations](#63-handling-asynchronous-operations)
 ## Working with APIs
-- [7.1 Understanding APIs, JSON, and API Keys](71-understanding-apis-json-and-api-keys)
+- [7.1 Understanding APIs, JSON, and API Keys](#71-understanding-apis-json-and-api-keys)
 - [7.2 Making API Requests](#72-making-api-requests)
 - [7.3 Handling JSON Data](#73-handling-json-data)
 ## Object-Oriented Programming (OOP)
@@ -76,7 +76,7 @@ Explore libraries like React and frameworks like Angular, Vue.js, and Ember.js t
 [🔝 Back to Top](#top)
 ---
 
-## JavaScript Code Order
+## 1.2 JavaScript Code Order
 The order of your code is vital for logical flow, efficient loading, and readability.
 
 ### Why It Matters
