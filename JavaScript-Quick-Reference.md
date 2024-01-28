@@ -377,19 +377,16 @@ switch (expression) {
 ## 3.4 ARRAYS
 Detailed guide on JavaScript Arrays, covering array manipulation methods, iteration, and array-specific operations.
 
-### Global object: properties
+### Properties
 - `Array.length` Reflects the number of elements in an array.
 - `Array.prototype` Represents the prototype for the Array constructor and allows to add new properties and methods to all Array objects.
 
-### Global object: methods
+### Methods
 - `Array.from(arrayLike[, mapFn[, thisArg]])` Creates a new Array instance from an array-like or iterable object.
 - `Array.isArray(obj)` Returns true if a variable is an array, if not false.
 - `Array.of(element0[, element1[, ...[, elementN]]])` Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
 
-### **Instance: properties
-- `arr.length` Reflects the number of elements in an array.
-
-### Instance: mutator methods
+### Mutator Methods
 - `arr.copyWithin(target, start, end)` Copies a sequence of array elements within the array.
 - `arr.fill(value, start, end)` Fills all the elements of an array from a start index to an end index with a static value.
 - `arr.pop()` Removes the last element from an array and returns that element.
@@ -401,7 +398,7 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 - `array.splice(start, deleteCount, item1, item2, ...)` Adds and/or removes elements from an array.
 - `arr.unshift([element1[, ...[, elementN]]])` Adds one or more elements to the front of an array and returns the new length of the array.
 
-### Instance: accessor methods
+### Acessor Methods
 - `arr.at(index)` Returns the element at the specified index in the array.
 - `arr.concat(value1[, value2[, ...[, valueN]]])` Returns a new array comprised of this array joined with other array(s) and/or value(s).
 - `arr.includes(searchElement, fromIndex)` Determines whether an array contains a certain element, returning true or false as appropriate.
@@ -412,7 +409,7 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 - `arr.toString()` Returns a string representing the array and its elements. Overrides the Object.prototype.toString() method.
 - `arr.toLocaleString(locales, options)` Returns a localized string representing the array and its elements. Overrides the `Object.prototype.toLocaleString()` method.
 
-### Instance: iteration methods
+### Iteration Methods
 - `arr.every(callback[, thisArg])` Returns true if every element in this array satisfies the provided testing function.
 - `arr.filter(callback[, thisArg])` Creates a new array with all of the elements of this array for which the provided filtering function returns true.
 - `arr.find(callback[, thisArg])` Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
@@ -431,20 +428,20 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 ## 3.5 OBJECTS
 Overview of JavaScript Object, its properties, and methods.
 
-### Creating an object
+### Creating an Object
 `const myObject = { key1: 'value1', key2: 'value2' };` Object literal with two properties
 
-### Accessing properties
+### Accessing Properties
 - `console.log(myObject.key1);` 'value1'
 - `console.log(myObject['key2']);` 'value2'
 
-### Adding properties
+### Adding Properties
 `myObject.key3 = 'value3';` Adding a new property 'key3'
 
-### Deleting properties
+### Deleting Properties
 `delete myObject.key2;` Removing property 'key2'
 
-### Methods of the Object constructor
+### Methods of the Object Constructor
 - `Object.assign(target, ...sources)` Copies values from source to target objects.
 - `Object.create(proto, propertiesObject)` Creates a new object with the specified prototype and properties.
 - `Object.defineProperty(obj, prop, descriptor)` Defines a new property on an object.
@@ -481,7 +478,7 @@ for (const key in myObject) {
 Overview of error handling mechanisms in JavaScript.
 
 ### try...catch statement
-Handles exceptions by testing a block of code for errors
+Handles exceptions by testing a block of code for errors.
 
 ```javascript
 try {
@@ -492,7 +489,7 @@ console.log(error); // Handling the error
 ```
 
 ### try...catch...finally statement
-Includes a block that runs regardless of the result
+Includes a block that runs regardless of the result.
 
 ```javascript
 try {
@@ -505,7 +502,7 @@ try {
 ```
 
 ### throw statement 
-Creates a custom error
+Creates a custom error.
 
 ```javascript
 function checkNumber(num) {
