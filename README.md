@@ -29,10 +29,10 @@ Feel free to use, share, and adapt this guide in your learning and development j
 If you're contributing or sharing, a reference to this repository is appreciated, but not required.
 
 ## Additional Resources
-To further enhance your JavaScript knowledge, here are some valuable resources:
+Valuable resources to further enhance your JavaScript knowledge:
 - [MDN Web Docs (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [JavaScript.info](https://javascript.info/)
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 ## Contact Information
-If you have any questions, feedback, or suggestions, feel free to e-mail me [here](mailto:contact@matrixcode.ca). 
+If you have any questions or feedback, feel free to [e-mail me](mailto:contact@matrixcode.ca). 
