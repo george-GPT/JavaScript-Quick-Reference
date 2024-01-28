@@ -55,19 +55,19 @@ Explore the JavaScript language and its versatile capabilities, including:
   - Supporting dynamic typing for variables with varying data types.
   - Embracing multiple programming paradigms: event-driven, functional, and imperative.
 
-### ![JavaScript Core Features](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/gear.png) Core Features
+### ![JavaScript Core Features](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/cog.png) Core Features
 Discover how JavaScript enhances user interaction on web pages by manipulating HTML and CSS. Learn how it handles asynchronous operations to make web applications more responsive.
 
 ### ![JavaScript and ECMAScript](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/js.png)  JavaScript and ECMAScript
 Understand JavaScript's adherence to ECMAScript (ES) standards, including significant updates introduced in ES6/ES2015, such as let/const, arrow functions, and classes.
 
-### ![JavaScript Environments](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/globe.png)  Environments
+### ![JavaScript Environments](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/stack.png)  Environments
 Explore JavaScript's versatility in both client-side (browser) and server-side (Node.js) development. See how it empowers the creation of dynamic web page content and back-end applications.
 
 ### ![JavaScript Role in Web Development](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/webdev.png)  Role in Web Development
 Understand JavaScript's integral role in web development, including its interactivity, DOM manipulation, and server-side capabilities.
 
-### ![Integration with Web Technologies](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/html.png)  Integration with Web Technologies
+### ![Integration with Web Technologies](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/tech.png)  Integration with Web Technologies
 Learn how JavaScript collaborates with HTML and CSS to deliver complete web page functionality. Discover its use of AJAX for asynchronous web tasks.
 
 ### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/react.png)  Libraries and Frameworks
@@ -79,7 +79,8 @@ Explore libraries like React and frameworks like Angular, Vue.js, and Ember.js t
 ## 1.2 JavaScript Code Order
 The order of your code is vital for logical flow, efficient loading, and readability.
 
-### Why It Matters
+
+### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/question.png)  Why It Matters
 
 - **Logical Flow:** Ensures proper function sequencing.
 - **Loading Efficiency:** Affects resource loading and page speed.
@@ -87,7 +88,7 @@ The order of your code is vital for logical flow, efficient loading, and readabi
 - **Maintainability:** Facilitates updates and bug fixes.
 - **Collaboration:** Simplifies teamwork and code sharing.
 
-### Code Order Variability
+### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/list.png)  Code Order Variability
 Optimal code order varies based on project needs and best practices:
 
 - **Library/Framework Integration:** Follow library/framework guidelines (e.g., React prioritizes state and rendering).
@@ -96,7 +97,7 @@ Optimal code order varies based on project needs and best practices:
 - **Performance Optimization:** Adjust the order for performance optimization as per your app's requirements.
 - **Team Workflow:** Adapt to your team's workflow and code organization preferences when collaborating.
 
-### General JavaScript Order
+### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/list2.png)  General JavaScript Order
 General structure to use as a baseline:
 
 1. **DOM References and Global Variables:** Declare and manage references to HTML elements and global variables.
