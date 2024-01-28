@@ -992,37 +992,7 @@ Promise.all([promise1, promise2, promise3])
 ---
 
 ### 7.1 MAKING API REQUESTS
-Using JavaScript Fetch() API to interact with web APIs
-
-- **Fetch API - Updating Web Page Content**
-
-```javascript
-// Define the API URL
-const apiUrl = "https://api.example.com/data";
-
-// Initialize variables to store elements on the web page
-const dataContainer = document.getElementById('dataContainer');
-const errorMessage = document.getElementById('errorMessage');
-
-// Make an HTTP request using the Fetch API
-fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then(data => {
-    // Update the web page content with the fetched data
-    dataContainer.textContent = `Data from API: ${data.value}`;
-  })
-  .catch(error => {
-    // Display an error message on the web page
-    errorMessage.textContent = `Error: ${error.message}`;
-  });
-
-
-```
+Using Fetch() API to interact with web APIs and update web page content
 
 - **Fetch API with Error Handling**
 
