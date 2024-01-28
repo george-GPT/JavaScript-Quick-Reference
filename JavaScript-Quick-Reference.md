@@ -90,8 +90,8 @@ The order of your code is vital for logical flow, efficient loading, and readabi
 ### Code Order Variability
 While there's no strict order, it's essential to recognize that the optimal code order can vary based on project needs, best practices, and specific use cases. This variability is key to adapting your code for different scenarios. Examples include:
 
-- **Library/Framework Integration:** When using a specific library or framework, align with their guidelines. For example, React prioritizes state management and component rendering.
-- **Event-Driven Applications:** In event-driven apps like games or real-time chat systems, prioritize event handling and asynchronous operations.
+- **Library/Framework Integration:** Follow library/framework guidelines (e.g., React prioritizes state and rendering).
+- **Event-Driven Applications:** In event-driven apps (e.g., games or chat), focus on event handling and async tasks.
 - **Complex Form Validation:** For intricate form validation, focus on form handling and validation early.
 - **Performance Optimization:** Adjust the order for performance optimization as per your app's requirements.
 - **Team Workflow:** Adapt to your team's workflow and code organization preferences when collaborating.
