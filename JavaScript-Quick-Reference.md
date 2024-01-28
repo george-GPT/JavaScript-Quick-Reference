@@ -88,7 +88,7 @@ The order of your code is vital for logical flow, efficient loading, and readabi
 - **Collaboration:** Simplifies teamwork and code sharing.
 
 ### Code Order Variability
-While there's no strict order, it's essential to recognize that the optimal code order can vary based on project needs, best practices, and specific use cases. This variability is key to adapting your code for different scenarios. Examples include:
+While there's no strict order, it's essential to recognize that the optimal code order can vary based on project needs, best practices, and specific use cases. Examples include:
 
 - **Library/Framework Integration:** Follow library/framework guidelines (e.g., React prioritizes state and rendering).
 - **Event-Driven Applications:** In event-driven apps (e.g., games or chat), focus on event handling and async tasks.
@@ -97,7 +97,7 @@ While there's no strict order, it's essential to recognize that the optimal code
 - **Team Workflow:** Adapt to your team's workflow and code organization preferences when collaborating.
 
 ### General JavaScript Order
-However, we can establish a general structure to use as a baseline:
+General structure to use as a baseline:
 
 1. **DOM References and Global Variables:** Declare and manage references to HTML elements and global variables.
 2. **Modularization and Code Organization:** Organize code into modules and understand import/export for better maintainability.
