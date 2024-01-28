@@ -1070,7 +1070,7 @@ Promise.all([promise1, promise2, promise3])
 ---
 
 ## 7.1 Understanding APIs, JSON, and API Keys
-Learn the fundamentals of APIs, JSON data format, and the importance of API keys for secure access to external services.
+
 ### APIs at a Glance
 APIs (Application Programming Interfaces) are like connectors, allowing your code to interact with external services and access their data and functions.
 
