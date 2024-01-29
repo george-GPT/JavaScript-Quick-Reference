@@ -408,8 +408,10 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 - `arr.join(separator)` Joins all elements of an array into a string.
 - `arr.lastIndexOf(searchElement, fromIndex)` Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
 - `arr.slice(begin, end)` Extracts a section of an array and returns a new array.
-- `arr.toString()` Returns a string representing the array and its elements. Overrides the Object.prototype.toString() method.
-- `arr.toLocaleString(locales, options)` Returns a localized string representing the array and its elements. Overrides the `Object.prototype.toLocaleString()` method.
+- `arr.toString()` Returns a string representing the array and its elements. 
+  - Overrides the Object.prototype.toString() method.
+- `arr.toLocaleString(locales, options)` Returns a localized string representing the array and its elements. 
+  - Overrides the `Object.prototype.toLocaleString()` method.
 
 ### Iteration Methods
 - `arr.every(callback[, thisArg])` Returns true if every element in this array satisfies the provided testing function.
