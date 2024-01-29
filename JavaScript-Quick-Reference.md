@@ -35,12 +35,12 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [5.3 DOM Node Properties and Methods](#53-dom-node-properties-and-methods)
 - [5.4 DOM Event Handling](#54-dom-event-handling)
 ## Asynchronous JavaScript
-- [6.1 ASYNCHRONOUS OPERATIONS IN JAVASCRIPT](#61-asynchronous-operations-in-javascript)
-- [6.2 CALLBACKS](#62-callbacks)
-- [6.3 PROMISES](#63-promises)
-- [6.4 ASYNC/AWAIT](#64-asyncawait)
+- [6.1 Asynchronous Operations iN Javascript](#61-asynchronous-operations-in-javascript)
+- [6.2 Callbacks](#62-callbacks)
+- [6.3 Promises](#63-promises)
+- [6.4 Asnyc/Await](#64-asyncawait)
 ## Working with APIs
-- [7.1 Understanding APIs, JSON, and API Keys](#71-understanding-apis-json-and-api-keys)
+- [7.1 Understanding APIs & JSON](#71-understanding-apis--json)
 - [7.2 Making API Requests](#72-making-api-requests)
 - [7.3 Handling JSON Data](#73-handling-json-data)
 ## Object-Oriented Programming (OOP)
@@ -1024,8 +1024,7 @@ fetchData()
 
 [🔝 Back to Top](#top)
 ---
-
-## 7.1 Understanding APIs, JSON, and API Keys
+## 7.1 UNDERSTANDING APIs & JSON
 Exploring the fundamentals of APIs, JSON and the importance of API keys in web development.
 
 ### APIs at a Glance
