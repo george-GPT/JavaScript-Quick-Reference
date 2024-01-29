@@ -1001,7 +1001,7 @@ async/await is a set of JavaScript keywords that simplifies the process of worki
 - **Error Handling**: It simplifies error handling with try...catch blocks, improving code reliability.
 - **Sequencing**: async/await allows you to sequence asynchronous tasks in a natural order, enhancing code flow.
 
-### Async Function Using asnyc/await to Fetch Data From a Server
+### Using asnyc/await to Fetch Data From a Server
 
 ```javascript
 async function fetchData() {
@@ -1066,12 +1066,13 @@ For educational purposes, this is an example that doesn't use an asynchronous te
 // Initialize variables to store elements on the web page
 const dataContainer = document.getElementById('dataContainer');
 const errorMessage = document.getElementById('errorMessage');
+const userInput = document.getElementById('userInput');
 
 // Define the API URL
 const apiUrl = `https://api.example.com/data?search=${userInput}`;
 
 // Display user input on the web page
-userSearchValue.textContent = `User Input: ${userInput}`;
+userInput.textContent = `User Input: ${userInput}`;
 
 // Make an HTTP request using the Fetch API with error handling
 fetch(apiUrl)
@@ -1082,13 +1083,14 @@ fetch(apiUrl)
     return response.json();
   })
   .then(data => {
-    // Update the web page content with the fetched data
+    // Display fetched data on the web page
     dataContainer.textContent = `Data for ${userInput}: ${data.value}`;
   })
   .catch(error => {
     // Display an error message on the web page
     errorMessage.textContent = `Error: ${error.message}`;
   });
+
 ```
 
 ### Fetch API (**With** API Key)
@@ -1096,6 +1098,7 @@ For educational purposes, this is an example that doesn't use an asynchronous te
 
 ```javascript
 // Initialize variables to store elements on the web page
+const userInput = document.getElementById('userInput');
 const dataContainer = document.getElementById('dataContainer');
 const errorMessage = document.getElementById('errorMessage');
 
@@ -1103,7 +1106,7 @@ const errorMessage = document.getElementById('errorMessage');
 const apiUrl = `https://api.example.com/data?api_key=${apiKey}&search=${userInput}`;
 
 // Display user input on the web page
-dataContainer.textContent = `User Input: ${userInput}`;
+userInput.textContent = `User Input: ${userInput}`;
 
 // Make an HTTP request using the Fetch API with error handling
 fetch(apiUrl)
@@ -1122,41 +1125,39 @@ fetch(apiUrl)
     errorMessage.textContent = `Error: ${error.message}`;
   });
 
-
 ```
 
 ### Fetch API using Async/Await (**Without** API Key)
 
 ```javascript
+// Initialize variables to store elements on the web page
+const userInput = document.getElementById('userInput');
+const dataContainer = document.getElementById('dataContainer');
+const errorMessage = document.getElementById('errorMessage');
+
 // Define an asynchronous function to fetch and handle API data
 async function fetchData() {
-   // Initialize variables to store elements on the web page
-    const dataContainer = document.getElementById('dataContainer');
-    const errorMessage = document.getElementById('errorMessage');
- 
- try {
+  try {
     // Make an HTTP request using the Fetch API
     const response = await fetch(`https://api.example.com/data?search=${userInput}`);
-    
     // Check if the response is successful
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    
     // Parse the JSON response
     const data = await response.json();
-    
-  // Display user input and fetched data on the web page
-    dataContainer.textContent = `User Input: ${userInput.value}, Data: ${data.value}`;
-
+    // Display user input on the web page
+    userInput.textContent = `User Input: ${userInput.value}`;
+    // Display fetched data on the web page
+    dataContainer.textContent = `Data: ${data.value}`;
   } catch (error) {
     // Display an error message on the web page
-    const errorMessage = document.getElementById('errorMessage');
     errorMessage.textContent = `Error: ${error.message}`;
   }
 }
 
 fetchData();
+
 
 ```
 
@@ -1166,8 +1167,10 @@ fetchData();
 // Define an asynchronous function to fetch and handle API data
 async function fetchData() {
     // Initialize variables to store elements on the web page
+    const userInput = document.getElementById("userInput");
     const dataContainer = document.getElementById('dataContainer');
     const errorMessage = document.getElementById('errorMessage');
+    
     try {
     // Make an HTTP request using the Fetch API
     const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput}`);
@@ -1180,11 +1183,10 @@ async function fetchData() {
     const data = await response.json();
     
     // Display user input and fetched data on the web page
-    userInformation.textContent = `User Input: ${userInput.value}, Data: ${data.value}`;
+    userInput.textContent = `User Input: ${userInput.value}, Data: ${data.value}`;
 
   } catch (error) {
     // Display an error message on the web page
-    const errorMessage = document.getElementById('errorMessage');
     errorMessage.textContent = `Error: ${error.message}`;
   }
 }
