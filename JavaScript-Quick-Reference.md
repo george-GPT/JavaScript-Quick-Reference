@@ -889,7 +889,9 @@ There are several approaches for handling asynchronous operations in JavaScript:
 
 - **Callbacks (Traditional Approach):** Callbacks are a common way to manage asynchronous tasks. They involve passing a function as an argument to another function to execute when the asynchronous operation is complete.
 
-- **Promises (Structured Approach):** Promises provide a structured and organized way to handle asynchronous operations. They simplify asynchronous code and make it more readable and maintainable.
+- **Promises (Structured Approach):** Promises provide a more structured way to handle asynchronous operations. They represent a value that may be available now or in the future, allowing you to perform actions once the operation completes.
+
+- **Async/Await (Modern Approach):** Async/await is a set of JavaScript keywords that simplifies working with promises. It allows you to write asynchronous code that resembles synchronous code, improving code readability and maintainability.
 
 [🔝 Back to Top](#top)
 ---
