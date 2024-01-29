@@ -1061,7 +1061,7 @@ When working with JSON data, remember to:
 API Key Management involves the secure handling and storage of API keys, crucial for authenticating access to web APIs. 
 
 ### What is API Key Management?
-API Key Management involves securely storing keys server-side and regulating their use to prevent unauthorized access, crucial for protecting applications from security breaches. This guide displays code examples of API requests that don't use API key management for learning ease. However, secure management is vital in real-world applications for data security and integrity.
+API Key Management involves securely storing keys server-side and regulating their use to prevent unauthorized access, crucial for protecting applications from security breaches. This guide displays code examples of API requests that don't use API key management for learning ease. Securing API keys is more advanced, requiring additional tools and knowledge in server-side development. However, secure management is vital in real-world applications for data security and integrity.  
 
 ### When It's important to follow API Key Management
 
@@ -1075,9 +1075,9 @@ API Key Management involves securely storing keys server-side and regulating the
 
 - **Server-Side Requests:** Process API requests on the server. This requires setting up a server environment (Node.js, Python, etc.) and understanding server-side programming.
 
-- **Access Control: **Utilize API provider's settings to limit key usage by IP, referer URL, or application.
-**Rate Limiting and Monitoring:** Apply rate limiting and monitor API key usage to detect unauthorized access. This may involve additional monitoring tools or services.
-Securing API keys is more advanced, requiring additional tools and knowledge in server-side development. 
+- **Access Control:** Utilize API provider's settings to limit key usage by IP, referer URL, or application.
+
+- **Rate Limiting and Monitoring:** Apply rate limiting and monitor API key usage to detect unauthorized access. This may involve additional monitoring tools or services.
 
 [🔝 Back to Top](#top)
 ---
