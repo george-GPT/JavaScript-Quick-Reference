@@ -1057,9 +1057,10 @@ When working with JSON data, remember to:
 ---
 
 ## 7.2 MAKING API REQUESTS
-Using Fetch() API to interact with web APIs and update web page content.
+Using Fetch() API to interact with web APIs and update web page content. Using asynchronous techniques with Fetch() are essential for a responsive user experience, allowing data retrieval in the background without blocking user interactions.
 
 ### Fetch API (**Without** API Key)
+For educational purposes, this is an example that doesn't use an asynchronous technique.
 
 ```javascript
 // Define the API URL
@@ -1092,6 +1093,7 @@ fetch(apiUrl)
 ```
 
 ### Fetch API (**With** API Key)
+For educational purposes, this is an example that doesn't use an asynchronous technique.
 
 ```javascript
 // Define the API URL
