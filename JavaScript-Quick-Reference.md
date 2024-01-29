@@ -1059,97 +1059,37 @@ When working with JSON data, remember to:
 ## 7.2 MAKING API REQUESTS
 Using Fetch() API to interact with web APIs and update web page content. Using asynchronous techniques with Fetch() are essential for a responsive user experience, allowing data retrieval in the background without blocking user interactions.
 
-### Fetch API (**Without** API Key)
-For educational purposes, this is an example that doesn't use an asynchronous technique.
-
-```javascript
-// Initialize variables to store elements on the web page
-const dataContainer = document.getElementById('dataContainer');
-const errorMessage = document.getElementById('errorMessage');
-const userInput = document.getElementById('userInput');
-
-// Define the API URL
-const apiUrl = `https://api.example.com/data?search=${userInput}`;
-
-// Display user input on the web page
-userInput.textContent = `User Input: ${userInput}`;
-
-// Make an HTTP request using the Fetch API with error handling
-fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then(data => {
-    // Display fetched data on the web page
-    dataContainer.textContent = `Data for ${userInput}: ${data.value}`;
-  })
-  .catch(error => {
-    // Display an error message on the web page
-    errorMessage.textContent = `Error: ${error.message}`;
-  });
-
-```
-
-### Fetch API (**With** API Key)
-For educational purposes, this is an example that doesn't use an asynchronous technique.
-
-```javascript
-// Initialize variables to store elements on the web page
-const userInput = document.getElementById('userInput');
-const dataContainer = document.getElementById('dataContainer');
-const errorMessage = document.getElementById('errorMessage');
-
-// Define the API URL
-const apiUrl = `https://api.example.com/data?api_key=${apiKey}&search=${userInput}`;
-
-// Display user input on the web page
-userInput.textContent = `User Input: ${userInput}`;
-
-// Make an HTTP request using the Fetch API with error handling
-fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then(data => {
-    // Update the web page content with the fetched data
-    dataContainer.textContent = `Data for ${userInput}: ${data.value}`;
-  })
-  .catch(error => {
-    // Display an error message on the web page
-    errorMessage.textContent = `Error: ${error.message}`;
-  });
-
-```
-
 ### Fetch API using Async/Await (**Without** API Key)
 
 ```javascript
-// Initialize variables to store elements on the web page
-const userInput = document.getElementById('userInput');
-const dataContainer = document.getElementById('dataContainer');
-const errorMessage = document.getElementById('errorMessage');
-
 // Define an asynchronous function to fetch and handle API data
 async function fetchData() {
+  // Initialize variables to store elements on the web page
+  const userInput = document.getElementById("userInput");
+  const dataContainer = document.getElementById('dataContainer');
+  const errorMessage = document.getElementById('errorMessage');
+  
   try {
     // Make an HTTP request using the Fetch API
-    const response = await fetch(`https://api.example.com/data?search=${userInput}`);
+    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput.value}`);
+    
     // Check if the response is successful
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
+    
     // Parse the JSON response
     const data = await response.json();
+    
     // Display user input on the web page
     userInput.textContent = `User Input: ${userInput.value}`;
-    // Display fetched data on the web page
-    dataContainer.textContent = `Data: ${data.value}`;
+    
+    // Display specific values from the JSON data
+    const value1 = data.property1; // Replace with the actual property name
+    const value2 = data.property2; // Replace with the actual property name
+    
+    dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
+
   } catch (error) {
     // Display an error message on the web page
     errorMessage.textContent = `Error: ${error.message}`;
@@ -1157,7 +1097,6 @@ async function fetchData() {
 }
 
 fetchData();
-
 
 ```
 
@@ -1166,24 +1105,31 @@ fetchData();
 ```javascript
 // Define an asynchronous function to fetch and handle API data
 async function fetchData() {
-    // Initialize variables to store elements on the web page
-    const userInput = document.getElementById("userInput");
-    const dataContainer = document.getElementById('dataContainer');
-    const errorMessage = document.getElementById('errorMessage');
-    
-    try {
+  // Initialize variables to store elements on the web page
+  const userInput = document.getElementById("userInput");
+  const dataContainer = document.getElementById('dataContainer');
+  const errorMessage = document.getElementById('errorMessage');
+  
+  try {
     // Make an HTTP request using the Fetch API
-    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput}`);
+    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput.value}`);
     
     // Check if the response is successful
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
+    
     // Parse the JSON response
     const data = await response.json();
     
-    // Display user input and fetched data on the web page
-    userInput.textContent = `User Input: ${userInput.value}, Data: ${data.value}`;
+    // Display user input on the web page
+    userInput.textContent = `User Input: ${userInput.value}`;
+    
+    // Display specific values from the JSON data
+    const value1 = data.proprerty1; // Replace with the actual property name
+    const value2 = data.property2; // Replace with the actual property name
+    
+    dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
 
   } catch (error) {
     // Display an error message on the web page
@@ -1192,6 +1138,7 @@ async function fetchData() {
 }
 
 fetchData();
+
 ```
 
 [🔝 Back to Top](#top)
