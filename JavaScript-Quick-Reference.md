@@ -695,7 +695,7 @@ Introduction to JavaScript's Date object, focusing on creating, manipulating, an
 [🔝 Back to Top](#top)
 ---
 
-## 5.1 Understanding the DOM & DOM Manipulation
+## 5.1 Understanding DOM & DOM Manipulation
 The DOM (Document Object Model) is a JavaScript programming interface for web documents. It represents web pages as a tree of nodes and objects, allowing you to change their structure, style, and content.
 
 ### The DOM Basics
