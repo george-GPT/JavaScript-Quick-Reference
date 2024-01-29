@@ -1062,15 +1062,53 @@ Using Fetch() API to interact with web APIs and update web page content. Using a
 ### Fetch API using Async/Await (**Without** API Key)
 
 ```javascript
+// Initialize these elements outside if they are used elsewhere too
+const userInput = document.getElementById("userInput");
+const dataContainer = document.getElementById('dataContainer');
+const errorMessage = document.getElementById('errorMessage');
+const searchButton = document.getElementById('searchButton');
+
+async function fetchData() {
+  try {
+    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput.value}`);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    
+    // Assuming 'displayInput' is another element to show the user input
+    const displayInput = document.getElementById("displayInput");
+    displayInput.textContent = `User Input: ${userInput.value}`;
+    
+    const value1 = data.property1; // Replace with actual property name
+    const value2 = data.property2; // Replace with actual property name
+    
+    dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
+  } catch (error) {
+    errorMessage.textContent = `Error: ${error.message}`;
+  }
+}
+
+// Call fetchData in response to an event (e.g., button click)
+searchButton.addEventListener('click', fetchData);
+
+```
+
+### Fetch API using Async/Await (**With** API Key)
+
+```javascript
 // Define an asynchronous function to fetch and handle API data
 async function fetchData() {
-  // Initialize variables to store elements on the web page
+  // Ensure these elements are correctly referenced in your HTML
   const userInput = document.getElementById("userInput");
   const dataContainer = document.getElementById('dataContainer');
   const errorMessage = document.getElementById('errorMessage');
+  const searchButton = document.getElementById('searchButton');
   
   try {
-    // Make an HTTP request using the Fetch API
+    // Make sure 'apiKey' is securely handled and correctly referenced
     const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput.value}`);
     
     // Check if the response is successful
@@ -1080,11 +1118,12 @@ async function fetchData() {
     
     // Parse the JSON response
     const data = await response.json();
-    
-    // Display user input on the web page
-    userInput.textContent = `User Input: ${userInput.value}`;
-    
-    // Display specific values from the JSON data
+
+    // Assuming 'displayInput' is a separate element to show the user input
+    const displayInput = document.getElementById("displayInput");
+    displayInput.textContent = `User Input: ${userInput.value}`;
+
+    // Correct typo in property name and replace with actual property names
     const value1 = data.property1; // Replace with the actual property name
     const value2 = data.property2; // Replace with the actual property name
     
@@ -1096,48 +1135,8 @@ async function fetchData() {
   }
 }
 
-fetchData();
-
-```
-
-### Fetch API using Async/Await (**With** API Key)
-
-```javascript
-// Define an asynchronous function to fetch and handle API data
-async function fetchData() {
-  // Initialize variables to store elements on the web page
-  const userInput = document.getElementById("userInput");
-  const dataContainer = document.getElementById('dataContainer');
-  const errorMessage = document.getElementById('errorMessage');
-  
-  try {
-    // Make an HTTP request using the Fetch API
-    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput.value}`);
-    
-    // Check if the response is successful
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    
-    // Parse the JSON response
-    const data = await response.json();
-    
-    // Display user input on the web page
-    userInput.textContent = `User Input: ${userInput.value}`;
-    
-    // Display specific values from the JSON data
-    const value1 = data.proprerty1; // Replace with the actual property name
-    const value2 = data.property2; // Replace with the actual property name
-    
-    dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
-
-  } catch (error) {
-    // Display an error message on the web page
-    errorMessage.textContent = `Error: ${error.message}`;
-  }
-}
-
-fetchData();
+// Call fetchData in response to an event (e.g., button click)
+searchButton.addEventListener('click', fetchData);
 
 ```
 
