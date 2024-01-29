@@ -29,15 +29,16 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [4.2 Number](#42-number)
 - [4.3 Math](#43-math)
 - [4.4 Date](#44-date)
-## JavaScript in the Browser
+## DOM & DOM Manipulation
 - [5.1 Understanding the Dom & Dom Manipulation](#51-understanding-the-dom-&-dom-manipulation)
 - [5.2 Accessing and Modifying DOM Elements](#52-accessing-and-modifying-dom-elements)
 - [5.3 DOM Node Properties and Methods](#53-dom-node-properties-and-methods)
 - [5.4 DOM Event Handling](#54-dom-event-handling)
 ## Asynchronous JavaScript
-- [6.1 Understanding Callbacks](#61-understanding-callbacks)
-- [6.2 Promises and Async/Await](#62-promises-and-asyncawait)
-- [6.3 Handling Asynchronous Operations](#63-handling-asynchronous-operations)
+- [6.1 ASYNCHRONOUS OPERATIONS IN JAVASCRIPT](#61-asynchronous-operations-in-javascript)
+- [6.2 CALLBACKS](#62-callbacks)
+- [6.3 PROMISES](#63-promises)
+- [6.4 ASYNC/AWAIT](#64-asyncawait)
 ## Working with APIs
 - [7.1 Understanding APIs, JSON, and API Keys](#71-understanding-apis-json-and-api-keys)
 - [7.2 Making API Requests](#72-making-api-requests)
@@ -814,7 +815,6 @@ list.insertBefore(newItem, list.firstChild);
 ---
 
 ## 5.4 DOM EVENT HANDLING
-
 Methods for attaching, handling, and removing event listeners on DOM elements.
 
 ### Adding Event Listeners
