@@ -30,7 +30,7 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [4.3 Math](#43-math)
 - [4.4 Date](#44-date)
 ## DOM & DOM Manipulation
-- [5.1 Understanding DOM & DOM Manipulation](#51-understanding-the-dom-&-dom-manipulation)
+- [5.1 Understanding DOM & DOM Manipulation](#51-understanding--dom--dom-manipulation)
 - [5.2 Accessing and Modifying DOM Elements](#52-accessing-and-modifying-dom-elements)
 - [5.3 DOM Node Properties and Methods](#53-dom-node-properties-and-methods)
 - [5.4 DOM Event Handling](#54-dom-event-handling)
