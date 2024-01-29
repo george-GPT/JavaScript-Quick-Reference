@@ -41,8 +41,9 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [6.4 Asnyc/Await](#64-asyncawait)
 ## Working with APIs
 - [7.1 Understanding APIs & JSON](#71-understanding-apis--json)
-- [7.2 Making API Requests](#72-making-api-requests)
-- [7.3 Handling JSON Data](#73-handling-json-data)
+- [7.2 API Key Management](#72-api-key-management)
+- [7.3 Making API Requests](#73-making-api-requests)
+- [7.4 Handling JSON Data](#74-handling-json-data)
 ## Object-Oriented Programming (OOP)
 - [8.1 Object-Oriented Programming (OOP)](#81-object-oriented-programming-oop)
 ## Tips and Best Practices
@@ -1056,10 +1057,42 @@ When working with JSON data, remember to:
 [🔝 Back to Top](#top)
 ---
 
-## 7.2 MAKING API REQUESTS
-Using Fetch() API to interact with web APIs and update web page content. Using asynchronous techniques with Fetch() are essential for a responsive user experience, allowing data retrieval in the background without blocking user interactions.
+## 7.2 API Key Management
+API Key Management involves the secure handling and storage of API keys, crucial for authenticating access to web APIs. 
 
-### Fetch API using Async/Await (**Without** API Key)
+### What is API Key Management?
+It encompasses practices like storing keys on the server-side, away from client-side exposure, and regulating their use to prevent unauthorized access. Effective management is essential in safeguarding applications from security breaches and data misuse.
+
+This guide provides an overview of making API requests without applying API key management for the sake of simplicity and accessibility in learning contexts. In real-world applications, implementing secure API key management is highly recommended to ensure data security and integrity.
+
+### When It's Okay to not follow API Key Management
+
+- **Learning and Testing:** In controlled environments like personal projects or learning exercises where security isn't a primary concern.
+- **Non-Critical Applications:** For applications without sensitive data, where API key exposure has minimal risks.
+
+### When It's important to follow API Key Management
+
+**Production Environments:** Exposing API keys can lead to unauthorized access and potential data breaches.
+**Handling Sensitive Data:** When dealing with personal, financial, or confidential information, securing API keys is essential to prevent data theft and service abuse.
+**Rate Limits and Costs:** Exposed keys can be misused, leading to rate limit breaches and unexpected costs.
+
+### Securing API Keys - Advanced Approach
+
+- **Environment Variables**: Use server-side environment variables for API keys. Tools like dotenv in Node.js can help manage these.
+
+- **Server-Side Requests:** Process API requests on the server. This requires setting up a server environment (Node.js, Python, etc.) and understanding server-side programming.
+
+- **Access Control: **Utilize API provider's settings to limit key usage by IP, referer URL, or application.
+**Rate Limiting and Monitoring:** Apply rate limiting and monitor API key usage to detect unauthorized access. This may involve additional monitoring tools or services.
+Securing API keys is more advanced, requiring additional tools and knowledge in server-side development. 
+
+[🔝 Back to Top](#top)
+---
+
+## 7.3 MAKING API REQUESTS
+Using Fetch() API facilitates asynchronous data fetching, enhancing user experience by ensuring that interactions are not blocked during data retrieval. 
+
+### Fetch API using Async/Await (WithoutAPI Key)
 
 ```javascript
 // Initialize these elements outside if they are used elsewhere too
@@ -1070,7 +1103,11 @@ const searchButton = document.getElementById('searchButton');
 
 async function fetchData() {
   try {
-    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput.value}`);
+    // Encode the user input for safe inclusion in the URL
+    const encodedInput = encodeURIComponent(userInput.value);
+
+    // Replace with a public API URL that doesn't require an API key
+    const response = await fetch(`https://api.example.com/data?search=${encodedInput}`);
     
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -1091,59 +1128,60 @@ async function fetchData() {
   }
 }
 
-// Call fetchData in response to an event (e.g., button click)
+// Attach an event listener to the search button
 searchButton.addEventListener('click', fetchData);
 
 ```
 
-### Fetch API using Async/Await (**With** API Key)
+### Fetch API using Async/Await (With API Key)
 
 ```javascript
-// Define an asynchronous function to fetch and handle API data
+// Initialize these elements outside if they are used elsewhere too
+const userInput = document.getElementById("userInput");
+const dataContainer = document.getElementById('dataContainer');
+const errorMessage = document.getElementById('errorMessage');
+const searchButton = document.getElementById('searchButton');
+
+// Your API key (in a real-world scenario, this should not be exposed in client-side code)
+const apiKey = 'YOUR_API_KEY_HERE';
+
 async function fetchData() {
-  // Ensure these elements are correctly referenced in your HTML
-  const userInput = document.getElementById("userInput");
-  const dataContainer = document.getElementById('dataContainer');
-  const errorMessage = document.getElementById('errorMessage');
-  const searchButton = document.getElementById('searchButton');
-  
   try {
-    // Make sure 'apiKey' is securely handled and correctly referenced
-    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${userInput.value}`);
+    // Encode the user input for safe inclusion in the URL
+    const encodedInput = encodeURIComponent(userInput.value);
+
+    // API URL that requires an API key
+    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${encodedInput}`);
     
-    // Check if the response is successful
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     
-    // Parse the JSON response
     const data = await response.json();
-
-    // Assuming 'displayInput' is a separate element to show the user input
+    
+    // Assuming 'displayInput' is another element to show the user input
     const displayInput = document.getElementById("displayInput");
     displayInput.textContent = `User Input: ${userInput.value}`;
-
-    // Correct typo in property name and replace with actual property names
-    const value1 = data.property1; // Replace with the actual property name
-    const value2 = data.property2; // Replace with the actual property name
+    
+    const value1 = data.property1; // Replace with actual property name
+    const value2 = data.property2; // Replace with actual property name
     
     dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
-
   } catch (error) {
-    // Display an error message on the web page
     errorMessage.textContent = `Error: ${error.message}`;
   }
 }
 
-// Call fetchData in response to an event (e.g., button click)
+// Attach an event listener to the search button
 searchButton.addEventListener('click', fetchData);
+
 
 ```
 
 [🔝 Back to Top](#top)
 ---
 
-## 7.3 HANDLING JSON DATA
+## 7.4 HANDLING JSON DATA
 Working with JSON (JavaScript Object Notation) data in JavaScript.
 
 ### Parsing JSON Data
