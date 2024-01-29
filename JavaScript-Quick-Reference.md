@@ -35,7 +35,7 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [5.3 DOM Node Properties and Methods](#53-dom-node-properties-and-methods)
 - [5.4 DOM Event Handling](#54-dom-event-handling)
 ## Asynchronous JavaScript
-- [6.1 Asynchronous Operations iN Javascript](#61-asynchronous-operations-in-javascript)
+- [6.1 Asynchronous Operations in Javascript](#61-asynchronous-operations-in-javascript)
 - [6.2 Callbacks](#62-callbacks)
 - [6.3 Promises](#63-promises)
 - [6.4 Asnyc/Await](#64-asyncawait)
