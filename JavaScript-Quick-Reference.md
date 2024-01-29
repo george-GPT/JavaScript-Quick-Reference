@@ -1090,87 +1090,94 @@ Using Fetch() API facilitates asynchronous data fetching, enhancing user experie
 ### Fetch API using Async/Await (WithoutAPI Key)
 
 ```javascript
-// Initialize these elements outside if they are used elsewhere too
+// DOM elements initialization
 const userInput = document.getElementById("userInput");
 const dataContainer = document.getElementById('dataContainer');
 const errorMessage = document.getElementById('errorMessage');
 const searchButton = document.getElementById('searchButton');
 
+// Function to fetch data from API asynchronously
 async function fetchData() {
   try {
-    // Encode the user input for safe inclusion in the URL
+    // Encode user input for URL parameter
     const encodedInput = encodeURIComponent(userInput.value);
 
-    // Replace with a public API URL that doesn't require an API key
+    // Fetch request to a public API without API key requirement
     const response = await fetch(`https://api.example.com/data?search=${encodedInput}`);
     
+    // Check response status
     if (!response.ok) {
+      // Throw error for unsuccessful response
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     
+    // Parse response to JSON
     const data = await response.json();
     
-    // Assuming 'displayInput' is another element to show the user input
-    const displayInput = document.getElementById("displayInput");
-    displayInput.textContent = `User Input: ${userInput.value}`;
+    // Display the entered user input
+    userInput.textContent = `User Input: ${userInput.value}`;
     
-    const value1 = data.property1; // Replace with actual property name
-    const value2 = data.property2; // Replace with actual property name
+    // Extract values from response
+    const value1 = data.property1; // Use actual data property names
+    const value2 = data.property2; // Use actual data property names
     
+    // Update DOM with response data
     dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
   } catch (error) {
+    // Handle and display error
     errorMessage.textContent = `Error: ${error.message}`;
   }
 }
-
 // Attach an event listener to the search button
 searchButton.addEventListener('click', fetchData);
-
 ```
 
 ### Fetch API using Async/Await (With API Key)
 
 ```javascript
-// Initialize these elements outside if they are used elsewhere too
+// DOM element references
 const userInput = document.getElementById("userInput");
 const dataContainer = document.getElementById('dataContainer');
 const errorMessage = document.getElementById('errorMessage');
 const searchButton = document.getElementById('searchButton');
 
-// Your API key (in a real-world scenario, this should not be exposed in client-side code)
+// API key (note: secure it properly in real-world apps)
 const apiKey = 'YOUR_API_KEY_HERE';
 
+// Async function to fetch data from API
 async function fetchData() {
   try {
-    // Encode the user input for safe inclusion in the URL
+    // Encode user input for URL inclusion
     const encodedInput = encodeURIComponent(userInput.value);
 
-    // API URL that requires an API key
+    // Fetch data from API with encoded input
     const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${encodedInput}`);
     
+    // Check for successful response
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     
+    // Parse JSON response
     const data = await response.json();
     
-    // Assuming 'displayInput' is another element to show the user input
-    const displayInput = document.getElementById("displayInput");
-    displayInput.textContent = `User Input: ${userInput.value}`;
+    // Display user input
+    userInput.textContent = `User Input: ${userInput.value}`;
     
-    const value1 = data.property1; // Replace with actual property name
-    const value2 = data.property2; // Replace with actual property name
+    // Extract and display values from response
+    const value1 = data.property1; // Adjust property names
+    const value2 = data.property2; // Adjust property names
     
     dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
   } catch (error) {
+    // Handle and display errors
     errorMessage.textContent = `Error: ${error.message}`;
   }
 }
 
+
 // Attach an event listener to the search button
 searchButton.addEventListener('click', fetchData);
-
-
 ```
 
 [🔝 Back to Top](#top)
