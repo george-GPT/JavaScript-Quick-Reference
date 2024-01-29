@@ -1058,16 +1058,18 @@ When working with JSON data, remember to:
 ---
 
 ## 7.2 API Key Management
-API Key Management involves the secure handling and storage of API keys, crucial for authenticating access to web APIs. 
+API Key Management involves securely storing keys server-side and regulating their use to prevent unauthorized access, crucial for protecting applications from security breaches.
 
-### What is API Key Management?
-API Key Management involves securely storing keys server-side and regulating their use to prevent unauthorized access, crucial for protecting applications from security breaches. This guide displays code examples of API requests that don't use API key management for learning ease. Securing API keys is more advanced, requiring additional tools and knowledge in server-side development. However, secure management is vital in real-world applications for data security and integrity.  
+### API Key Management: Educational Examples vs. Real-World Application
+This guide displays code examples of API requests that don't use API key management for learning ease. Securing API keys is more advanced, requiring additional tools and knowledge in server-side development. However, secure management is vital in real-world applications for data security and integrity.  
 
 ### When It's important to follow API Key Management
 
-**Production Environments:** Exposing API keys can lead to unauthorized access and potential data breaches.
-**Handling Sensitive Data:** When dealing with personal, financial, or confidential information, securing API keys is essential to prevent data theft and service abuse.
-**Rate Limits and Costs:** Exposed keys can be misused, leading to rate limit breaches and unexpected costs.
+- **Production Environments:** Exposing API keys can lead to unauthorized access and potential data breaches.
+
+- **Handling Sensitive Data:** When dealing with personal, financial, or confidential information, securing API keys is essential to prevent data theft and service abuse.
+
+- **Rate Limits and Costs:** Exposed keys can be misused, leading to rate limit breaches and unexpected costs.
 
 ### Securing API Keys - Advanced Approach
 
