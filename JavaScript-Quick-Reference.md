@@ -387,23 +387,23 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 ### Methods
 - `Array.from(arrayLike[, mapFn[, thisArg]])` Creates a new Array instance from an array-like or iterable object.
 - `Array.isArray(obj)` Returns true if a variable is an array, if not false.
-- `Array.of(element0[, element1[, ...[, elementN]]])` Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
+- `Array.of("element1", "element2");` Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
 
 ### Mutator Methods
 - `arr.copyWithin(target, start, end)` Copies a sequence of array elements within the array.
 - `arr.fill(value, start, end)` Fills all the elements of an array from a start index to an end index with a static value.
 - `arr.pop()` Removes the last element from an array and returns that element.
 - `arr.flat()` Merges nested array into one single array.
-- `arr.push([element1[, ...[, elementN]]])` Adds one or more elements to the end of an array and returns the new length of the array.
+- `arr.push("element1", "element2");` Adds one or more elements to the end of an array and returns the new length of the array.
 - `arr.reverse()` Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.
 - `arr.shift()` Removes the first element from an array and returns that element.
 - `arr.sort()` Sorts the elements of an array in place and returns the array.
-- `array.splice(start, deleteCount, item1, item2, ...)` Adds and/or removes elements from an array.
-- `arr.unshift([element1[, ...[, elementN]]])` Adds one or more elements to the front of an array and returns the new length of the array.
+- `array.splice(start, deleteCount, item1, item2)` Adds and/or removes elements from an array.
+- `arr.unShift("element1", "element2");` Adds one or more elements to the front of an array and returns the new length of the array.
 
 ### Acessor Methods
 - `arr.at(index)` Returns the element at the specified index in the array.
-- `arr.concat(value1[, value2[, ...[, valueN]]])` Returns a new array comprised of this array joined with other array(s) and/or value(s).
+- `arr.concat(value1, value2, array2)` Returns a new array comprised of this array joined with other array(s) and/or value(s).
 - `arr.includes(searchElement, fromIndex)` Determines whether an array contains a certain element, returning true or false as appropriate.
 - `arr.indexOf(searchElement[, fromIndex])` Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
 - `arr.join(separator)` Joins all elements of an array into a string.
@@ -753,7 +753,7 @@ Methods for selecting, creating, and modifying DOM elements.
 - `element.classList.toggle(className);` Toggles a class on the element.
 - `element.style.property = "value";` Changes the style of an element.
 
-### Examples of Common Style Properties and Attributes
+### Examples of Common Style Properties & Attributes
 - `element.style.color = "red";` Sets the text color of the element.
 - `element.style.backgroundColor = "yellow";` Sets the background color of the element.
 - `element.style.border = "1px solid black";` Sets a border for the element.
