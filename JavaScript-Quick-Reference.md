@@ -401,42 +401,21 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 - `array.splice(start, deleteCount, element1, element2)` Adds and/or removes elements from an array.
 - `arr.unShift("element1", "element2");` Adds one or more elements to the front of an array and returns the new length of the array.
 
-### Example of arrray.sort()
+### Example of .sort() & .filter()
 
 ```javascript
-// Assume we have an array of objects with a 'category' property
-const items = [
-  { name: 'Banana', category: 'Fruit' },
-  { name: 'Carrot', category: 'Vegetable' },
-  { name: 'Apple', category: 'Fruit' },
-  { name: 'Lettuce', category: 'Vegetable' },
-  { name: 'Orange', category: 'Fruit' }
-];
+let numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 
-// Sort the items by category in ascending order
-items.sort((a, b) => {
-  if (a.category < b.category) {
-    return -1;
-  }
-  if (a.category > b.category) {
-    return 1;
-  }
-  return 0;
-});
+let result = numbers
+  .sort((a, b) => a - b) // Sort in ascending order
+  .filter(number => number > 3); // Filter numbers greater than 3
 
-console.log(items);
+console.log(result); // [4, 4, 5, 5, 5, 6, 9]
 
-// Outputs:
-[
-  { name: 'Banana', category: 'Fruit' },
-  { name: 'Apple', category: 'Fruit' },
-  { name: 'Orange', category: 'Fruit' },
-  { name: 'Carrot', category: 'Vegetable' },
-  { name: 'Lettuce', category: 'Vegetable' }
-]
 ```
 
 ### Acessor Methods
+- `array.filter(callback[, thisArg])` Creates a new array containing elements that meet a specified condition defined by the provided callback function.
 - `array.at(index)` Returns the element at the specified index in the array.
 - `array.concat(value1, value2, array2)` Returns a new array comprised of this array joined with other array(s) and/or value(s).
 - `array.includes(searchElement, fromIndex)` Determines whether an array contains a certain element, returning true or false as appropriate.
