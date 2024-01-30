@@ -381,13 +381,13 @@ switch (expression) {
 Detailed guide on JavaScript Arrays, covering array manipulation methods, iteration, and array-specific operations.
 
 ### Properties
-- `Array.length` Reflects the number of elements in an array.
-- `Array.prototype` Represents the prototype for the Array constructor and allows to add new properties and methods to all Array objects.
+- `array.length` Reflects the number of elements in an array.
+- `array.prototype` Represents the prototype for the Array constructor and allows to add new properties and methods to all Array objects.
 
 ### Methods
-- `Array.from(arrayLike[, mapFn[, thisArg]])` Creates a new Array instance from an array-like or iterable object.
-- `Array.isArray(obj)` Returns true if a variable is an array, if not false.
-- `Array.of("element1", "element2");` Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
+- `array.from(arrayLike[, mapFn[, thisArg]])` Creates a new Array instance from an array-like or iterable object.
+- `array.isArray(object)` Returns true if a variable is an array, if not false.
+- `array.of("element1", "element2");` Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
 
 ### Mutator Methods
 - `arr.copyWithin(target, start, end)` Copies a sequence of array elements within the array.
@@ -398,34 +398,95 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 - `arr.reverse()` Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.
 - `arr.shift()` Removes the first element from an array and returns that element.
 - `arr.sort()` Sorts the elements of an array in place and returns the array.
-- `array.splice(start, deleteCount, item1, item2)` Adds and/or removes elements from an array.
+- `array.splice(start, deleteCount, element1, element2)` Adds and/or removes elements from an array.
 - `arr.unShift("element1", "element2");` Adds one or more elements to the front of an array and returns the new length of the array.
 
+### Example of arrray.sort()
+
+```javascript
+// Assume we have an array of objects with a 'category' property
+const items = [
+  { name: 'Banana', category: 'Fruit' },
+  { name: 'Carrot', category: 'Vegetable' },
+  { name: 'Apple', category: 'Fruit' },
+  { name: 'Lettuce', category: 'Vegetable' },
+  { name: 'Orange', category: 'Fruit' }
+];
+
+// Sort the items by category in ascending order
+items.sort((a, b) => {
+  if (a.category < b.category) {
+    return -1;
+  }
+  if (a.category > b.category) {
+    return 1;
+  }
+  return 0;
+});
+
+console.log(items);
+
+// Outputs:
+[
+  { name: 'Banana', category: 'Fruit' },
+  { name: 'Apple', category: 'Fruit' },
+  { name: 'Orange', category: 'Fruit' },
+  { name: 'Carrot', category: 'Vegetable' },
+  { name: 'Lettuce', category: 'Vegetable' }
+]
+```
+
 ### Acessor Methods
-- `arr.at(index)` Returns the element at the specified index in the array.
-- `arr.concat(value1, value2, array2)` Returns a new array comprised of this array joined with other array(s) and/or value(s).
-- `arr.includes(searchElement, fromIndex)` Determines whether an array contains a certain element, returning true or false as appropriate.
-- `arr.indexOf(searchElement[, fromIndex])` Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
-- `arr.join(separator)` Joins all elements of an array into a string.
-- `arr.lastIndexOf(searchElement, fromIndex)` Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
-- `arr.slice(begin, end)` Extracts a section of an array and returns a new array.
-- `arr.toString()` Returns a string representing the array and its elements. 
+- `array.at(index)` Returns the element at the specified index in the array.
+- `array.concat(value1, value2, array2)` Returns a new array comprised of this array joined with other array(s) and/or value(s).
+- `array.includes(searchElement, fromIndex)` Determines whether an array contains a certain element, returning true or false as appropriate.
+- `array.indexOf(searchElement[, fromIndex])` Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
+- `array.join(separator)` Joins all elements of an array into a string.
+- `array.lastIndexOf(searchElement, fromIndex)` Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
+- `array.slice(begin, end)` Extracts a section of an array and returns a new array.
+- `array.toString()` Returns a string representing the array and its elements. 
   - Overrides the Object.prototype.toString() method.
-- `arr.toLocaleString(locales, options)` Returns a localized string representing the array and its elements. 
+- `array.toLocaleString(locales, options)` Returns a localized string representing the array and its elements. 
   - Overrides the `Object.prototype.toLocaleString()` method.
 
+### Example of array.slice(begin, end)
+
+```javascript
+// Suppose we have an array of months
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+
+// We want to get only the spring months
+const springMonths = months.slice(2, 5);
+
+console.log(springMonths); // Output: ['March', 'April', 'May']
+```
+
 ### Iteration Methods
-- `arr.every(callback[, thisArg])` Returns true if every element in this array satisfies the provided testing function.
-- `arr.filter(callback[, thisArg])` Creates a new array with all of the elements of this array for which the provided filtering function returns true.
-- `arr.find(callback[, thisArg])` Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
-- `arr.findIndex(callback[, thisArg])` Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.
-- `arr.forEach(callback[, thisArg])` Calls a function for each element in the array.
-- `arr.keys()` Returns a new Array Iterator that contains the keys for each index in the array.
-- `arr.map(callback[, initialValue])` Creates a new array with the results of calling a provided function on every element in this array.
-- `arr.reduce(callback[, initialValue])` Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
-- `arr.reduceRight(callback[, initialValue])` Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.
-- `arr.some(callback[, initialValue])` Returns true if at least one element in this array satisfies the provided testing function.
-- `arr.values()` Returns a new Array Iterator object that contains the values for each index in the array.
+- `array.every(callback[, thisArg])` Returns true if every element in this array satisfies the provided testing function.
+- `array.filter(callback[, thisArg])` Creates a new array with all of the elements of this array for which the provided filtering function returns true.
+- `array.find(callback[, thisArg])` Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
+- `array.findIndex(callback[, thisArg])` Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.
+- `array.forEach(callback[, thisArg])` Calls a function for each element in the array.
+- `array.keys()` Returns a new Array Iterator that contains the keys for each index in the array.
+- `array.map(callback[, initialValue])` Creates a new array with the results of calling a provided function on every element in this array.
+- `array.reduce(callback[, initialValue])` Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
+- `array.reduceRight(callback[, initialValue])` Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.
+- `array.some(callback[, initialValue])` Returns true if at least one element in this array satisfies the provided testing function.
+- `array.values()` Returns a new Array Iterator object that contains the values for each index in the array.
+
+### Example of array.reduce(callback[, initialValue])
+
+```javascript
+// Suppose we have an array of numbers
+const numbers = [1, 2, 3, 4, 5];
+
+// We want to find the sum of all numbers in the array
+const sum = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0); // 0 is the initial value
+
+console.log(sum); // Output: 15
+```
 
 [🔝 Back to Top](#top)
 ---
@@ -468,7 +529,36 @@ Overview of JavaScript Object, its properties, and methods.
 - `Object.setPrototypeOf(obj, prototype)` Sets the prototype (i.e., the internal [[Prototype]] property).
 - `Object.values(obj)` Returns an array of a given object's own enumerable property values.
  
+### Example of object.assign()
+
+```javascript
+// Create a target object
+const target = {
+  name: 'John',
+  age: 30
+};
+
+// Create source objects
+const source1 = {
+  age: 25,
+  profession: 'Engineer'
+};
+
+const source2 = {
+  city: 'New York',
+  hobby: 'Guitar'
+};
+
+// Use Object.assign to copy values from sources to the target
+Object.assign(target, source1, source2);
+
+// Display the modified target object
+console.log(target);
+```
+
 ### Looping Through Properties Using for...in
+for...in loops through an object's properties to access and work with each property and its associated value.
+
 
 ```javascript
 for (const key in myObject) {
