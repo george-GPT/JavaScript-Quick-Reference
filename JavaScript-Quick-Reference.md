@@ -471,10 +471,11 @@ console.log(sum); // Output: 15
 ---
 
 ## 3.5 OBJECTS
-Overview of JavaScript Object, its properties, and methods.
+Objects are a collection of properties, where a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. 
 
 ### Creating an Object
 - `const myObject = { key1: 'value1', key2: 'value2' };` Object literal with two properties
+- `Object.create()` creates a new object with a specified prototype object and properties
 
 ### Accessing Properties
 - `console.log(myObject.key1);` 'value1'
@@ -485,6 +486,45 @@ Overview of JavaScript Object, its properties, and methods.
 
 ### Deleting Properties
 - `delete myObject.key2;` Removing property 'key2'
+
+### Methods
+A method in a JavaScript object is a property of the object that is a function. Methods are functions stored as object properties, and they are typically used to define actions or behavior for the object.
+
+### Structure used for Creating and Using Methods
+
+```javascript
+const exampleObject = {
+  property1: "Value1",
+  property2: "Value2",
+  method1: function() {
+    return "Method1 returns: " + this.property1;
+  },
+  method2: function(parameter) {
+    console.log("Method2 uses " + parameter + " and property2: " + this.property2);
+  }
+};
+
+console.log(exampleObject.method1()); // Calls method1, outputs: Method1 returns: Value1
+exampleObject.method2("Parameter1"); // Calls method2 with "Parameter1" as an argument, outputs: Method2 uses Parameter1 and property2: Value2
+```
+
+### Example of Creating and Using Methods
+
+```javascript
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  },
+  greet: function(greeting) {
+    console.log(greeting + ", my name is " + this.firstName);
+  }
+};
+
+console.log(person.fullName()); // Calls the fullName method, outputs: John Doe
+person.greet("Hello"); // Calls the greet method with "Hello" as an argument, outputs: Hello, my name is John
+```
 
 ### Methods of the Object Constructor
 - `Object.assign(target, ...sources)` Copies values from source to target objects.
