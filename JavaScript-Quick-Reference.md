@@ -490,7 +490,7 @@ Objects are a collection of properties, where a property is an association betwe
 ### Methods
 A method in a JavaScript object is a property of the object that is a function. Methods are functions stored as object properties, and they are typically used to define actions or behavior for the object.
 
-### Structure used for Creating and Using Methods
+### Structure for Creating and Using Methods
 
 ```javascript
 const exampleObject = {
