@@ -26,7 +26,7 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [3.6 Error Handling](#36-error-handling)
 ## Global JavaScript Objects
 - [4.1 String](#41-string)
-- [4.2 Number](#42-number)
+- [4.2 Numbers](#42-numbers)
 - [4.3 Math](#43-math)
 - [4.4 Date](#44-date)
 ## DOM & DOM Manipulation
@@ -527,6 +527,7 @@ person.greet("Hello"); // Calls the greet method with "Hello" as an argument, ou
 ```
 
 ### Methods of the Object Constructor
+Methods of the Object constructor in JavaScript provide a set of utility functions for creating, manipulating, and working with objects, including methods for object creation, property manipulation, and property enumeration.
 - `Object.assign(target, ...sources)` Copies values from source to target objects.
 - `Object.create(proto, propertiesObject)` Creates a new object with the specified prototype and properties.
 - `Object.defineProperty(obj, prop, descriptor)` Defines a new property on an object.
@@ -688,6 +689,24 @@ Fundamental number-related functionalities in JavaScript.
 - `parseInt("10", 10);` Converts the string "10" to an integer (base 10).
 - `parseInt("10", 2);` Converts the string "10" to an integer (base 2, binary).
 
+### parseInt Example
+
+```javascript
+// Sample input from the user
+const userInput = "42";
+
+// Using parseInt to convert the string to an integer
+const parsedNumber = parseInt(userInput);
+
+// Checking if the conversion was successful
+if (!isNaN(parsedNumber)) {
+  console.log(`Parsed number: ${parsedNumber}`);
+  console.log(`Type of parsedNumber: ${typeof parsedNumber}`);
+} else {
+  console.log("Conversion failed. Please enter a valid number.");
+}
+```
+
 ### parseFloat(string)
 `parseFloat("3.14");` Converts the string "3.14" to a floating-point number.
 
@@ -723,8 +742,6 @@ console.log(morePrimes); // [7, 2, 3, 5, 11]
 - `Number.isSafeInteger(10);` true
 - `Number.MAX_VALUE;` The largest positive representable number
 - `Number.MIN_VALUE;`  The smallest positive representable number
-- `Number.parseFloat("5.5");` 5.5
-- `Number.parseInt("10", 10);` 10
 
 [🔝 Back to Top](#top)
 ---
@@ -758,6 +775,27 @@ Essential guide to JavaScript's Math object, covering basic constants and mathem
 
 ### Random Number Generation
 - `Math.random();` Generates a random number between 0 (inclusive) and 1 (exclusive)
+  
+### Example of Math.random() to generate a random choice
+
+```javascript
+// Function to get a random choice for the computer
+function getComputerChoice() {
+  const randomNumber = Math.random(); // Generates a random number between 0 (inclusive) and 1 (exclusive).
+
+  if (randomNumber < 1/3) {
+    return 'rock';
+  } else if (randomNumber < 2/3) {
+    return 'paper';
+  } else {
+    return 'scissors';
+  }
+}
+
+// Example usage:
+const computerSelection = getComputerChoice();
+console.log(`Computer chose: ${computerSelection}`);
+```
 
 [🔝 Back to Top](#top)
 ---
@@ -943,6 +981,14 @@ document.getElementById("myButton").addEventListener("click", function() {
 For additional checks, complex logic, or reusability, using a named function offers better code organization and maintainability:
 ```javascript
 document.getElementById("myButton").addEventListener("click", buttonClickFunction);
+```
+
+### DOMContentLoaded Event Listener
+To execute code when the DOM is fully loaded and parsed, use the DOMContentLoaded event.
+
+```javascript
+document.addEventListener("DOMContentLoaded", function() {
+});
 ```
 
 ### Removing Event Listeners
