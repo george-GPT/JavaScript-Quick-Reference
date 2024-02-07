@@ -300,7 +300,7 @@ for (const key in person) {
 }
 ```
 
-### dor...of Loop (ES6)
+### for...of Loop (ES6)
 Iterates over iterable objects like arrays, strings.
 
 ```javascript
