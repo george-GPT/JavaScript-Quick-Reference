@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-# ![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/JS-icon.png)  JavaScript Simplified: An Efficient Learning Guide
+# ![JavaScript Icon](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/JS-icon.png) JavaScript Simplified: An Efficient Learning Guide
 
 ![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -11,78 +11,102 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 [Back to README](https://github.com/george-GPT/JavaScript-Quick-Reference/blob/main/README.md)
 
 ## Introduction to JavaScript
+
 - [1.1 Overview of JavaScript](#11-overview-of-javascript)
 - [1.2 JavaScript Code Order](#12-javascript-code-order)
+
 ## Variables and Declarations
+
 - [2.1 Understanding var, let, and const](#21-understanding-var-let-and-const)
 - [2.2 Basic Data Types](#22-basic-data-types)
 - [2.3 Syntax and Examples](#23-syntax-and-examples)
+
 ## Fundamental Programming Concepts
+
 - [3.1 Functions](#31-functions)
 - [3.2 Loops](#32-loops)
 - [3.3 Conditional Statements](#33-conditional-statements)
 - [3.4 Arrays](#34-arrays)
 - [3.5 Objects](#35-objects)
 - [3.6 Error Handling](#36-error-handling)
+
 ## Global JavaScript Objects
+
 - [4.1 String](#41-string)
 - [4.2 Numbers](#42-numbers)
 - [4.3 Math](#43-math)
 - [4.4 Date](#44-date)
+
 ## DOM & DOM Manipulation
+
 - [5.1 Understanding DOM & DOM Manipulation](#51-understanding-dom--dom-manipulation)
 - [5.2 Accessing and Modifying DOM Elements](#52-accessing-and-modifying-dom-elements)
 - [5.3 DOM Node Properties and Methods](#53-dom-node-properties-and-methods)
 - [5.4 DOM Event Handling](#54-dom-event-handling)
+
 ## Asynchronous JavaScript
+
 - [6.1 Asynchronous Operations in Javascript](#61-asynchronous-operations-in-javascript)
 - [6.2 Callbacks](#62-callbacks)
 - [6.3 Promises](#63-promises)
 - [6.4 Asnyc/Await](#64-asyncawait)
+
 ## Working with APIs
+
 - [7.1 Understanding APIs & JSON](#71-understanding-apis--json)
 - [7.2 API Key Management](#72-api-key-management)
 - [7.3 Making API Requests](#73-making-api-requests)
 - [7.4 Handling JSON Data](#74-handling-json-data)
+
 ## Object-Oriented Programming (OOP)
+
 - [8.1 Object-Oriented Programming (OOP)](#81-object-oriented-programming-oop)
+
 ## Tips and Best Practices
+
 - [9.1 Tips and Best Practices](#91-tips-and-best-practices)
 
 ---
 
 ## 1.1 Overview of JavaScript
+
 Explore the JavaScript language and its versatile capabilities, including:
-  - Being a high-level, interpreted programming language.
-  - Supporting dynamic typing for variables with varying data types.
-  - Embracing multiple programming paradigms: event-driven, functional, and imperative.
+
+- Being a high-level, interpreted programming language.
+- Supporting dynamic typing for variables with varying data types.
+- Embracing multiple programming paradigms: event-driven, functional, and imperative.
 
 ### ![JavaScript Core Features](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/cog.png) Core Features
+
 Discover how JavaScript enhances user interaction on web pages by manipulating HTML and CSS. Learn how it handles asynchronous operations to make web applications more responsive.
 
-### ![JavaScript and ECMAScript](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/js.png)  JavaScript and ECMAScript
+### ![JavaScript and ECMAScript](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/js.png) JavaScript and ECMAScript
+
 Understand JavaScript's adherence to ECMAScript (ES) standards, including significant updates introduced in ES6/ES2015, such as let/const, arrow functions, and classes.
 
-### ![JavaScript Environments](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/stack.png)  Environments
+### ![JavaScript Environments](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/stack.png) Environments
+
 Explore JavaScript's versatility in both client-side (browser) and server-side (Node.js) development. See how it empowers the creation of dynamic web page content and back-end applications.
 
-### ![JavaScript Role in Web Development](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/webdev.png)  Role in Web Development
+### ![JavaScript Role in Web Development](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/webdev.png) Role in Web Development
+
 Understand JavaScript's integral role in web development, including its interactivity, DOM manipulation, and server-side capabilities.
 
-### ![Integration with Web Technologies](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/tech.png)  Integration with Web Technologies
+### ![Integration with Web Technologies](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/tech.png) Integration with Web Technologies
+
 Learn how JavaScript collaborates with HTML and CSS to deliver complete web page functionality. Discover its use of AJAX for asynchronous web tasks.
 
-### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/react.png)  Libraries and Frameworks
+### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/react.png) Libraries and Frameworks
+
 Explore libraries like React and frameworks like Angular, Vue.js, and Ember.js that simplify common tasks and provide robust tools for building complex applications.
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 1.2 JavaScript Code Order
+
 The order of your code is vital for logical flow, efficient loading, and readability.
 
-
-### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/question.png)  Why It Matters
+### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/question.png) Why It Matters
 
 - **Logical Flow:** Ensures proper function sequencing.
 - **Loading Efficiency:** Affects resource loading and page speed.
@@ -90,7 +114,8 @@ The order of your code is vital for logical flow, efficient loading, and readabi
 - **Maintainability:** Facilitates updates and bug fixes.
 - **Collaboration:** Simplifies teamwork and code sharing.
 
-### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/list.png)  Code Order Variability
+### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/list.png) Code Order Variability
+
 Optimal code order varies based on project needs and best practices:
 
 - **Library/Framework Integration:** Follow library/framework guidelines (e.g., React prioritizes state and rendering).
@@ -99,7 +124,8 @@ Optimal code order varies based on project needs and best practices:
 - **Performance Optimization:** Adjust the order for performance optimization as per your app's requirements.
 - **Team Workflow:** Adapt to your team's workflow and code organization preferences when collaborating.
 
-### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/list2.png)  General JavaScript Order
+### ![JavaScript Libraries and Frameworks](https://github.com/george-GPT/JavaScript-Quick-Reference/raw/main/images/list2.png) General JavaScript Order
+
 General structure to use as a baseline:
 
 1. **DOM References and Global Variables:** Declare and manage references to HTML elements and global variables.
@@ -112,84 +138,99 @@ General structure to use as a baseline:
 8. **Error Handling and Debugging:** Implement error handling and debugging techniques.
 9. **Performance Optimization and Testing:** Optimize code for performance and introduce testing practices.
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 2.1 VARIABLES AND DECLARATIONS
+
 Understanding variable declaration and scope in JavaScript.
 
 - **'var':** Function-scoped variable declaration (uncommon in modern JS)
+
   - `var oldVar = "I am old";` Avoid using 'var' when possible
 
 - **'let':** Block-scoped variable declaration (can be reassigned)
+
   - `let newLet = "I am new";` Preferred for variables that can change
 
 - **'const':** Block-scoped and constant variable declaration (cannot be reassigned)
   - `const constantVar = "I am constant";` Use for variables that should not change
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 2.2 BASIC DATA TYPES
+
 Overview of primitive data types in JavaScript.
 
 - **Number:** Represents both integers and floats
+
   - `let score = 75;` Integer
   - `let price = 9.99;` Float
 
 - **String:** Represents textual data
+
   - `let name = "Alice";`
 
 - **Boolean:** Represents true or false values
+
   - `let isPassed = score > 50; `
 
 - **Undefined:** Variable declared but not assigned
+
   - `let result;`
 
 - **Null:** Explicitly signifies no value
   - `let data = null;`
 
 ## 2.3 SYNTAX AND EXAMPLES
+
 Examples illustrating syntax for variable declarations and data types.
 
 ### Declaring Multiple Variables
+
 `let x = 5, y = 10; // Multiple variables in one line`
 
 ### String Concatenation
+
 `let greeting = "Hello " + name; // "Hello Alice"`
 
 ### Template Literals (ES6)
+
 `` `let greetingTemplate = `Hello ${name}`; // "Hello Alice"` ``
 
 ### Arithmetic Operations
+
 - `let sum = x + y;` Addition (15)
 - `let diff = y - x;` Subtraction (5)
 
 ### Boolean Logic
+
 `let isGreater = x > y;` false
 
 ### Type Coercion
+
 `let total = "3" + 4;` "34", number 4 becomes a string
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 3.1 FUNCTIONS
+
 Detailed exploration of functions in JavaScript, including parameters and advanced concepts.
 
-### Function Declarations 
+### Function Declarations
+
 Standard way to define a function with parameters.
 
 ```javascript
 function greet(name) {
-return `Hello, ${name}!`;
+  return `Hello, ${name}!`;
 }
-console.log(greet("Alice"));
+console.log(greet('Alice'));
 ```
 
 Outputs "Hello, Alice!"
 
-### Function Parameters 
+### Function Parameters
+
 Functions can take parameters as input.
 
 ```javascript
@@ -200,10 +241,11 @@ console.log(add(5, 3)); // Outputs 8
 ```
 
 ### Default Parameters (ES6)
+
 Assign default values to parameters.
 
 ```javascript
-function say(message = "Hi") {
+function say(message = 'Hi') {
   console.log(message);
 }
 `say();` // Outputs "Hi"
@@ -211,20 +253,23 @@ function say(message = "Hi") {
 ```
 
 ### Rest Parameters (ES6)
+
 Handle an indefinite number of parameters.
 
 ```javascript
 function sumAll(...numbers) {
-return numbers.reduce((acc, num) => acc + num, 0);
+  return numbers.reduce((acc, num) => acc + num, 0);
 }
 console.log(sumAll(1, 2, 3));
 ```
 
 Outputs 6
 
-### Arrow Functions (ES6) 
+### Arrow Functions (ES6)
+
 Concise way to write functions:
-  - (parameters) => expression
+
+- (parameters) => expression
 
 ```javascript
 const multiply = (x, y) => x \* y;
@@ -234,15 +279,17 @@ console.log(multiply(2, 3));
 Outputs 6
 
 ### IIFE (Immediately Invoked Function Expression)
+
 Function that runs as soon as it is defined.
 
 ```javascript
-(function() {
-console.log("This function runs right away!");
+(function () {
+  console.log('This function runs right away!');
 })();
 ```
 
 ### Higher-Order Functions
+
 Functions that take or return other functions.
 
 ```javascript
@@ -253,13 +300,14 @@ function applyOperation(a, b, operation) {
 `console.log(result);`; // Outputs 8
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 3.2 LOOPS
+
 Loops enable repetitive execution of code, streamlining tasks like array traversal and conditional iterations.
 
 ### for Loop
+
 Repeatedly runs a block of code a certain number of times.
 
 ```javascript
@@ -268,7 +316,8 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-### while Loop 
+### while Loop
+
 Executes code as long as a specified condition is true.
 
 ```javascript
@@ -280,6 +329,7 @@ while (j < 5) {
 ```
 
 ### do...while Loop
+
 Executes code once, then repeats the loop as long as the condition is true.
 
 ```javascript
@@ -291,16 +341,18 @@ do {
 ```
 
 ### for...in Loop
+
 Iterates over all enumerable properties of an object.
 
 ```javascript
-const person = { name: "Alice", age: 30 };
+const person = { name: 'Alice', age: 30 };
 for (const key in person) {
   console.log(`${key}: ${person[key]}`); // Outputs: "name: Alice", "age: 30"
 }
 ```
 
 ### for...of Loop (ES6)
+
 Iterates over iterable objects like arrays, strings.
 
 ```javascript
@@ -310,7 +362,8 @@ for (const number of numbers) {
 }
 ```
 
-### Array.forEach() 
+### Array.forEach()
+
 Executes a specified function for each element within an array. While it's not a traditional loop, it's closely related to the topic of array iteration.
 
 ```javascript
@@ -319,13 +372,14 @@ numbers.forEach((number) => {
 });
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 3.3 CONDITIONAL STATEMENTS
+
 Quick reference for using conditional logic in JavaScript.
 
-### if Statement 
+### if Statement
+
 Executes code block if condition is true.
 
 ```javascript
@@ -335,6 +389,7 @@ if (condition) {
 ```
 
 ### if...else Statement
+
 Executes one code block if condition is true, another if false.
 
 ```javascript
@@ -346,6 +401,7 @@ if (condition) {
 ```
 
 ### if...else if...else Statement
+
 Executes multiple conditions.
 
 ```javascript
@@ -358,7 +414,8 @@ if (condition1) {
 }
 ```
 
-### switch Statement 
+### switch Statement
+
 Executes code based on the value of an expression.
 
 ```javascript
@@ -374,22 +431,28 @@ switch (expression) {
 }
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 3.4 ARRAYS
+
 Detailed guide on JavaScript Arrays, covering array manipulation methods, iteration, and array-specific operations.
 
+- Use arrays to store a list of items in an ordered manner, where each item can be accessed by its numerical index.
+- Arrays are ideal for scenarios where you need to perform operations like looping through elements, as they provide methods for iteration and manipulation.
+
 ### Properties
+
 - `array.length` Reflects the number of elements in an array.
 - `array.prototype` Represents the prototype for the Array constructor and allows to add new properties and methods to all Array objects.
 
 ### Methods
+
 - `array.from(arrayLike[, mapFn[, thisArg]])` Creates a new Array instance from an array-like or iterable object.
 - `array.isArray(object)` Returns true if a variable is an array, if not false.
 - `array.of("element1", "element2");` Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
 
 ### Mutator Methods
+
 - `arr.copyWithin(target, start, end)` Copies a sequence of array elements within the array.
 - `arr.fill(value, start, end)` Fills all the elements of an array from a start index to an end index with a static value.
 - `arr.pop()` Removes the last element from an array and returns that element.
@@ -408,13 +471,13 @@ let numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 
 let result = numbers
   .sort((a, b) => a - b) // Sort in ascending order
-  .filter(number => number > 3); // Filter numbers greater than 3
+  .filter((number) => number > 3); // Filter numbers greater than 3
 
 console.log(result); // [4, 4, 5, 5, 5, 6, 9]
-
 ```
 
 ### Acessor Methods
+
 - `array.filter(callback[, thisArg])` Creates a new array containing elements that meet a specified condition defined by the provided callback function.
 - `array.at(index)` Returns the element at the specified index in the array.
 - `array.concat(value1, value2, array2)` Returns a new array comprised of this array joined with other array(s) and/or value(s).
@@ -423,9 +486,9 @@ console.log(result); // [4, 4, 5, 5, 5, 6, 9]
 - `array.join(separator)` Joins all elements of an array into a string.
 - `array.lastIndexOf(searchElement, fromIndex)` Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.
 - `array.slice(begin, end)` Extracts a section of an array and returns a new array.
-- `array.toString()` Returns a string representing the array and its elements. 
+- `array.toString()` Returns a string representing the array and its elements.
   - Overrides the Object.prototype.toString() method.
-- `array.toLocaleString(locales, options)` Returns a localized string representing the array and its elements. 
+- `array.toLocaleString(locales, options)` Returns a localized string representing the array and its elements.
   - Overrides the `Object.prototype.toLocaleString()` method.
 
 ### Example of array.slice(begin, end)
@@ -441,6 +504,7 @@ console.log(springMonths); // Output: ['March', 'April', 'May']
 ```
 
 ### Iteration Methods
+
 - `array.every(callback[, thisArg])` Returns true if every element in this array satisfies the provided testing function.
 - `array.filter(callback[, thisArg])` Creates a new array with all of the elements of this array for which the provided filtering function returns true.
 - `array.find(callback[, thisArg])` Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
@@ -467,67 +531,90 @@ const sum = numbers.reduce((accumulator, currentValue) => {
 console.log(sum); // Output: 15
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 3.5 OBJECTS
-Objects are a collection of properties, where a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. 
 
+Objects are a collection of properties, where a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.
+
+- Objects are used to store data as key-value pairs, allowing for the organization of data with named properties that can be accessed using keys.
+- They are suitable for representing more complex data structures where each item may contain a different set of properties.
+
+### What is a Key?
+It is a unique identifier used to access the corresponding value in the object. Keys are often strings (but can be symbols in ES6 and beyond), representing property names.
+
+### What is a Value?
+ It is the data associated with a key within an object. Values can be of any data type, such as numbers, strings, arrays, functions, or even other objects.
+### what is a Key Value Pair?
+Together, a key and its associated value form a key-value pair, allowing you to store and organize data in a structured way within an object. For example, in the following object,"name" and "age" are keys, while "John" and 30 are their corresponding values: 
+```javascript
+{ name: "John", age: 30 },
+```
+ 
 ### Creating an Object
+
 - `const myObject = { key1: 'value1', key2: 'value2' };` Object literal with two properties
 - `Object.create()` creates a new object with a specified prototype object and properties
 
 ### Accessing Properties
+
 - `console.log(myObject.key1);` 'value1'
 - `console.log(myObject['key2']);` 'value2'
 
 ### Adding Properties
+
 - `myObject.key3 = 'value3';` Adding a new property 'key3'
 
 ### Deleting Properties
+
 - `delete myObject.key2;` Removing property 'key2'
 
 ### Methods
+
 A method in a JavaScript object is a property of the object that is a function. Methods are functions stored as object properties, and they are typically used to define actions or behavior for the object.
 
 ### Structure for Creating and Using Methods
 
 ```javascript
 const exampleObject = {
-  property1: "Value1",
-  property2: "Value2",
-  method1: function() {
-    return "Method1 returns: " + this.property1;
+  property1: 'Value1',
+  property2: 'Value2',
+  method1: function () {
+    return 'Method1 returns: ' + this.property1;
   },
-  method2: function(parameter) {
-    console.log("Method2 uses " + parameter + " and property2: " + this.property2);
-  }
+  method2: function (parameter) {
+    console.log(
+      'Method2 uses ' + parameter + ' and property2: ' + this.property2
+    );
+  },
 };
 
 console.log(exampleObject.method1()); // Calls method1, outputs: Method1 returns: Value1
-exampleObject.method2("Parameter1"); // Calls method2 with "Parameter1" as an argument, outputs: Method2 uses Parameter1 and property2: Value2
+exampleObject.method2('Parameter1'); // Calls method2 with "Parameter1" as an argument, outputs: Method2 uses Parameter1 and property2: Value2
 ```
 
 ### Example of Creating and Using Methods
 
 ```javascript
 const person = {
-  firstName: "John",
-  lastName: "Doe",
-  fullName: function() {
-    return this.firstName + " " + this.lastName;
+  firstName: 'John',
+  lastName: 'Doe',
+  fullName: function () {
+    return this.firstName + ' ' + this.lastName;
   },
-  greet: function(greeting) {
-    console.log(greeting + ", my name is " + this.firstName);
-  }
+  greet: function (greeting) {
+    console.log(greeting + ', my name is ' + this.firstName);
+  },
 };
 
 console.log(person.fullName()); // Calls the fullName method, outputs: John Doe
-person.greet("Hello"); // Calls the greet method with "Hello" as an argument, outputs: Hello, my name is John
+person.greet('Hello'); // Calls the greet method with "Hello" as an argument, outputs: Hello, my name is John
 ```
 
 ### Methods of the Object Constructor
+
 Methods of the Object constructor in JavaScript provide a set of utility functions for creating, manipulating, and working with objects, including methods for object creation, property manipulation, and property enumeration.
+
 - `Object.assign(target, ...sources)` Copies values from source to target objects.
 - `Object.create(proto, propertiesObject)` Creates a new object with the specified prototype and properties.
 - `Object.defineProperty(obj, prop, descriptor)` Defines a new property on an object.
@@ -548,25 +635,25 @@ Methods of the Object constructor in JavaScript provide a set of utility functio
 - `Object.seal(obj)` Prevents other code from deleting properties of an object.
 - `Object.setPrototypeOf(obj, prototype)` Sets the prototype (i.e., the internal [[Prototype]] property).
 - `Object.values(obj)` Returns an array of a given object's own enumerable property values.
- 
+
 ### Example of object.assign()
 
 ```javascript
 // Create a target object
 const target = {
   name: 'John',
-  age: 30
+  age: 30,
 };
 
 // Create source objects
 const source1 = {
   age: 25,
-  profession: 'Engineer'
+  profession: 'Engineer',
 };
 
 const source2 = {
   city: 'New York',
-  hobby: 'Guitar'
+  hobby: 'Guitar',
 };
 
 // Use Object.assign to copy values from sources to the target
@@ -577,8 +664,8 @@ console.log(target);
 ```
 
 ### Looping Through Properties Using for...in
-for...in loops through an object's properties to access and work with each property and its associated value.
 
+for...in loops through an object's properties to access and work with each property and its associated value.
 
 ```javascript
 for (const key in myObject) {
@@ -586,24 +673,26 @@ for (const key in myObject) {
 }
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 3.6 ERROR HANDLING
+
 Overview of error handling mechanisms in JavaScript.
 
 ### try...catch Statement
+
 Handles exceptions by testing a block of code for errors.
 
 ```javascript
 try {
-// Code that may throw an error
+  // Code that may throw an error
 } catch (error) {
-console.log(error); // Handling the error
+  console.log(error); // Handling the error
 }
 ```
 
 ### try...catch...finally Statement
+
 Includes a block that runs regardless of the result.
 
 ```javascript
@@ -616,13 +705,14 @@ try {
 }
 ```
 
-### throw Statement 
+### throw Statement
+
 Creates a custom error.
 
 ```javascript
 function checkNumber(num) {
   if (isNaN(num)) {
-    throw new Error("Input is not a number"); // Custom error
+    throw new Error('Input is not a number'); // Custom error
   }
 }
 ```
@@ -631,23 +721,25 @@ function checkNumber(num) {
 
 ```javascript
 try {
-  checkNumber("A");
+  checkNumber('A');
 } catch (e) {
   console.log(e.message); // Output: Input is not a number
 }
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 4.1 STRINGS
+
 Overview of commonly used methods of the String object.
 
 ### Properties
+
 - `str.length` Returns the length of the string.
 - `str.[index]` Allows you to access characters in the string using bracket notation
 
 ### Methods
+
 - `str.charAt(index)` Returns the character at the specified index.
 - `str.charCodeAt(index)` Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
 - `str.concat(string2, string3[, ..., stringN])` Concatenates the string arguments to the calling string and returns a new string.
@@ -666,7 +758,8 @@ Overview of commonly used methods of the String object.
 - `str.trim()` Trims whitespace from the beginning and end of the string.
 - `str.valueOf()` Returns the primitive value of a String object.
 
-### String Interpolation (Template Literals) 
+### String Interpolation (Template Literals)
+
 - `const name = "Alice";`
 - `` `const greeting = `Hello, ${name}!`;` `` Hello, Alice!
 
@@ -679,13 +772,14 @@ multiple lines`;
 console.log(multiLineString);
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 4.2 NUMBERS
+
 Fundamental number-related functionalities in JavaScript.
 
 ### parseInt(string, radix)
+
 - `parseInt("10", 10);` Converts the string "10" to an integer (base 10).
 - `parseInt("10", 2);` Converts the string "10" to an integer (base 2, binary).
 
@@ -693,7 +787,7 @@ Fundamental number-related functionalities in JavaScript.
 
 ```javascript
 // Sample input from the user
-const userInput = "42";
+const userInput = '42';
 
 // Using parseInt to convert the string to an integer
 const parsedNumber = parseInt(userInput);
@@ -703,11 +797,12 @@ if (!isNaN(parsedNumber)) {
   console.log(`Parsed number: ${parsedNumber}`);
   console.log(`Type of parsedNumber: ${typeof parsedNumber}`);
 } else {
-  console.log("Conversion failed. Please enter a valid number.");
+  console.log('Conversion failed. Please enter a valid number.');
 }
 ```
 
 ### parseFloat(string)
+
 `parseFloat("3.14");` Converts the string "3.14" to a floating-point number.
 
 ### toFixed(digits)
@@ -720,7 +815,7 @@ num.toFixed(2); // Returns "123.46" - formats the number using fixed-point notat
 ### Array Destructuring
 
 ```javascript
-const fruits = ["Apple", "Banana", "Cherry"];
+const fruits = ['Apple', 'Banana', 'Cherry'];
 const [firstFruit, secondFruit] = fruits;
 console.log(firstFruit); // 'Apple'
 console.log(secondFruit); // 'Banana'
@@ -741,19 +836,21 @@ console.log(morePrimes); // [7, 2, 3, 5, 11]
 - `Number.isInteger(10);` true
 - `Number.isSafeInteger(10);` true
 - `Number.MAX_VALUE;` The largest positive representable number
-- `Number.MIN_VALUE;`  The smallest positive representable number
+- `Number.MIN_VALUE;` The smallest positive representable number
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 4.3 MATH
+
 Essential guide to JavaScript's Math object, covering basic constants and mathematical functions.
 
 ### Math Constants
+
 - `Math.PI; π:` Approximately 3.14159
 - `Math.E; Euler's constant, e:` Approximately 2.718
 
 ### Basic Math Methods
+
 - `Math.abs(-5);` Absolute value: Returns 5
 - `Math.ceil(4.2);` Ceiling: Rounds up to 5
 - `Math.floor(4.8);` Floor: Rounds down to 4
@@ -762,20 +859,24 @@ Essential guide to JavaScript's Math object, covering basic constants and mathem
 - `Math.min(1, 3, 5);` Minimum value: Returns 1
 
 ### Exponential and Logarithmic Functions
+
 - `Math.exp(1);` e^1: Returns Euler's number raised to the power of 1
 - `Math.log(10);` Natural logarithm of 10
 
 ### Trigonometric Functions (Basic)
+
 - `Math.sin(0)` Sine: Returns 0 (sin of 0 degrees)
 - `Math.cos(Math.PI);` Cosine: Returns -1 (cos of 180 degrees)
 
 ### Power and Square Root Functions
+
 - `Math.pow(2, 3);` 2 to the power of 3: Returns 8
 - `Math.sqrt(16);` Square root of 16: Returns 4
 
 ### Random Number Generation
+
 - `Math.random();` Generates a random number between 0 (inclusive) and 1 (exclusive)
-  
+
 ### Example of Math.random() to generate a random choice
 
 ```javascript
@@ -783,9 +884,9 @@ Essential guide to JavaScript's Math object, covering basic constants and mathem
 function getComputerChoice() {
   const randomNumber = Math.random(); // Generates a random number between 0 (inclusive) and 1 (exclusive).
 
-  if (randomNumber < 1/3) {
+  if (randomNumber < 1 / 3) {
     return 'rock';
-  } else if (randomNumber < 2/3) {
+  } else if (randomNumber < 2 / 3) {
     return 'paper';
   } else {
     return 'scissors';
@@ -797,18 +898,20 @@ const computerSelection = getComputerChoice();
 console.log(`Computer chose: ${computerSelection}`);
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 4.4 DATES
+
 Introduction to JavaScript's Date object, focusing on creating, manipulating, and formatting dates.
 
 ### Creating Date Objects
+
 - `const now = new Date();` Current date and time
 - `const specificDate = new Date('2024-01-24');` Specific date (YYYY-MM-DD)
 - `const specificDateTime = new Date('2024-01-24T12:00:00');` Specific date and time (YYYY-MM-DDTHH:MM:SS)
 
 ### Date Methods
+
 - `now.getFullYear();` Get the year as a four digit number (yyyy)
 - `now.getMonth();` Get the month as a zero-based value (0-11)
 - `now.getDate();` Get the day as a number (1-31)
@@ -820,6 +923,7 @@ Introduction to JavaScript's Date object, focusing on creating, manipulating, an
 - `now.getTime();` Get the time (milliseconds since January 1, 1970)
 
 ### Setting Date Values
+
 - `now.setFullYear(2024);` Set the year (optionally month, day)
 - `now.setMonth(0);` Set the month (0-11)
 - `now.setDate(24);` Set the day as a number (1-31)
@@ -829,6 +933,7 @@ Introduction to JavaScript's Date object, focusing on creating, manipulating, an
 - `now.setMilliseconds(123);` Set the milliseconds (0-999)
 
 ### Formatting Dates
+
 - `now.toDateString();` Converts the date portion to a readable string
 - `now.toTimeString();` Converts the time portion to a readable string
 - `now.toLocaleDateString();` Returns the date portion in a locale-sensitive format
@@ -836,14 +941,15 @@ Introduction to JavaScript's Date object, focusing on creating, manipulating, an
 - `now.toISOString();` Returns the date in ISO format (YYYY-MM-DDTHH:MM:SS.sssZ)
 
 ### Comparing Dates
+
 - `const earlier = new Date('2024-01-01');`
 - `const later = new Date('2024-12-31');`
 - `const isLater = later > earlier;` true if 'later' is a later date than 'earlier'
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 5.1 Understanding DOM & DOM Manipulation
+
 The DOM (Document Object Model) is a JavaScript programming interface for web documents. It represents web pages as a tree of nodes and objects, allowing you to change their structure, style, and content.
 
 ### The DOM Basics
@@ -855,41 +961,46 @@ The DOM (Document Object Model) is a JavaScript programming interface for web do
 - **document Object**: The `document` object represents the web page's content. It allows JavaScript to add, modify, and interact with elements on the page.
 
 ### Dom Manipulation Process
+
 To manipulate the DOM, you begin by selecting the desired DOM element(s) using methods like getElementById, querySelector, or getElementsByClassName. Once you've selected the element(s), you can directly apply modifications, such as changing content or styling. While it's common to assign elements to variables for convenience and reusability, it's not mandatory. You can select elements and perform modifications without the need for intermediate variable declarations.
 
 ### Example: Basic interaction with the DOM using JavaScript
 
 ```javascript
 // Access an element by its ID
-const element = document.getElementById("example-element");
+const element = document.getElementById('example-element');
 
 // Modify the element's content
-element.innerHTML = "This is the new content.";
+element.innerHTML = 'This is the new content.';
 
 // This updates the HTML content of the element.
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 5.2 ACCESSING AND MODIFYING DOM ELEMENTS
+
 Methods for selecting, creating, and modifying DOM elements.
 
 ### Accessing Elements
+
 - `document.getElementById(id);` Gets an element by its ID.
 - `document.getElementsByTagName(name);` Returns a live HTMLCollection of elements with the given tag name.
 - `document.getElementsByClassName(className);` Returns a live HTMLCollection of elements with the given class name.
 - `document.querySelector(selector);` Returns the first element matching the specified CSS selector.
 - `document.querySelectorAll(selector);` Returns a NodeList of all elements matching the specified CSS selector.
- 
+
 ### Creating and Inserting Elements
+
 - `const newElement = document.createElement(tagName);` Creates a new element with the specified tag name.
 - `element.appendChild(newElement);` Appends the new element as the last child of the parent element.
 
 ### Removing Elements
+
 - `element.removeChild(child);` Removes a child node from the DOM.
 
 ### Modifying Elements
+
 - `element.innerHTML = '<p>New HTML content</p>';` Changes the HTML content of an element.
 - `element.textContent = 'New text content';` Changes the text content of an element.
 - `element.setAttribute(name, value);` Sets a new value for an attribute on the element.
@@ -901,6 +1012,7 @@ Methods for selecting, creating, and modifying DOM elements.
 - `element.style.property = "value";` Changes the style of an element.
 
 ### Examples of Common Style Properties & Attributes
+
 - `element.style.color = "red";` Sets the text color of the element.
 - `element.style.backgroundColor = "yellow";` Sets the background color of the element.
 - `element.style.border = "1px solid black";` Sets a border for the element.
@@ -915,15 +1027,17 @@ Methods for selecting, creating, and modifying DOM elements.
 - `element.disabled = true;` Disables the element.
 
 ### Cloning Elements
+
 `const clone = element.cloneNode(true); ` Clones the element and its descendants.
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 5.3 DOM NODE PROPERTIES AND METHODS
+
 Overview of properties and methods specific to DOM nodes.
 
 ### Node Properties
+
 - `node.childNodes;` A live NodeList containing all the children of this node.
 - `node.firstChild;` The node's first child in the tree, or null if the node has no children.
 - `node.lastChild;` The node's last child in the tree, or null if the node has no children.
@@ -933,72 +1047,81 @@ Overview of properties and methods specific to DOM nodes.
 - `node.nodeValue;` The value of the current node (varies depending on the node type).
 - `node.parentNode;` The parent of the node, or null if it has no parent.
 - `node.previousSibling;` The node immediately preceding this node, or null if there's no sibling.
- 
+
 ### Node Methods
+
 - `node.cloneNode(deep);` Clones the node. If 'deep' is true, it clones all descendants, otherwise it clones only the node.
 - `node.contains(otherNode);` Returns true if 'otherNode' is a descendant of the node, false otherwise.
 - `node.hasChildNodes();` Returns true if the node has any children, false otherwise.
 - `node.insertBefore(newNode, referenceNode);` Inserts 'newNode' before the 'referenceNode' as a child of the current node.
 - `node.replaceChild(newChild, oldChild);` Replaces 'oldChild' with 'newChild' among the children of the node.
- 
+
 ### Example Usage
 
 ```javascript
-const list = document.getElementById("myList");
+const list = document.getElementById('myList');
 
 // Get the text content of the first child node
 const firstChildText = list.firstChild.innerText;
 
 // Change the HTML content of the list
-list.innerHTML = "<li>New Item 1</li><li>New Item 2</li>";
+list.innerHTML = '<li>New Item 1</li><li>New Item 2</li>';
 
 // Create a new list item element
-const newItem = document.createElement("li");
-newItem.innerText = "New Item 3";
+const newItem = document.createElement('li');
+newItem.innerText = 'New Item 3';
 
 // Insert the new item at the beginning of the list
 list.insertBefore(newItem, list.firstChild);
-
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 5.4 DOM EVENT HANDLING
+
 Methods for attaching, handling, and removing event listeners on DOM elements.
 
 ### Adding Event Listeners
 
 ### Anonymous Function Event Listener
+
 For simple, one-time event handling without the need for additional checks or complex logic:
+
 ```javascript
-document.getElementById("myButton").addEventListener("click", function() {
+document.getElementById('myButton').addEventListener('click', function () {
   handleButtonClick();
 });
 ```
 
 ### Named Function Event Listener
+
 For additional checks, complex logic, or reusability, using a named function offers better code organization and maintainability:
+
 ```javascript
-document.getElementById("myButton").addEventListener("click", buttonClickFunction);
+document
+  .getElementById('myButton')
+  .addEventListener('click', buttonClickFunction);
 ```
 
 ### DOMContentLoaded Event Listener
+
 To execute code when the DOM is fully loaded and parsed, use the DOMContentLoaded event.
 
 ```javascript
-document.addEventListener("DOMContentLoaded", function() {
-});
+document.addEventListener('DOMContentLoaded', function () {});
 ```
 
 ### Removing Event Listeners
-- `elementName.removeEventListener("click", buttonClickFunction);` 
+
+- `elementName.removeEventListener("click", buttonClickFunction);`
 
 ### Event Propagation: Capturing and Bubbling
+
 - **Capturing:** Events propagate from the window down to the target's ancestors.
 - **Bubbling:** Events propagate from the target up to the window.
 
-### Stopping Event Propagation 
+### Stopping Event Propagation
+
 ```javascript
 function eventHandler(event) {
   event.stopPropagation(); // Prevents further propagation of the current event.
@@ -1006,41 +1129,43 @@ function eventHandler(event) {
 ```
 
 ### Preventing Default Event Behavior
+
 ```javascript
-element.addEventListener("click", function(event) {
-event.preventDefault(); // Cancels the event if it is cancelable, without stopping its propagation.
+element.addEventListener('click', function (event) {
+  event.preventDefault(); // Cancels the event if it is cancelable, without stopping its propagation.
 });
 ```
 
 ### Common Event Types
+
 - **Mouse Events:** `'click', 'dblclick', 'mousedown', 'mouseup', 'mousemove', 'mouseover', 'mouseout', 'mouseenter', 'mouseleave'`
 - **Keyboard Events:** `'keydown', 'keypress', 'keyup'`
 - **Form Events:** `'submit', 'change', 'focus', 'blur'`
 - **Window Events:** `'load', 'resize', 'scroll', 'unload', 'error'`
 
-
 ### Example of a keydown event
 
 ```javascript
-document.addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
     // Call your function here
     // Example: handleEnterKey();
   }
 });
-
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 6.1 ASYNCHRONOUS OPERATIONS IN JAVASCRIPT
+
 This section covers JavaScript's asynchronous operations, including network requests and user interactions.
 
 ### What Are Asynchronous Operations?
+
 Asynchronous operations are tasks that occur independently of the main program flow. They often involve actions like fetching data from a remote server, reading files, or waiting for user interactions. These tasks can take time to complete, and they may not block the execution of other parts of your program.
 
 ### Common Approaches
+
 There are several approaches for handling asynchronous operations in JavaScript:
 
 - **Callbacks (Traditional Approach):** Callbacks are a common way to manage asynchronous tasks. They involve passing a function as an argument to another function to execute when the asynchronous operation is complete.
@@ -1049,21 +1174,22 @@ There are several approaches for handling asynchronous operations in JavaScript:
 
 - **Async/Await (Modern Approach):** Async/await is a set of JavaScript keywords that simplifies working with promises. It allows you to write asynchronous code that resembles synchronous code, improving code readability and maintainability.
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 6.2 CALLBACKS
+
 A callback is a function passed as an argument to another function, executed once a specific task is complete.
 While useful in certain scenarios, callbacks have limitations, particularly in complex code with error handling.
 
 ### When to Consider Using Callbacks
+
 Callbacks are commonly used in the following situations:
 
 - Handling asynchronous operations, like fetching data from a server.
 - Managing event-driven programming, such as user interactions or timers.
 - Dealing with I/O operations, like reading files in Node.js.
 
-While callbacks can be employed in these scenarios, they may not always be the most efficient or maintainable choice. 
+While callbacks can be employed in these scenarios, they may not always be the most efficient or maintainable choice.
 In more complex applications, Promises or async/await can provide a more structured and readable approach.
 
 ### Potential Downsides of Callbacks
@@ -1091,18 +1217,16 @@ function handleFetchedData(data) {
 
 // Usage: Fetch data from the server and handle it with the callback
 fetchDataFromServer(handleFetchedData);
-
-
-
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 6.3 PROMISES
+
 Promises are a crucial part of JavaScript for handling asynchronous operations in a structured and organized manner.
 
 ### What Are Promises?
+
 Promises are a structured way to manage asynchronous operations in JavaScript. They represent a value that can become available now or in the future, allowing you to take action once the operation finishes.
 
 Promises offer a clear separation between initiating an asynchronous task and dealing with its outcome or errors. They provide a standardized approach to asynchronous code, improving code clarity and maintainability.
@@ -1110,6 +1234,7 @@ Promises offer a clear separation between initiating an asynchronous task and de
 **Note**: Promises have a capital first letter, unlike most JavaScript syntax.
 
 ### Key Concepts of Promises
+
 To understand promises fully, consider these key concepts:
 
 - **Creation**: You can create a promise using the `Promise` constructor, encapsulating an asynchronous task.
@@ -1143,16 +1268,18 @@ fetchDataFromServer()
   });
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 6.4 ASYNC/AWAIT
+
 Async/await simplifies the process of working with promises and is widely adopted in modern JavaScript development.
 
 ### What is async/await?
+
 async/await is a set of JavaScript keywords that simplifies the process of working with promises, allowing you to write asynchronous code that resembles synchronous code, improving code readability and maintainability.
 
 ### Benefits of async/await
+
 - **Simplicity**: async/await reduces the complexity of handling promises, resulting in more concise and readable code.
 - **Error Handling**: It simplifies error handling with try...catch blocks, improving code reliability.
 - **Sequencing**: async/await allows you to sequence asynchronous tasks in a natural order, enhancing code flow.
@@ -1183,15 +1310,18 @@ fetchData()
   });
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
+
 ## 7.1 UNDERSTANDING APIs & JSON
+
 Exploring the fundamentals of APIs, JSON and the importance of API keys in web development.
 
 ### APIs at a Glance
+
 APIs (Application Programming Interfaces) connect your code to external services for data and functions.
 
 ### API Keys
+
 For many APIs, you'll need an API key for authentication and usage tracking:
 
 1. **Sign Up:** Create an account on the API provider's website.
@@ -1199,9 +1329,11 @@ For many APIs, you'll need an API key for authentication and usage tracking:
 3. **Usage Guidelines:** Check the provider's documentation for usage instructions, rate limits, and any costs.
 
 ### JSON Simplified
-JSON (JavaScript Object Notation) is a straightforward, human-readable data format commonly used in APIs for data exchange. 
+
+JSON (JavaScript Object Notation) is a straightforward, human-readable data format commonly used in APIs for data exchange.
 
 ### Handling JSON
+
 When working with JSON data, remember to:
 
 - **Parse:** Convert JSON to JavaScript objects.
@@ -1209,14 +1341,15 @@ When working with JSON data, remember to:
 - **Modify:** Adjust data as needed.
 - **Stringify:** Convert JavaScript objects back to JSON for storage or transmission.
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 7.2 API Key Management
+
 API Key Management involves securely storing keys server-side and regulating their use to prevent unauthorized access, crucial for protecting applications from security breaches.
 
 ### API Key Management: Educational Examples vs. Real-World Application
-This guide displays code examples of API requests that don't use API key management for learning ease. Securing API keys is more advanced, requiring additional tools and knowledge in server-side development. However, secure management is vital in real-world applications for data security and integrity.  
+
+This guide displays code examples of API requests that don't use API key management for learning ease. Securing API keys is more advanced, requiring additional tools and knowledge in server-side development. However, secure management is vital in real-world applications for data security and integrity.
 
 ### When It's important to follow API Key Management
 
@@ -1236,17 +1369,17 @@ This guide displays code examples of API requests that don't use API key managem
 
 - **Rate Limiting and Monitoring:** Apply rate limiting and monitor API key usage to detect unauthorized access. This may involve additional monitoring tools or services.
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 7.3 MAKING API REQUESTS
-Using Fetch() API facilitates asynchronous data fetching, enhancing user experience by ensuring that interactions are not blocked during data retrieval. 
+
+Using Fetch() API facilitates asynchronous data fetching, enhancing user experience by ensuring that interactions are not blocked during data retrieval.
 
 ### Fetch API using Async/Await (WithoutAPI Key)
 
 ```javascript
 // DOM elements initialization
-const userInput = document.getElementById("userInput");
+const userInput = document.getElementById('userInput');
 const dataContainer = document.getElementById('dataContainer');
 const errorMessage = document.getElementById('errorMessage');
 const searchButton = document.getElementById('searchButton');
@@ -1258,24 +1391,26 @@ async function fetchData() {
     const encodedInput = encodeURIComponent(userInput.value);
 
     // Fetch request to a public API without API key requirement
-    const response = await fetch(`https://api.example.com/data?search=${encodedInput}`);
-    
+    const response = await fetch(
+      `https://api.example.com/data?search=${encodedInput}`
+    );
+
     // Check response status
     if (!response.ok) {
       // Throw error for unsuccessful response
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    
+
     // Parse response to JSON
     const data = await response.json();
-    
+
     // Display the entered user input
     userInput.textContent = `User Input: ${userInput.value}`;
-    
+
     // Extract values from response
     const value1 = data.property1; // Use actual data property names
     const value2 = data.property2; // Use actual data property names
-    
+
     // Update DOM with response data
     dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
   } catch (error) {
@@ -1291,7 +1426,7 @@ searchButton.addEventListener('click', fetchData);
 
 ```javascript
 // DOM element references
-const userInput = document.getElementById("userInput");
+const userInput = document.getElementById('userInput');
 const dataContainer = document.getElementById('dataContainer');
 const errorMessage = document.getElementById('errorMessage');
 const searchButton = document.getElementById('searchButton');
@@ -1306,23 +1441,25 @@ async function fetchData() {
     const encodedInput = encodeURIComponent(userInput.value);
 
     // Fetch data from API with encoded input
-    const response = await fetch(`https://api.example.com/data?api_key=${apiKey}&search=${encodedInput}`);
-    
+    const response = await fetch(
+      `https://api.example.com/data?api_key=${apiKey}&search=${encodedInput}`
+    );
+
     // Check for successful response
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    
+
     // Parse JSON response
     const data = await response.json();
-    
+
     // Display user input
     userInput.textContent = `User Input: ${userInput.value}`;
-    
+
     // Extract and display values from response
     const value1 = data.property1; // Adjust property names
     const value2 = data.property2; // Adjust property names
-    
+
     dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
   } catch (error) {
     // Handle and display errors
@@ -1330,15 +1467,14 @@ async function fetchData() {
   }
 }
 
-
 // Attach an event listener to the search button
 searchButton.addEventListener('click', fetchData);
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 7.4 HANDLING JSON DATA
+
 Working with JSON (JavaScript Object Notation) data in JavaScript.
 
 ### Parsing JSON Data
@@ -1360,7 +1496,7 @@ try {
 const person = {
   name: 'Alice',
   age: 25,
-  city: 'San Francisco'
+  city: 'San Francisco',
 };
 
 const jsonPerson = JSON.stringify(person);
@@ -1372,9 +1508,9 @@ const result = jsonPerson; // Use 'result' for further processing
 ```javascript
 const data = {
   users: [
-    { id: 1, name: "John" },
-    { id: 2, name: "Alice" },
-    { id: 3, name: "Bob" },
+    { id: 1, name: 'John' },
+    { id: 2, name: 'Alice' },
+    { id: 3, name: 'Bob' },
   ],
 };
 
@@ -1383,31 +1519,33 @@ const userName = data.users[0].name;
 const result1 = userName; // Use 'result1' for further processing
 
 // Modifying JSON Data
-data.users.push({ id: 4, name: "Eve" });
+data.users.push({ id: 4, name: 'Eve' });
 
 // Converting Back to JSON
 const updatedJsonData = JSON.stringify(data);
 const result2 = updatedJsonData; // Use 'result2' for further processing
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 8.1 OBJECT-ORIENTED PROGRAMMING (OOP) IN JAVASCRIPT
+
 Overview of Object-Oriented Programming (OOP) concepts in JavaScript.
 
-### Object-Oriented Programming (OOP) 
-OOP is a programming paradigm that uses objects and classes to organize code. 
+### Object-Oriented Programming (OOP)
+
+OOP is a programming paradigm that uses objects and classes to organize code.
 In JavaScript, objects are at the core of OOP.
 
 ### Objects
-Objects are instances of classes or constructors and encapsulate data and behavior. 
+
+Objects are instances of classes or constructors and encapsulate data and behavior.
 They consist of properties (data) and methods (functions).
 
 ```javascript
 // Creating an Object
 const person = {
-  name: "John",
+  name: 'John',
   age: 30,
   sayHello: function () {
     console.log(
@@ -1424,7 +1562,8 @@ person.sayHello(); // Output: "Hello, my name is John and I'm 30 years old."
 ```
 
 ### Classes
-Classes are blueprints or templates for creating objects. 
+
+Classes are blueprints or templates for creating objects.
 They define the structure and behavior of objects.
 
 ```javascript
@@ -1443,8 +1582,8 @@ class Person {
 }
 
 // Creating Objects from a Class
-const person1 = new Person("Alice", 25);
-const person2 = new Person("Bob", 35);
+const person1 = new Person('Alice', 25);
+const person2 = new Person('Bob', 35);
 
 // Calling Class Methods
 person1.sayHello(); // Output: "Hello, my name is Alice and I'm 25 years old."
@@ -1452,123 +1591,134 @@ person2.sayHello(); // Output: "Hello, my name is Bob and I'm 35 years old."
 ```
 
 ### Constructor Method
+
 The constructor method is called when an object is created from the class.
 It initializes object properties.
 
-### Class Inheritance 
+### Class Inheritance
+
 Classes can inherit properties and methods from another class using the'extends' keyword.
 This promotes code reusability and the creation of class hierarchies.
 
 ```javascript
 // Inheritance Example
 class Animal {
-constructor(name) {
-this.name = name;
-}
+  constructor(name) {
+    this.name = name;
+  }
 
-    speak() {
-        console.log(`${this.name} makes a sound.`);
-    }
-
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
 }
 
 class Dog extends Animal {
-constructor(name, breed) {
-super(name); // Calls the parent class constructor
-this.breed = breed;
+  constructor(name, breed) {
+    super(name); // Calls the parent class constructor
+    this.breed = breed;
+  }
+
+  speak() {
+    console.log(`${this.name} (a ${this.breed} dog) barks.`);
+  }
 }
 
-    speak() {
-        console.log(`${this.name} (a ${this.breed} dog) barks.`);
-    }
-
-}
-
-const dog1 = new Dog("Buddy", "Golden Retriever");
+const dog1 = new Dog('Buddy', 'Golden Retriever');
 ```
 
-### Polymorphism 
-Polymorphism allows objects of different classes to be treated as objects ofa common superclass. 
+### Polymorphism
+
+Polymorphism allows objects of different classes to be treated as objects ofa common superclass.
 It enables flexibility and dynamic behavior based on the specific object type.
 
 ### Polymorphism Example
 
 ```javascript
-const animals = [new Dog("Buddy", "Golden Retriever"), new Animal("Kitty")];
+const animals = [new Dog('Buddy', 'Golden Retriever'), new Animal('Kitty')];
 
 for (const animal of animals) {
-animal.speak();
+  animal.speak();
 }
 ```
 
 ### Output
+
 - "Buddy (a Golden Retriever dog) barks."
 - "Kitty makes a sound."
 
 ### Object Composition
-In JavaScript, you can create objects by composing or combining multiple objects, 
+
+In JavaScript, you can create objects by composing or combining multiple objects,
 allowing for more flexible and modular code.
 
 ```javascript
 const address = {
-  street: "123 Main St",
-  city: "Exampleville",
-  zipCode: "12345",
+  street: '123 Main St',
+  city: 'Exampleville',
+  zipCode: '12345',
 };
 
 const person = {
-  name: "John Doe",
+  name: 'John Doe',
   age: 30,
   address: address, // Object composition
 };
 ```
 
-[🔝 Back to Top](#top)
----
+## [🔝 Back to Top](#top)
 
 ## 9.1 TIPS AND BEST PRACTICES
+
 Tips for cleaner, more efficient and maintainable JavaScript code.
 
 ### 1. Use Descriptive Variable and Function Names
+
 - Choose meaningful and descriptive names for variables and functions to improve code readability.
 - Avoid overly abbreviated or cryptic names.
 
 ### 2. Consistent Code Formatting
+
 - Follow a consistent code formatting style to enhance code maintainability.
 - Consider using popular coding conventions like the Airbnb JavaScript Style Guide.
 
 ### 3. Comment Your Code
+
 - Add comments to explain complex logic, important decisions, or the purpose of functions and variables.
 - Use comments to provide context to your code for yourself and others.
 
 ### 4. Avoid Global Variables
+
 - Minimize the use of global variables to prevent potential conflicts and improve code modularity.
 - Use local variables or encapsulate code within functions or modules.
 
 ### 5. Embrace ES6 Features
+
 - Familiarize yourself with ES6 (ECMAScript 2015) features and syntax enhancements.
 - Utilize features like arrow functions, template literals, and destructuring for cleaner code.
 
 ### 6. Error Handling
+
 - Implement proper error handling mechanisms, including try...catch blocks, to handle exceptions gracefully.
 
 ### 7. Optimize Loops
+
 - Be mindful of loop performance when dealing with large data sets.
 - Use efficient loop constructs and consider optimizations like loop unrolling.
 
 ### 8. Modular Code
+
 - Break down your code into reusable and modular components or functions.
 - Embrace the concept of modules and imports for better code organization.
 
 ### 9. Testing
+
 - Write unit tests to ensure the correctness of your code.
 - Explore testing frameworks like Jest, Mocha, or Jasmine.
 
 ### 10. Stay Updated
+
 - Keep up with the latest developments in JavaScript and web technologies.
 - Follow industry best practices and consider performance optimizations.
-
-
 
 ### Further Learning Resources
 
