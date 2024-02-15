@@ -792,6 +792,14 @@ console.log(multiLineString);
 
 Fundamental number-related functionalities in JavaScript.
 
+### What is an Integer?
+
+An integer is a whole number without any fractional or decimal parts, such as -1, 0, or 42. It's used in scenarios requiring countable quantities, like loop counters, array indexes, or any situation where partial values don't make sense.
+
+### What is a Floating-Point Number?
+
+A floating-point number includes decimal parts, allowing for the representation of fractions and precise measurements, like 3.14 or -0.01. Useful in calculations requiring high precision, such as financial transactions, scientific computations, or any scenario where small, incremental values matter.
+
 ### parseInt(string, radix)
 
 - `parseInt("10", 10);` Converts the string "10" to an integer (base 10).
@@ -1832,6 +1840,25 @@ const emailInput = document.getElementById('email').value.toLowerCase();
 const quantity = parseInt(document.getElementById('quantity').value, 10);
 ```
 
+### Validating Numeric Input with `isNaN()`
+
+- **Purpose:** `isNaN(value)` checks if a value is NaN (Not-a-Number). It's useful for validating that the conversion from a string to a number was successful.
+- **How it works:** After converting a string to a number, `isNaN()` can be used to check if the result is numeric. If `isNaN()` returns `true`, the input was not a valid number.
+- **Example:**
+
+  ```javascript
+  const inputElement = document.getElementById('input').value;
+  const number = Number(inputElement);
+
+  if (isNaN(number)) {
+    console.error('Input is not a valid number.');
+  } else {
+    console.log('Valid number input:', number);
+  }
+  ```
+
+- **Use case:** Essential for form validation, ensuring that inputs expected to be numeric do not contain letters or other invalid characters.
+
 ### Sanitizing Input
 
 - **Purpose:** Removes or escapes potentially harmful characters.
@@ -2053,7 +2080,6 @@ function loadCart() {
 ```
 
 Web Storage, encompassing both localStorage and sessionStorage, offers robust solutions for persisting data in web applications. By leveraging these technologies, developers can enhance the user experience, providing seamless session continuity and personalized settings across visits. Through practical applications like theme selection, form data preservation, and shopping cart management, Web Storage proves to be an invaluable asset in modern web development.
-
 
 ## [🔝 Back to Top](#top)
 
