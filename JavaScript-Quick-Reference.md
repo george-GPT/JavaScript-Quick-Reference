@@ -538,7 +538,7 @@ let result = numbers
 console.log(result); // [4, 4, 5, 5, 5, 6, 9]
 ```
 
-### Acessor Methods
+### Accessor Methods
 
 - `array.filter(callback[, thisArg])` Creates a new array containing elements that meet a specified condition defined by the provided callback function.
 - `array.at(index)` Returns the element at the specified index in the array.
@@ -593,6 +593,20 @@ const sum = numbers.reduce((accumulator, currentValue) => {
 console.log(sum); // Output: 15
 ```
 
+### array.includes() method
+
+The includes() method in JavaScript is used to determine whether an array includes a certain value among its elements. It returns true if the array contains the specified element, and false otherwise. This method offers a simple way to check for the presence of a value within an array without needing to iterate through its elements manually.
+
+```javascript
+array.includes(searchElement, fromIndex);
+```
+
+```javascript
+const fruits = ['apple', 'banana', 'orange', 'grape'];
+console.log(fruits.includes('banana')); // Output: true
+console.log(fruits.includes('watermelon')); // Output: false
+```
+
 ## [🔝 Back to Top](#top)
 
 ## 3.5 OBJECTS
@@ -616,7 +630,7 @@ Together, a key and its associated value form a key-value pair, allowing you to 
 
 ```javascript
 { name: "John", age: 30 },
-```
+````
 
 ### Creating an Object
 
