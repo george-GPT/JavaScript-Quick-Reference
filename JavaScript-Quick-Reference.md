@@ -70,7 +70,7 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [9.4 Form Validation](#94-form-validation)
 - [9.5 Leveraging Randomness with Math.random()](#95-leveraging-randomness-with-mathrandom)
 - [9.6 Persisting Data with Web Storage](#96-persisting-data-with-web-storage)
-- [9.7 Coding Logic vs Data Retrieval & Execution](97-coding-logic-vs-data-retrival--execution)
+- [9.7 Coding Logic vs Data Retrieval & Execution](#97-coding-logic-vs-data-retrieval--execution)
 
 ## Tips and Best Practices
 
