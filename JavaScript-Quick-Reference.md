@@ -593,7 +593,7 @@ const sum = numbers.reduce((accumulator, currentValue) => {
 console.log(sum); // Output: 15
 ```
 
-### array.includes() method
+### Array.includes() method
 
 The includes() method in JavaScript is used to determine whether an array includes a certain value among its elements. It returns true if the array contains the specified element, and false otherwise. This method offers a simple way to check for the presence of a value within an array without needing to iterate through its elements manually.
 
