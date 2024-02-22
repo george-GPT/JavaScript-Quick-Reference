@@ -252,28 +252,28 @@ Operators allow you to perform various tasks, such as assigning values to variab
 
 ### Comparison Operators
 
-`==` Checks if the values of two operands are equal.
-`!=` Checks if the values of two operands are not equal.
-`===` Checks if the values and types of two operands are equal.
-`==` Checks if the values or types of two operands are not equal.
-`>` Checks if the value of the left operand is greater than the value of the right operand.
-`<` Checks if the value of the left operand is less than the value of the right operand.
-`>=` Checks if the value of the left operand is greater than or equal to the value of the right operand.
-`<=` Checks if the value of the left operand is less than or equal to the value of the right operand.
+- `==` Checks if the values of two operands are equal.
+- `!=` Checks if the values of two operands are not equal.
+- `===` Checks if the values and types of two operands are equal.
+- `==` Checks if the values or types of two operands are not equal.
+- `>` Checks if the value of the left operand is greater than the value of the right operand.
+- `<` Checks if the value of the left operand is less than the value of the right operand.
+- `>=` Checks if the value of the left operand is greater than or equal to the value of the right operand.
+- `<=` Checks if the value of the left operand is less than or equal to the value of the right operand.
 
 ### Logical Operators
 
-`&&` Returns true if both operands are true.
-`||` Returns true if either of the operands is true.
-`!` Returns true if the operand is false and false if the operand is true.
+- `&&` Returns true if both operands are true.
+- `||` Returns true if either of the operands is true.
+- `!` Returns true if the operand is false and false if the operand is true.
 
 ### Arithmetic Operators
 
-`+` Adds two operands.
-`-` Subtracts the second operand from the first operand.
-`*` Multiplies two operands.
-`/` Divides the first operand by the second operand.
-`%` Returns the remainder when the first operand is divided by the second operand.
+- `+` Adds two operands.
+- `-` Subtracts the second operand from the first operand.
+- `*` Multiplies two operands.
+- `/` Divides the first operand by the second operand.
+- `%` Returns the remainder when the first operand is divided by the second operand.
 
 ## [🔝 Back to Top](#top)
 
