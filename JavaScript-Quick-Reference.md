@@ -20,6 +20,7 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [2.1 Understanding var, let, and const](#21-understanding-var-let-and-const)
 - [2.2 Basic Data Types](#22-basic-data-types)
 - [2.3 Syntax and Examples](#23-syntax-and-examples)
+- [2.4 Operators](#24-operators)
 
 ## Fundamental Programming Concepts
 
@@ -220,6 +221,60 @@ Examples illustrating syntax for variable declarations and data types.
 
 `let total = "3" + 4;` "34", number 4 becomes a string
 
+### The typeof Operator
+
+The `typeof` operator is used to determine the type of a variable or expression. It returns a string indicating the data type.
+
+```javascript
+let num = 42;
+console.log(typeof num); // Outputs: "number"
+
+let str = 'Hello, world!';
+console.log(typeof str); // Outputs: "string"
+
+let bool = true;
+console.log(typeof bool); // Outputs: "boolean"
+```
+
+## [🔝 Back to Top](#top)
+
+## 2.4 Operators
+
+Operators allow you to perform various tasks, such as assigning values to variables, comparing values, performing arithmetic operations, and more. This section provides an overview of the different types of operators in JavaScript.
+
+### Assignment Operators
+
+- `=` Assigns the value on the right to the variable on the left.
+- `+=` Adds the value on the right to the variable on the left.
+- `-=` Subtracts the value on the right from the variable on the left.
+- `*=` Multiplies the variable on the left by the value on the right.
+- `/=` Divides the variable on the left by the value on the right.
+
+### Comparison Operators
+
+`==` Checks if the values of two operands are equal.
+`!=` Checks if the values of two operands are not equal.
+`===` Checks if the values and types of two operands are equal.
+`==` Checks if the values or types of two operands are not equal.
+`>` Checks if the value of the left operand is greater than the value of the right operand.
+`<` Checks if the value of the left operand is less than the value of the right operand.
+`>=` Checks if the value of the left operand is greater than or equal to the value of the right operand.
+`<=` Checks if the value of the left operand is less than or equal to the value of the right operand.
+
+### Logical Operators
+
+`&&` Returns true if both operands are true.
+`||` Returns true if either of the operands is true.
+`!` Returns true if the operand is false and false if the operand is true.
+
+### Arithmetic Operators
+
+`+` Adds two operands.
+`-` Subtracts the second operand from the first operand.
+`*` Multiplies two operands.
+`/` Divides the first operand by the second operand.
+`%` Returns the remainder when the first operand is divided by the second operand.
+
 ## [🔝 Back to Top](#top)
 
 ## 3.1 FUNCTIONS
@@ -337,6 +392,14 @@ function applyOperation(a, b, operation) {
 
 Loops enable repetitive execution of code, streamlining tasks like array traversal and conditional iterations.
 
+### Choosing the Right Loop Structure
+
+- **for loop** when you need to repeat a block of code for a known number of iterations, typically defined by a start condition, an end condition, and an increment.
+- **while loop** when the number of iterations is uncertain, and you need to continue iterating as long as a specific condition remains true.
+- **do...while loop** when you need to execute a block of code at least once before evaluating the loop condition for further iterations.
+- **for...in loop** to iterate over all enumerable properties of an object, often useful for iterating through object keys and values.
+- **for...of loop (ES6)** when iterating over iterable objects like arrays or strings, providing a simpler syntax without needing to deal with indexes or properties.
+
 ### for Loop
 
 Repeatedly runs a block of code a certain number of times.
@@ -391,21 +454,6 @@ const numbers = [1, 2, 3, 4, 5];
 for (const number of numbers) {
   console.log(number); // Outputs: 1, 2, 3, 4, 5
 }
-```
-
-### Ternary Operator
-
-The ternary operator is a concise way to write conditional statements in JavaScript. It takes three operands: a condition, an expression to execute if the condition is true, and an expression to execute if the condition is false.
-
-```javascript
-condition ? expression1 : expression2;
-```
-
-```javascript
-const age = 20;
-const status = age >= 18 ? 'adult' : 'minor';
-
-console.log(status); // Outputs: 'adult' since age is greater than or equal to 18
 ```
 
 ### Array.forEach()
@@ -493,6 +541,21 @@ switch (day) {
 }
 ```
 
+### Ternary Operator
+
+The ternary operator is a concise way to write conditional statements in JavaScript. It takes three operands: a condition, an expression to execute if the condition is true, and an expression to execute if the condition is false.
+
+```javascript
+condition ? expression1 : expression2;
+```
+
+```javascript
+const age = 20;
+const status = age >= 18 ? 'adult' : 'minor';
+
+console.log(status); // Outputs: 'adult' since age is greater than or equal to 18
+```
+
 ## [🔝 Back to Top](#top)
 
 ## 3.4 ARRAYS
@@ -565,6 +628,18 @@ const springMonths = months.slice(2, 5);
 console.log(springMonths); // Output: ['March', 'April', 'May']
 ```
 
+### Iterating Through Array Elements
+
+When iterating through array elements, you can use the index notation `[i]` to access a specific element at index `i`:
+
+```javascript
+const array = [10, 20, 30, 40, 50];
+
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]); // Accesses the element at index i
+}
+```
+
 ### Iteration Methods
 
 - `array.every(callback[, thisArg])` Returns true if every element in this array satisfies the provided testing function.
@@ -579,7 +654,18 @@ console.log(springMonths); // Output: ['March', 'April', 'May']
 - `array.some(callback[, initialValue])` Returns true if at least one element in this array satisfies the provided testing function.
 - `array.values()` Returns a new Array Iterator object that contains the values for each index in the array.
 
-### Example of array.reduce(callback[, initialValue])
+
+### Array.forEach()
+
+Executes a specified function for each element within an array. While it's not a traditional loop, it's closely related to the topic of array iteration.
+
+```javascript
+numbers.forEach((number) => {
+  console.log(number); // Outputs: 1, 2, 3, 4, 5
+});
+```
+
+### array.reduce(callback[, initialValue])
 
 ```javascript
 // Suppose we have an array of numbers
@@ -630,7 +716,7 @@ Together, a key and its associated value form a key-value pair, allowing you to 
 
 ```javascript
 { name: "John", age: 30 },
-````
+```
 
 ### Creating an Object
 
@@ -639,8 +725,26 @@ Together, a key and its associated value form a key-value pair, allowing you to 
 
 ### Accessing Properties
 
+In JavaScript, objects are collections of properties, and you can access these properties using either dot notation or bracket notation.
+
 - `console.log(myObject.key1);` 'value1'
 - `console.log(myObject['key2']);` 'value2'
+
+### Dot Notation VS Bracket Notation
+
+Dot notation is preferred for direct and straightforward property access when the property name is known at development time and is a valid JavaScript identifier. On the other hand, bracket notation offers more flexibility and versatility, allowing for dynamic property access, handling special cases, and enabling programmatic property access.
+
+#### When to Use Dot Notation
+
+- **Known Property Names:** Use dot notation when you know the property name at development time and it is a valid JavaScript identifier.
+- **Clear and Direct Access:** Dot notation is ideal for accessing properties directly and offers a concise syntax for this purpose.
+- **Code Readability:** It enhances code readability, especially when accessing well-known properties of objects.
+
+#### When to Use Bracket Notation
+
+- **Dynamic Property Access:** Use bracket notation when the property name is determined dynamically at runtime, such as when it's stored in a variable or computed through an expression.
+- **Handling Special Cases:** Bracket notation is essential for accessing properties with special characters, spaces, or reserved words in JavaScript.
+- **Programmatic Property Access:** It enables programmatic approaches to property access, making it useful for working with data structures, APIs, or situations where property names may vary.
 
 ### Adding Properties
 
@@ -987,6 +1091,20 @@ const computerSelection = getComputerChoice();
 console.log(`Computer chose: ${computerSelection}`);
 ```
 
+### Math.trunc
+
+Math.trunc is a method in JavaScript's Math object that is used to remove the decimal part of a number, effectively truncating it to an integer. This method does not round the number; it simply cuts off the decimal portion.
+
+### How Math.trunc Fits With Math.random
+
+The combination of Math.trunc and Math.random is particularly useful when you need to generate random integers within a specific range. Math.random generates the random decimal number, and Math.trunc can be used to truncate this number to an integer.
+
+- Keep in mind that Math.random() generates a number starting from 0, to start from 1 we add +1 to the end of the equation.
+
+```javascript
+let randomInteger = Math.trunc(Math.random() * 10) + 1;
+```
+
 ## [🔝 Back to Top](#top)
 
 ## 4.4 DATES
@@ -1071,13 +1189,16 @@ element.innerHTML = 'This is the new content.';
 
 Methods for selecting, creating, and modifying DOM elements.
 
-### Accessing Elements
+### Primary Methods of Accessing Elements
 
 - `document.getElementById(id);` Gets an element by its ID.
-- `document.getElementsByTagName(name);` Returns a live HTMLCollection of elements with the given tag name.
-- `document.getElementsByClassName(className);` Returns a live HTMLCollection of elements with the given class name.
 - `document.querySelector(selector);` Returns the first element matching the specified CSS selector.
 - `document.querySelectorAll(selector);` Returns a NodeList of all elements matching the specified CSS selector.
+
+## Other Methods of Accessing elements
+
+- `document.getElementsByTagName(name);` Returns a live HTMLCollection of elements with the given tag name.
+- `document.getElementsByClassName(className);` Returns a live HTMLCollection of elements with the given class name.
 
 ### Creating and Inserting Elements
 
@@ -2185,6 +2306,7 @@ function functionName(parameters) {
 ### When to use various methods of data execution
 
 - **console.log:** Outputs debugging information to the browser's console, external to application logic and UI.
+- **prompt:** Displays dialogue box that prompts the user for text input.
 - **alert:** Displays a message to the user via a dialog box, directly interacting with the user, external to code logic.
 - **.innerHTML/.innerText:** Changes an element's HTML/Text content, directly modifying the web page's visible content.
 
