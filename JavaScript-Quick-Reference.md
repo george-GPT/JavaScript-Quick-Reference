@@ -1007,10 +1007,11 @@ A floating-point number includes decimal parts, allowing for the representation 
 
 ### parseInt(string, radix)
 
-The `parseInt()` function in JavaScript is used to convert a string to an integer (whole number). It takes two parameters: 
-- The string to be converted (which should represent a number) 
+The `parseInt()` function in JavaScript is used to convert a string to an integer (whole number). It takes two parameters:
+
+- The string to be converted (which should represent a number)
 - The base (or radix) of the numerical system to which the string belongs
- 
+
 When using `parseInt()`, it's crucial to specify the radix to ensure accurate conversion.
 
 - For decimal numbers (the usual number system), use base 10.
@@ -1114,7 +1115,6 @@ Essential guide to JavaScript's Math object, covering basic constants and mathem
 
 - `Math.random()` is a JavaScript method that generates a floating-point, pseudo-random number in the range from 0 (inclusive) to 1 (exclusive). This means it can return a number as small as 0 but never exactly 1.
 
-
 ```javascript
 // Function to get a random choice for the computer
 function getComputerChoice() {
@@ -1135,7 +1135,6 @@ console.log(`Computer chose: ${computerSelection}`);
 ```
 
 The function getComputerChoice() utilizes Math.random() to simulate making a random choice between 'rock', 'paper', and 'scissors'. By comparing the random number against fractional thresholds, it assigns one of these three choices. This is a straightforward use case where Math.random() directly influences the flow of the program based on random selection.
-
 
 ### Math.trunc
 
@@ -2183,10 +2182,12 @@ console.log(randomItem); // Randomly selected item
 ```
 
 ### Math.trunc
-- Math.trunc can be paired with Math.random() for generating zero-based index values, useful in selecting random elements from an array. For example, Math.trunc(Math.random() * array.length) can randomly index into an array, ensuring the index starts at 0 and is within the array bounds.
+
+- Math.trunc can be paired with Math.random() for generating zero-based index values, useful in selecting random elements from an array. For example, Math.trunc(Math.random() \* array.length) can randomly index into an array, ensuring the index starts at 0 and is within the array bounds.
 
 ### Math.floor
-- Math.floor, on the other hand, can be utilized with Math.random() to create inclusive upper-bound random integers. For instance, Math.floor(Math.random() * (max - min + 1)) + min generates a random integer between min and max, inclusively, catering to situations where the starting integer is 1 and the upper limit must be part of the outcome range.
+
+- Math.floor, on the other hand, can be utilized with Math.random() to create inclusive upper-bound random integers. For instance, Math.floor(Math.random() \* (max - min + 1)) + min generates a random integer between min and max, inclusively, catering to situations where the starting integer is 1 and the upper limit must be part of the outcome range.
 
 ### Advanced Applications
 
