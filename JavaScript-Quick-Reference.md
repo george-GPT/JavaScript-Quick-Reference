@@ -2182,21 +2182,11 @@ const randomItem = items[randomIndex];
 console.log(randomItem); // Randomly selected item
 ```
 
-### Overview of Math.trunc and Math.floor with Math.random
+### Math.trunc
+- Math.trunc can be paired with Math.random() for generating zero-based index values, useful in selecting random elements from an array. For example, Math.trunc(Math.random() * array.length) can randomly index into an array, ensuring the index starts at 0 and is within the array bounds.
 
-**Math.trunc with Math.random:**
-- **Purpose:** Removes the decimal part of a number, leaving the integer.
-- **Use Case:** Ideal for generating random integers from 0 up to (but not including) a maximum value.
-- **Example:** `Math.trunc(Math.random() * 10)` generates integers from 0 to 9.
-
-**Math.floor with Math.random:**
-- **Purpose:** Rounds down to the nearest whole number.
-- **Use Case:** Best for generating random integers from 1 to a specified maximum, inclusive.
-- **Example:** `Math.floor(Math.random() * 10) + 1` generates integers from 1 to 10.
-
-### When to Use Each
-- **Math.trunc:** When you need integers starting at 0. Suitable for zero-based indexes.
-- **Math.floor:** When integers must start from 1. Preferred for inclusive upper-bound ranges.
+### Math.floor
+- Math.floor, on the other hand, can be utilized with Math.random() to create inclusive upper-bound random integers. For instance, Math.floor(Math.random() * (max - min + 1)) + min generates a random integer between min and max, inclusively, catering to situations where the starting integer is 1 and the upper limit must be part of the outcome range.
 
 ### Advanced Applications
 
