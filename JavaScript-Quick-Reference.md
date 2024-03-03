@@ -36,7 +36,8 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [4.1 String](#41-string)
 - [4.2 Numbers](#42-numbers)
 - [4.3 Math](#43-math)
-- [4.4 Date](#44-date)
+- [4.4 Leveraging Randomness with Math.random()](#95-leveraging-randomness-with-mathrandom)
+- [4.5 Date](#44-date)
 
 ## DOM & DOM Manipulation
 
@@ -69,9 +70,8 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [9.2 Choosing Between Objects and Arrays](#92-choosing-between-objects-and-arrays)
 - [9.3 Managing User Input](#93-managing-user-input)
 - [9.4 Form Validation](#94-form-validation)
-- [9.5 Leveraging Randomness with Math.random()](#95-leveraging-randomness-with-mathrandom)
-- [9.6 Persisting Data with Web Storage](#96-persisting-data-with-web-storage)
-- [9.7 Coding Logic vs Data Retrieval & Execution](#97-coding-logic-vs-data-retrieval--execution)
+- [9.5 Persisting Data with Web Storage](#96-persisting-data-with-web-storage)
+- [9.6 Coding Logic vs Data Retrieval & Execution](#97-coding-logic-vs-data-retrieval--execution)
 
 ## Tips and Best Practices
 
@@ -397,6 +397,30 @@ const square = function (x) {
   return x * x;
 };
 console.log(square(4)); // Outputs 16
+```
+
+### Comparing Function Types
+
+```javascript
+// Function Declaration
+function greetDeclaration(name) {
+  return 'Hello, ' + name + '!';
+}
+
+// Function Expression
+const greetExpression = function (name) {
+  return 'Hello, ' + name + '!';
+};
+
+// Arrow Function
+const greetArrow = (name) => {
+  return 'Hello, ' + name + '!';
+};
+
+// Test the functions
+console.log(greetDeclaration('Alice')); // Output: Hello, Alice!
+console.log(greetExpression('Bob')); // Output: Hello, Bob!
+console.log(greetArrow('Charlie')); // Output: Hello, Charlie!
 ```
 
 ### IIFE (Immediately Invoked Function Expression)
@@ -727,6 +751,29 @@ console.log(fruits.includes('banana')); // Output: true
 console.log(fruits.includes('watermelon')); // Output: false
 ```
 
+### Array Destructuring
+
+Destructuring arrays provides a more concise and readable way to extract values from an array and assign them to variables. Leading to cleaner code and make it easier to work with arrays, especially when dealing with functions that return arrays or when handling array elements in different parts of your code.
+
+- **Clarity and readability:** Destructuring makes it clear which elements of the array you are interested in, improving code readability compared to accessing elements by index.
+- **Conciseness:** Destructuring allows you to extract multiple values from an array in a single statement, reducing the amount of code needed.
+- **Variable naming:** When destructuring, you can assign more meaningful variable names to the extracted values, making your code easier to understand.
+- **Avoiding temporary variables:** Destructuring can help you avoid the need for temporary variables when working with array elements, leading to cleaner code.
+- **Function return values:** Destructuring can be especially useful when dealing with functions that return arrays, allowing you to easily extract and work with the returned values.
+
+```javascript
+// Define an array with numerical values
+const numbers = [1, 2, 3];
+
+// Destructure the array into individual variables
+const [firstNumber, secondNumber, thirdNumber] = numbers;
+
+// Log the individual variables
+console.log(firstNumber); // Output: 1
+console.log(secondNumber); // Output: 2
+console.log(thirdNumber); // Output: 3
+```
+
 ## [🔝 Back to Top](#top)
 
 ## 3.5 OBJECTS
@@ -890,6 +937,33 @@ for...in loops through an object's properties to access and work with each prope
 for (const key in myObject) {
   console.log(key, myObject[key]); // Logs key and value of each property
 }
+```
+
+### Object Destructuring
+
+Destructuring objects in JavaScript allows you to extract properties from objects and assign them to variables, providing a concise and readable way to work with object data. This feature enhances code clarity and reduces redundancy, especially when dealing with functions that return objects or when accessing object properties in different parts of your code.
+
+- **Clarity and readability:** Destructuring makes it explicit which properties of the object you are interested in, improving code readability compared to accessing properties by their keys.
+- **Conciseness:** Destructuring allows you to extract multiple properties from an object in a single statement, reducing the verbosity of your code.
+- **Variable naming:** When destructuring, you can assign more descriptive variable names to the extracted properties, enhancing code comprehension.
+- **Avoiding repetition:** Destructuring helps you avoid repeating object property access, leading to cleaner and more maintainable code.
+- **Function return values:** Destructuring can be particularly useful when dealing with functions that return objects, enabling you to easily extract and utilize the returned properties.
+
+```javascript
+// Define an object with properties
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 30,
+};
+
+// Destructure the object into individual variables
+const { firstName, lastName, age } = person;
+
+// Log the individual variables
+console.log(firstName); // Output: John
+console.log(lastName); // Output: Doe
+console.log(age); // Output: 30
 ```
 
 ## [🔝 Back to Top](#top)
@@ -1111,48 +1185,82 @@ Essential guide to JavaScript's Math object, covering basic constants and mathem
 - `Math.pow(2, 3);` 2 to the power of 3: Returns 8
 - `Math.sqrt(16);` Square root of 16: Returns 4
 
-### Generating Random Choices with Math.random()
+## [🔝 Back to Top](#top)
 
-- `Math.random()` is a JavaScript method that generates a floating-point, pseudo-random number in the range from 0 (inclusive) to 1 (exclusive). This means it can return a number as small as 0 but never exactly 1.
+## 4.4 Leveraging Randomness with Math.random()
+
+`Math.random()` is a powerful JavaScript function that generates a pseudo-random number between 0 (inclusive) and 1 (exclusive). This function is widely used in various programming scenarios, from simple tasks like randomizing UI elements to complex simulations and algorithms. Understanding how to effectively use `Math.random()` can add a dynamic and unpredictable element to your applications.
+
+#### Generating a Random Number
 
 ```javascript
-// Function to get a random choice for the computer
-function getComputerChoice() {
-  const randomNumber = Math.random(); // Generates a random number between 0 (inclusive) and 1 (exclusive).
-
-  if (randomNumber < 1 / 3) {
-    return 'rock';
-  } else if (randomNumber < 2 / 3) {
-    return 'paper';
-  } else {
-    return 'scissors';
-  }
-}
-
-// Example usage:
-const computerSelection = getComputerChoice();
-console.log(`Computer chose: ${computerSelection}`);
+const randomNumber = Math.random();
+console.log(randomNumber); // Any number between 0 and 1
 ```
 
-The function getComputerChoice() utilizes Math.random() to simulate making a random choice between 'rock', 'paper', and 'scissors'. By comparing the random number against fractional thresholds, it assigns one of these three choices. This is a straightforward use case where Math.random() directly influences the flow of the program based on random selection.
+### Selecting a Random Item from an Array
+
+Often, you need to pick an item randomly from a list. Here's how you can do it:
+
+```javascript
+const items = ['Apple', 'Banana', 'Cherry', 'Date'];
+const randomIndex = Math.floor(Math.random() * items.length);
+const randomItem = items[randomIndex];
+console.log(randomItem); // Randomly selected item
+```
+
+### Generating an integer with Math.random()
+
+When it comes to generating a random integer between you can use either `Math.trunc()` or `Math.floor()`. The distinction between the two only matters for negative numbers, as `Math.random()` always returns a positive number.
 
 ### Math.trunc
 
-Math.trunc is a method in JavaScript's Math object that is used to remove the decimal part of a number, effectively truncating it to an integer. This method does not round the number; it simply cuts off the decimal portion.
+- Math.trunc can be paired with `Math.random()` for generating zero-based index values, useful in selecting random elements from an array. For example, `Math.trunc(Math.random() * array.length)` can randomly index into an array, ensuring the index starts at 0 and is within the array bounds.
 
-### How Math.trunc Fits With Math.random
+### Math.floor
 
-The combination of Math.trunc and Math.random is particularly useful when you need to generate random integers within a specific range. Math.random generates the random decimal number, and Math.trunc can be used to truncate this number to an integer.
+- Math.floor, on the other hand, can be utilized with `Math.random()` to create inclusive upper-bound random integers. For instance, `Math.floor(Math.random() * (max - min + 1)) + min` generates a random integer between min and max, inclusively, catering to situations where the starting integer is 1 and the upper limit must be part of the outcome range.
 
-- Keep in mind that Math.random() generates a number starting from 0, to start from 1 we add +1 to the end of the equation.
+### Advanced Applications
+
+`Math.random()` can be adapted for more complex scenarios, enhancing its utility beyond simple random selection.
+
+### Randomizing Within a Range
+
+To generate a random number within a specific range, you can modify the output of `Math.random()`:
 
 ```javascript
-let randomInteger = Math.trunc(Math.random() * 10) + 1;
+function getRandomInRange(min, max) {
+  return Math.random() * (max - min) + min;
+}
+console.log(getRandomInRange(1, 100)); // Random number between 1 and 100
 ```
+
+### Weighted Random Selection
+
+In situations where options have different probabilities of being chosen, a weighted random selection algorithm can be implemented:
+
+```javascript
+function weightedRandom(options) {
+  let i,
+    sum = 0,
+    r = Math.random();
+  for (i in options) {
+    sum += options[i];
+    if (r <= sum) return i;
+  }
+}
+const choices = { A: 0.1, B: 0.3, C: 0.6 };
+console.log(weightedRandom(choices)); // "C" has a higher chance of being selected
+```
+
+### Dynamic Randomness
+
+`Math.random()` can be particularly useful in scenarios where the data is dynamic or the exact values are not known in advance. For example, in game development for spawning items at random locations or in simulations where random factors influence outcomes.
 
 ## [🔝 Back to Top](#top)
 
-## 4.4 DATES
+## 4.5 DATES
 
 Introduction to JavaScript's Date object, focusing on creating, manipulating, and formatting dates.
 
@@ -1282,7 +1390,7 @@ Methods for selecting, creating, and modifying DOM elements.
 - `<table>`: .innerHTML, .textContent, .style
 - `<tr>` (Table Row): .innerHTML, .textContent, .style
 - `<td>` (Table Data/Cell): .innerText, .innerHTML, .textContent, .style
-- `<form>`: .submit(), .reset(), .addEventListener('submit', ...),  addEventListener('reset', ...)
+- `<form>`: .submit(), .reset(), .addEventListener('submit', ...), addEventListener('reset', ...)
 
 ### Examples of Common Style Properties & Attributes
 
@@ -2177,76 +2285,7 @@ Separating form validation into its own section emphasizes its importance in web
 
 ## [🔝 Back to Top](#top)
 
-## 9.5 Leveraging Randomness with Math.random()
-
-`Math.random()` is a powerful JavaScript function that generates a pseudo-random number between 0 (inclusive) and 1 (exclusive). This function is widely used in various programming scenarios, from simple tasks like randomizing UI elements to complex simulations and algorithms. Understanding how to effectively use `Math.random()` can add a dynamic and unpredictable element to your applications.
-
-#### Generating a Random Number
-
-```javascript
-const randomNumber = Math.random();
-console.log(randomNumber); // Any number between 0 and 1
-```
-
-### Selecting a Random Item from an Array
-
-Often, you need to pick an item randomly from a list. Here's how you can do it:
-
-```javascript
-const items = ['Apple', 'Banana', 'Cherry', 'Date'];
-const randomIndex = Math.floor(Math.random() * items.length);
-const randomItem = items[randomIndex];
-console.log(randomItem); // Randomly selected item
-```
-
-### Math.trunc
-
-- Math.trunc can be paired with Math.random() for generating zero-based index values, useful in selecting random elements from an array. For example, Math.trunc(Math.random() \* array.length) can randomly index into an array, ensuring the index starts at 0 and is within the array bounds.
-
-### Math.floor
-
-- Math.floor, on the other hand, can be utilized with Math.random() to create inclusive upper-bound random integers. For instance, Math.floor(Math.random() \* (max - min + 1)) + min generates a random integer between min and max, inclusively, catering to situations where the starting integer is 1 and the upper limit must be part of the outcome range.
-
-### Advanced Applications
-
-`Math.random()` can be adapted for more complex scenarios, enhancing its utility beyond simple random selection.
-
-### Randomizing Within a Range
-
-To generate a random number within a specific range, you can modify the output of `Math.random()`:
-
-```javascript
-function getRandomInRange(min, max) {
-  return Math.random() * (max - min) + min;
-}
-console.log(getRandomInRange(1, 100)); // Random number between 1 and 100
-```
-
-### Weighted Random Selection
-
-In situations where options have different probabilities of being chosen, a weighted random selection algorithm can be implemented:
-
-```javascript
-function weightedRandom(options) {
-  let i,
-    sum = 0,
-    r = Math.random();
-  for (i in options) {
-    sum += options[i];
-    if (r <= sum) return i;
-  }
-}
-const choices = { A: 0.1, B: 0.3, C: 0.6 };
-console.log(weightedRandom(choices)); // "C" has a higher chance of being selected
-```
-
-### Dynamic Randomness
-
-`Math.random()` can be particularly useful in scenarios where the data is dynamic or the exact values are not known in advance. For example, in game development for spawning items at random locations or in simulations where random factors influence outcomes.
-
-## [🔝 Back to Top](#top)
-
-## 9.6 Persisting Data with Web Storage
+## 9.5 Persisting Data with Web Storage
 
 Web Storage allows web applications to store data locally within the user's browser, offering two main mechanisms: `localStorage` and `sessionStorage`. This section delves into practical applications of both, showcasing how they can be utilized in real-world web development scenarios.
 
@@ -2318,7 +2357,7 @@ Web Storage, encompassing both localStorage and sessionStorage, offers robust so
 
 ## [🔝 Back to Top](#top)
 
-## 9.7 Coding Logic vs Data Retrieval & Execution
+## 9.6 Coding Logic vs Data Retrieval & Execution
 
 Understanding the distinction between coding logic and data retrieval & execution in JavaScript is crucial for effective programming.
 
