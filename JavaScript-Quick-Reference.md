@@ -36,7 +36,7 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [4.1 String](#41-string)
 - [4.2 Numbers](#42-numbers)
 - [4.3 Math](#43-math)
-- [4.4 Leveraging Randomness with Math.random()](#95-leveraging-randomness-with-mathrandom)
+- [4.4 Leveraging Randomness with Math.random()](#45-leveraging-randomness-with-mathrandom)
 - [4.5 Date](#44-date)
 
 ## DOM & DOM Manipulation
@@ -70,8 +70,8 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [9.2 Choosing Between Objects and Arrays](#92-choosing-between-objects-and-arrays)
 - [9.3 Managing User Input](#93-managing-user-input)
 - [9.4 Form Validation](#94-form-validation)
-- [9.5 Persisting Data with Web Storage](#96-persisting-data-with-web-storage)
-- [9.6 Coding Logic vs Data Retrieval & Execution](#97-coding-logic-vs-data-retrieval--execution)
+- [9.5 Persisting Data with Web Storage](#95-persisting-data-with-web-storage)
+- [9.6 Coding Logic vs Data Retrieval & Execution](#96-coding-logic-vs-data-retrieval--execution)
 
 ## Tips and Best Practices
 
