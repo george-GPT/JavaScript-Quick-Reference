@@ -36,8 +36,8 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [4.1 String](#41-string)
 - [4.2 Numbers](#42-numbers)
 - [4.3 Math](#43-math)
-- [4.4 Leveraging Randomness with Math.random()](#44-leveraging-randomness-with-mathrandom)
-- [4.5 Date](#45-date)
+- [4.4 Date](#44-date)
+- [4.5 Randomness with Math.random()](#45-randomness-with-mathrandom)
 
 ## DOM & DOM Manipulation
 
@@ -1187,7 +1187,55 @@ Essential guide to JavaScript's Math object, covering basic constants and mathem
 
 ## [🔝 Back to Top](#top)
 
-## 4.4 LEVEREGING RANDOMNESS WITH Math.random()
+## 4.4 DATES
+
+Introduction to JavaScript's Date object, focusing on creating, manipulating, and formatting dates.
+
+### Creating Date Objects
+
+- `const now = new Date();` Current date and time
+- `const specificDate = new Date('2024-01-24');` Specific date (YYYY-MM-DD)
+- `const specificDateTime = new Date('2024-01-24T12:00:00');` Specific date and time (YYYY-MM-DDTHH:MM:SS)
+
+### Date Methods
+
+- `now.getFullYear();` Get the year as a four digit number (yyyy)
+- `now.getMonth();` Get the month as a zero-based value (0-11)
+- `now.getDate();` Get the day as a number (1-31)
+- `now.getDay();` Get the weekday as a number (0-6)
+- `now.getHours();` Get the hour (0-23)
+- `now.getMinutes();` Get the minute (0-59)
+- `now.getSeconds();` Get the second (0-59)
+- `now.getMilliseconds();` Get the milliseconds (0-999)
+- `now.getTime();` Get the time (milliseconds since January 1, 1970)
+
+### Setting Date Values
+
+- `now.setFullYear(2024);` Set the year (optionally month, day)
+- `now.setMonth(0);` Set the month (0-11)
+- `now.setDate(24);` Set the day as a number (1-31)
+- `now.setHours(12);` Set the hour (0-23)
+- `now.setMinutes(30);` Set the minute (-59)
+- `now.setSeconds(30);` Set the second (0-59)
+- `now.setMilliseconds(123);` Set the milliseconds (0-999)
+
+### Formatting Dates
+
+- `now.toDateString();` Converts the date portion to a readable string
+- `now.toTimeString();` Converts the time portion to a readable string
+- `now.toLocaleDateString();` Returns the date portion in a locale-sensitive format
+- `now.toLocaleTimeString();` Returns the time portion in a locale-sensitive format
+- `now.toISOString();` Returns the date in ISO format (YYYY-MM-DDTHH:MM:SS.sssZ)
+
+### Comparing Dates
+
+- `const earlier = new Date('2024-01-01');`
+- `const later = new Date('2024-12-31');`
+- `const isLater = later > earlier;` true if 'later' is a later date than 'earlier'
+
+## [🔝 Back to Top](#top)
+
+## 4.5 RANDOMNESS WITH Math.random()
 
 `Math.random()` is a powerful JavaScript function that generates a pseudo-random number between 0 (inclusive) and 1 (exclusive). This function is widely used in various programming scenarios, from simple tasks like randomizing UI elements to complex simulations and algorithms. Understanding how to effectively use `Math.random()` can add a dynamic and unpredictable element to your applications.
 
@@ -1272,54 +1320,6 @@ console.log('Rolling the dice...')
 let rollResult = rollDice()
 console.log('The result is:', rollResult)
 ```
-
-## [🔝 Back to Top](#top)
-
-## 4.5 DATES
-
-Introduction to JavaScript's Date object, focusing on creating, manipulating, and formatting dates.
-
-### Creating Date Objects
-
-- `const now = new Date();` Current date and time
-- `const specificDate = new Date('2024-01-24');` Specific date (YYYY-MM-DD)
-- `const specificDateTime = new Date('2024-01-24T12:00:00');` Specific date and time (YYYY-MM-DDTHH:MM:SS)
-
-### Date Methods
-
-- `now.getFullYear();` Get the year as a four digit number (yyyy)
-- `now.getMonth();` Get the month as a zero-based value (0-11)
-- `now.getDate();` Get the day as a number (1-31)
-- `now.getDay();` Get the weekday as a number (0-6)
-- `now.getHours();` Get the hour (0-23)
-- `now.getMinutes();` Get the minute (0-59)
-- `now.getSeconds();` Get the second (0-59)
-- `now.getMilliseconds();` Get the milliseconds (0-999)
-- `now.getTime();` Get the time (milliseconds since January 1, 1970)
-
-### Setting Date Values
-
-- `now.setFullYear(2024);` Set the year (optionally month, day)
-- `now.setMonth(0);` Set the month (0-11)
-- `now.setDate(24);` Set the day as a number (1-31)
-- `now.setHours(12);` Set the hour (0-23)
-- `now.setMinutes(30);` Set the minute (-59)
-- `now.setSeconds(30);` Set the second (0-59)
-- `now.setMilliseconds(123);` Set the milliseconds (0-999)
-
-### Formatting Dates
-
-- `now.toDateString();` Converts the date portion to a readable string
-- `now.toTimeString();` Converts the time portion to a readable string
-- `now.toLocaleDateString();` Returns the date portion in a locale-sensitive format
-- `now.toLocaleTimeString();` Returns the time portion in a locale-sensitive format
-- `now.toISOString();` Returns the date in ISO format (YYYY-MM-DDTHH:MM:SS.sssZ)
-
-### Comparing Dates
-
-- `const earlier = new Date('2024-01-01');`
-- `const later = new Date('2024-12-31');`
-- `const isLater = later > earlier;` true if 'later' is a later date than 'earlier'
 
 ## [🔝 Back to Top](#top)
 
