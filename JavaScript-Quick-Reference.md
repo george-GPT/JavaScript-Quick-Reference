@@ -1391,21 +1391,21 @@ Methods for selecting, creating, and modifying DOM elements.
 
 ### Methods For Acessesing Various HTML Element Types
 
-- `<input>`.value, .disabled, .checked
-- `<div>`.innerText, .innerHTML, .textContent, .style
-- `<span>`.innerText, .innerHTML, .textContent, .style
-- `<p>`.innerText, .innerHTML, .textContent, .style
+- `<input>` .value, .disabled, .checked
+- `<div>` .innerText, .innerHTML, .textContent, .style
+- `<span>` .innerText, .innerHTML, .textContent, .style
+- `<p>` .innerText, .innerHTML, .textContent, .style
 - `<a>`**(Anchor):** .innerText, .innerHTML, .textContent, .href, .target, .style
-- `<button>`.innerText, .innerHTML, .textContent, .disabled, .style
+- `<button>` .innerText, .innerHTML, .textContent, .disabled, .style
 - `<img>`**(Image):** .src, .alt, .style
 - `<select>`**(Dropdown):** .value, .selectedIndex, .options
-- `<textarea>`.value, .disabled, .style
+- `<textarea>` .value, .disabled, .style
 - `<ul>` **(Unordered List):** .innerHTML, .textContent, .style
 - `<li>` **(List Item):** .innerText, .innerHTML, .textContent, .style
 - `<table>` .innerHTML, .textContent, .style
 - `<tr>` **(Table Row):** .innerHTML, .textContent, .style
 - `<td>` **(Table Data/Cell):** .innerText, .innerHTML, .textContent, .style
-- `<form>`.submit(), .reset(), .addEventListener('submit', ...), addEventListener('reset', ...)
+- `<form>` .submit(), .reset(), .addEventListener('submit', ...), addEventListener('reset', ...)
 
 ### Examples of Common Style Properties & Attributes
 
