@@ -36,8 +36,8 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [4.1 String](#41-string)
 - [4.2 Numbers](#42-numbers)
 - [4.3 Math](#43-math)
-- [4.4 Leveraging Randomness with Math.random()](#45-leveraging-randomness-with-mathrandom)
-- [4.5 Date](#44-date)
+- [4.4 Leveraging Randomness with Math.random()](#44-leveraging-randomness-with-mathrandom)
+- [4.5 Date](#45-date)
 
 ## DOM & DOM Manipulation
 
@@ -226,14 +226,14 @@ Examples illustrating syntax for variable declarations and data types.
 The `typeof` operator is used to determine the type of a variable or expression. It returns a string indicating the data type.
 
 ```javascript
-let num = 42;
-console.log(typeof num); // Outputs: "number"
+let num = 42
+console.log(typeof num) // Outputs: "number"
 
-let str = 'Hello, world!';
-console.log(typeof str); // Outputs: "string"
+let str = 'Hello, world!'
+console.log(typeof str) // Outputs: "string"
 
-let bool = true;
-console.log(typeof bool); // Outputs: "boolean"
+let bool = true
+console.log(typeof bool) // Outputs: "boolean"
 ```
 
 ## [🔝 Back to Top](#top)
@@ -287,9 +287,9 @@ Define functions using the `function` keyword, specifying parameters within pare
 
 ```javascript
 function greet(name) {
-  return `Hello, ${name}!`;
+  return `Hello, ${name}!`
 }
-console.log(greet('Alice'));
+console.log(greet('Alice'))
 ```
 
 Outputs "Hello, Alice!"
@@ -300,19 +300,19 @@ Functions accept inputs called parameters, defined at declaration, and are place
 
 ```javascript
 // Variable declared outside the function
-let globalVariable = 10;
+let globalVariable = 10
 
 // Function that takes a parameter which is a variable declared outside the function
 function multiplyByGlobal(globalVariable) {
   // Perform multiplication using the parameter and the global variable
-  let result = userInput * globalVariable;
-  return result;
+  let result = userInput * globalVariable
+  return result
 }
 
 // Example usage of the function
-let userInput = 5;
-let multipliedValue = multiplyByGlobal(globalVariable);
-console.log(`Result: ${multipliedValue}`); // Output: Result: 50
+let userInput = 5
+let multipliedValue = multiplyByGlobal(globalVariable)
+console.log(`Result: ${multipliedValue}`) // Output: Result: 50
 ```
 
 ### When to Use Parameters
@@ -344,10 +344,10 @@ They are specified in the function declaration and assigned using the syntax par
 
 ```javascript
 function say(message = 'Hi') {
-  console.log(message);
+  console.log(message)
 }
-`say();` // Outputs "Hi"
-`say("Hello");`; // Outputs "Hello"
+;`say();` // Outputs "Hi"
+`say("Hello");` // Outputs "Hello"
 ```
 
 ### Rest Parameters (ES6)
@@ -357,9 +357,9 @@ They are represented by three dots (...) followed by the parameter name and coll
 
 ```javascript
 function sumAll(...numbers) {
-  return numbers.reduce((acc, num) => acc + num, 0);
+  return numbers.reduce((acc, num) => acc + num, 0)
 }
-console.log(sumAll(1, 2, 3));
+console.log(sumAll(1, 2, 3))
 ```
 
 Outputs 6
@@ -370,20 +370,20 @@ Arrow functions provide a concise syntax for writing function expressions in Jav
 They inherit the this value from the surrounding code context and are commonly used for short, one-liner functions or functions that don't require their own this context.
 
 ```javascript
-const arrowFunction = (parameters) => expression;
+const arrowFunction = (parameters) => expression
 ```
 
 ```javascript
 // Traditional function expression to greet a user
 function greetUser(userName) {
-  return 'Hello, ' + userName + '!';
+  return 'Hello, ' + userName + '!'
 }
 
 // Arrow function expression for greeting a user
-const greetUserArrow = (userName) => `Hello, ${userName}!`;
+const greetUserArrow = (userName) => `Hello, ${userName}!`
 
-console.log(greetUser('John')); // Output: Hello, John!
-console.log(greetUserArrow('Jane')); // Output: Hello, Jane!
+console.log(greetUser('John')) // Output: Hello, John!
+console.log(greetUserArrow('Jane')) // Output: Hello, Jane!
 ```
 
 In this example, the arrow function addArrow accomplishes the same thing but with a more concise syntax. It omits the function keyword and uses the => arrow syntax to define the function.
@@ -394,9 +394,9 @@ Function expressions assign an anonymous function to a variable. They offer flex
 
 ```javascript
 const square = function (x) {
-  return x * x;
-};
-console.log(square(4)); // Outputs 16
+  return x * x
+}
+console.log(square(4)) // Outputs 16
 ```
 
 ### Comparing Function Types
@@ -404,23 +404,23 @@ console.log(square(4)); // Outputs 16
 ```javascript
 // Function Declaration
 function greetDeclaration(name) {
-  return 'Hello, ' + name + '!';
+  return 'Hello, ' + name + '!'
 }
 
 // Function Expression
 const greetExpression = function (name) {
-  return 'Hello, ' + name + '!';
-};
+  return 'Hello, ' + name + '!'
+}
 
 // Arrow Function
 const greetArrow = (name) => {
-  return 'Hello, ' + name + '!';
-};
+  return 'Hello, ' + name + '!'
+}
 
 // Test the functions
-console.log(greetDeclaration('Alice')); // Output: Hello, Alice!
-console.log(greetExpression('Bob')); // Output: Hello, Bob!
-console.log(greetArrow('Charlie')); // Output: Hello, Charlie!
+console.log(greetDeclaration('Alice')) // Output: Hello, Alice!
+console.log(greetExpression('Bob')) // Output: Hello, Bob!
+console.log(greetArrow('Charlie')) // Output: Hello, Charlie!
 ```
 
 ### IIFE (Immediately Invoked Function Expression)
@@ -428,9 +428,9 @@ console.log(greetArrow('Charlie')); // Output: Hello, Charlie!
 IIFEs are functions that execute immediately upon definition, useful for initializing applications or namespaces.
 
 ```javascript
-(function () {
-  console.log('This function runs right away!');
-})();
+;(function () {
+  console.log('This function runs right away!')
+})()
 ```
 
 ### Higher-Order Functions
@@ -439,10 +439,10 @@ These functions accept or return other functions, facilitating abstraction and c
 
 ```javascript
 function applyOperation(a, b, operation) {
-  return operation(a, b);
+  return operation(a, b)
 }
-`const result = applyOperation(4, 2, multiply);` // Using the multiply arrow function
-`console.log(result);`; // Outputs 8
+;`const result = applyOperation(4, 2, multiply);` // Using the multiply arrow function
+`console.log(result);` // Outputs 8
 ```
 
 ## [🔝 Back to Top](#top)
@@ -465,7 +465,7 @@ Repeatedly runs a block of code a certain number of times.
 
 ```javascript
 for (let i = 0; i < 5; i++) {
-  console.log(i); // Outputs: 0, 1, 2, 3, 4
+  console.log(i) // Outputs: 0, 1, 2, 3, 4
 }
 ```
 
@@ -474,10 +474,10 @@ for (let i = 0; i < 5; i++) {
 Executes code as long as a specified condition is true.
 
 ```javascript
-let j = 0;
+let j = 0
 while (j < 5) {
-  console.log(j); // Outputs: 0, 1, 2, 3, 4
-  j++;
+  console.log(j) // Outputs: 0, 1, 2, 3, 4
+  j++
 }
 ```
 
@@ -486,11 +486,11 @@ while (j < 5) {
 Executes code once, then repeats the loop as long as the condition is true.
 
 ```javascript
-let k = 0;
+let k = 0
 do {
-  console.log(k); // Outputs: 0, 1, 2, 3, 4
-  k++;
-} while (k < 5);
+  console.log(k) // Outputs: 0, 1, 2, 3, 4
+  k++
+} while (k < 5)
 ```
 
 ### for...in Loop
@@ -498,9 +498,9 @@ do {
 Iterates over all enumerable properties of an object.
 
 ```javascript
-const person = { name: 'Alice', age: 30 };
+const person = { name: 'Alice', age: 30 }
 for (const key in person) {
-  console.log(`${key}: ${person[key]}`); // Outputs: "name: Alice", "age: 30"
+  console.log(`${key}: ${person[key]}`) // Outputs: "name: Alice", "age: 30"
 }
 ```
 
@@ -509,9 +509,9 @@ for (const key in person) {
 Iterates over iterable objects like arrays, strings.
 
 ```javascript
-const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5]
 for (const number of numbers) {
-  console.log(number); // Outputs: 1, 2, 3, 4, 5
+  console.log(number) // Outputs: 1, 2, 3, 4, 5
 }
 ```
 
@@ -521,8 +521,8 @@ Executes a specified function for each element within an array. While it's not a
 
 ```javascript
 numbers.forEach((number) => {
-  console.log(number); // Outputs: 1, 2, 3, 4, 5
-});
+  console.log(number) // Outputs: 1, 2, 3, 4, 5
+})
 ```
 
 ## [🔝 Back to Top](#top)
@@ -575,10 +575,10 @@ Switch statements provide a way to perform different actions based on different 
 switch (expression) {
   case value1:
     // Code block to execute if expression equals value1
-    break;
+    break
   case value2:
     // Code block to execute if expression equals value2
-    break;
+    break
   // Additional cases as needed
   default:
   // Code block to execute if expression doesn't match any case
@@ -586,17 +586,17 @@ switch (expression) {
 ```
 
 ```javascript
-const day = 'Monday';
+const day = 'Monday'
 
 switch (day) {
   case 'Monday':
-    console.log('Today is Monday');
-    break;
+    console.log('Today is Monday')
+    break
   case 'Tuesday':
-    console.log('Today is Tuesday');
-    break;
+    console.log('Today is Tuesday')
+    break
   default:
-    console.log("It's neither Monday nor Tuesday");
+    console.log("It's neither Monday nor Tuesday")
 }
 ```
 
@@ -605,14 +605,14 @@ switch (day) {
 The ternary operator is a concise way to write conditional statements in JavaScript. It takes three operands: a condition, an expression to execute if the condition is true, and an expression to execute if the condition is false.
 
 ```javascript
-condition ? expression1 : expression2;
+condition ? expression1 : expression2
 ```
 
 ```javascript
-const age = 20;
-const status = age >= 18 ? 'adult' : 'minor';
+const age = 20
+const status = age >= 18 ? 'adult' : 'minor'
 
-console.log(status); // Outputs: 'adult' since age is greater than or equal to 18
+console.log(status) // Outputs: 'adult' since age is greater than or equal to 18
 ```
 
 ## [🔝 Back to Top](#top)
@@ -651,13 +651,13 @@ Detailed guide on JavaScript Arrays, covering array manipulation methods, iterat
 ### Example of .sort() & .filter()
 
 ```javascript
-let numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+let numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 
 let result = numbers
   .sort((a, b) => a - b) // Sort in ascending order
-  .filter((number) => number > 3); // Filter numbers greater than 3
+  .filter((number) => number > 3) // Filter numbers greater than 3
 
-console.log(result); // [4, 4, 5, 5, 5, 6, 9]
+console.log(result) // [4, 4, 5, 5, 5, 6, 9]
 ```
 
 ### Accessor Methods
@@ -679,12 +679,12 @@ console.log(result); // [4, 4, 5, 5, 5, 6, 9]
 
 ```javascript
 // Suppose we have an array of months
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
 
 // We want to get only the spring months
-const springMonths = months.slice(2, 5);
+const springMonths = months.slice(2, 5)
 
-console.log(springMonths); // Output: ['March', 'April', 'May']
+console.log(springMonths) // Output: ['March', 'April', 'May']
 ```
 
 ### Iterating Through Array Elements
@@ -692,10 +692,10 @@ console.log(springMonths); // Output: ['March', 'April', 'May']
 When iterating through array elements, you can use the index notation `[i]` to access a specific element at index `i`:
 
 ```javascript
-const array = [10, 20, 30, 40, 50];
+const array = [10, 20, 30, 40, 50]
 
 for (let i = 0; i < array.length; i++) {
-  console.log(array[i]); // Accesses the element at index i
+  console.log(array[i]) // Accesses the element at index i
 }
 ```
 
@@ -719,22 +719,22 @@ Executes a specified function for each element within an array. While it's not a
 
 ```javascript
 numbers.forEach((number) => {
-  console.log(number); // Outputs: 1, 2, 3, 4, 5
-});
+  console.log(number) // Outputs: 1, 2, 3, 4, 5
+})
 ```
 
 ### array.reduce(callback[, initialValue])
 
 ```javascript
 // Suppose we have an array of numbers
-const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5]
 
 // We want to find the sum of all numbers in the array
 const sum = numbers.reduce((accumulator, currentValue) => {
-  return accumulator + currentValue;
-}, 0); // 0 is the initial value
+  return accumulator + currentValue
+}, 0) // 0 is the initial value
 
-console.log(sum); // Output: 15
+console.log(sum) // Output: 15
 ```
 
 ### Array.includes() method
@@ -742,13 +742,13 @@ console.log(sum); // Output: 15
 The includes() method in JavaScript is used to determine whether an array includes a certain value among its elements. It returns true if the array contains the specified element, and false otherwise. This method offers a simple way to check for the presence of a value within an array without needing to iterate through its elements manually.
 
 ```javascript
-array.includes(searchElement, fromIndex);
+array.includes(searchElement, fromIndex)
 ```
 
 ```javascript
-const fruits = ['apple', 'banana', 'orange', 'grape'];
-console.log(fruits.includes('banana')); // Output: true
-console.log(fruits.includes('watermelon')); // Output: false
+const fruits = ['apple', 'banana', 'orange', 'grape']
+console.log(fruits.includes('banana')) // Output: true
+console.log(fruits.includes('watermelon')) // Output: false
 ```
 
 ### Array Destructuring
@@ -763,15 +763,15 @@ Destructuring arrays provides a more concise and readable way to extract values 
 
 ```javascript
 // Define an array with numerical values
-const numbers = [1, 2, 3];
+const numbers = [1, 2, 3]
 
 // Destructure the array into individual variables
-const [firstNumber, secondNumber, thirdNumber] = numbers;
+const [firstNumber, secondNumber, thirdNumber] = numbers
 
 // Log the individual variables
-console.log(firstNumber); // Output: 1
-console.log(secondNumber); // Output: 2
-console.log(thirdNumber); // Output: 3
+console.log(firstNumber) // Output: 1
+console.log(secondNumber) // Output: 2
+console.log(thirdNumber) // Output: 3
 ```
 
 ## [🔝 Back to Top](#top)
@@ -846,17 +846,17 @@ const exampleObject = {
   property1: 'Value1',
   property2: 'Value2',
   method1: function () {
-    return 'Method1 returns: ' + this.property1;
+    return 'Method1 returns: ' + this.property1
   },
   method2: function (parameter) {
     console.log(
       'Method2 uses ' + parameter + ' and property2: ' + this.property2
-    );
+    )
   },
-};
+}
 
-console.log(exampleObject.method1()); // Calls method1, outputs: Method1 returns: Value1
-exampleObject.method2('Parameter1'); // Calls method2 with "Parameter1" as an argument, outputs: Method2 uses Parameter1 and property2: Value2
+console.log(exampleObject.method1()) // Calls method1, outputs: Method1 returns: Value1
+exampleObject.method2('Parameter1') // Calls method2 with "Parameter1" as an argument, outputs: Method2 uses Parameter1 and property2: Value2
 ```
 
 ### Example of Creating and Using Methods
@@ -866,15 +866,15 @@ const person = {
   firstName: 'John',
   lastName: 'Doe',
   fullName: function () {
-    return this.firstName + ' ' + this.lastName;
+    return this.firstName + ' ' + this.lastName
   },
   greet: function (greeting) {
-    console.log(greeting + ', my name is ' + this.firstName);
+    console.log(greeting + ', my name is ' + this.firstName)
   },
-};
+}
 
-console.log(person.fullName()); // Calls the fullName method, outputs: John Doe
-person.greet('Hello'); // Calls the greet method with "Hello" as an argument, outputs: Hello, my name is John
+console.log(person.fullName()) // Calls the fullName method, outputs: John Doe
+person.greet('Hello') // Calls the greet method with "Hello" as an argument, outputs: Hello, my name is John
 ```
 
 ### Methods of the Object Constructor
@@ -909,24 +909,24 @@ Methods of the Object constructor in JavaScript provide a set of utility functio
 const target = {
   name: 'John',
   age: 30,
-};
+}
 
 // Create source objects
 const source1 = {
   age: 25,
   profession: 'Engineer',
-};
+}
 
 const source2 = {
   city: 'New York',
   hobby: 'Guitar',
-};
+}
 
 // Use Object.assign to copy values from sources to the target
-Object.assign(target, source1, source2);
+Object.assign(target, source1, source2)
 
 // Display the modified target object
-console.log(target);
+console.log(target)
 ```
 
 ### Looping Through Properties Using for...in
@@ -935,7 +935,7 @@ for...in loops through an object's properties to access and work with each prope
 
 ```javascript
 for (const key in myObject) {
-  console.log(key, myObject[key]); // Logs key and value of each property
+  console.log(key, myObject[key]) // Logs key and value of each property
 }
 ```
 
@@ -955,15 +955,15 @@ const person = {
   firstName: 'John',
   lastName: 'Doe',
   age: 30,
-};
+}
 
 // Destructure the object into individual variables
-const { firstName, lastName, age } = person;
+const { firstName, lastName, age } = person
 
 // Log the individual variables
-console.log(firstName); // Output: John
-console.log(lastName); // Output: Doe
-console.log(age); // Output: 30
+console.log(firstName) // Output: John
+console.log(lastName) // Output: Doe
+console.log(age) // Output: 30
 ```
 
 ## [🔝 Back to Top](#top)
@@ -980,7 +980,7 @@ Handles exceptions by testing a block of code for errors.
 try {
   // Code that may throw an error
 } catch (error) {
-  console.log(error); // Handling the error
+  console.log(error) // Handling the error
 }
 ```
 
@@ -992,7 +992,7 @@ Includes a block that runs regardless of the result.
 try {
   // Code that may throw an error
 } catch (error) {
-  console.log(error); // Handling the error
+  console.log(error) // Handling the error
 } finally {
   // Code that will run regardless of try / catch outcome
 }
@@ -1005,7 +1005,7 @@ Creates a custom error.
 ```javascript
 function checkNumber(num) {
   if (isNaN(num)) {
-    throw new Error('Input is not a number'); // Custom error
+    throw new Error('Input is not a number') // Custom error
   }
 }
 ```
@@ -1014,9 +1014,9 @@ function checkNumber(num) {
 
 ```javascript
 try {
-  checkNumber('A');
+  checkNumber('A')
 } catch (e) {
-  console.log(e.message); // Output: Input is not a number
+  console.log(e.message) // Output: Input is not a number
 }
 ```
 
@@ -1061,8 +1061,8 @@ Overview of commonly used methods of the String object.
 ```javascript
 const multiLineString = `This is a string
 that spans across
-multiple lines`;
-console.log(multiLineString);
+multiple lines`
+console.log(multiLineString)
 ```
 
 ## [🔝 Back to Top](#top)
@@ -1098,17 +1098,17 @@ When using `parseInt()`, it's crucial to specify the radix to ensure accurate co
 
 ```javascript
 // Sample input from the user
-const userInput = '42';
+const userInput = '42'
 
 // Using parseInt to convert the string to an integer
-const parsedNumber = parseInt(userInput);
+const parsedNumber = parseInt(userInput)
 
 // Checking if the conversion was successful
 if (!isNaN(parsedNumber)) {
-  console.log(`Parsed number: ${parsedNumber}`);
-  console.log(`Type of parsedNumber: ${typeof parsedNumber}`);
+  console.log(`Parsed number: ${parsedNumber}`)
+  console.log(`Type of parsedNumber: ${typeof parsedNumber}`)
 } else {
-  console.log('Conversion failed. Please enter a valid number.');
+  console.log('Conversion failed. Please enter a valid number.')
 }
 ```
 
@@ -1119,25 +1119,25 @@ if (!isNaN(parsedNumber)) {
 ### toFixed(digits)
 
 ```javascript
-const num = 123.456;
-num.toFixed(2); // Returns "123.46" - formats the number using fixed-point notation.
+const num = 123.456
+num.toFixed(2) // Returns "123.46" - formats the number using fixed-point notation.
 ```
 
 ### Array Destructuring
 
 ```javascript
-const fruits = ['Apple', 'Banana', 'Cherry'];
-const [firstFruit, secondFruit] = fruits;
-console.log(firstFruit); // 'Apple'
-console.log(secondFruit); // 'Banana'
+const fruits = ['Apple', 'Banana', 'Cherry']
+const [firstFruit, secondFruit] = fruits
+console.log(firstFruit) // 'Apple'
+console.log(secondFruit) // 'Banana'
 ```
 
 ### Spread Operator in Arrays
 
 ```javascript
-const primeNumbers = [2, 3, 5];
-const morePrimes = [7, ...primeNumbers, 11];
-console.log(morePrimes); // [7, 2, 3, 5, 11]
+const primeNumbers = [2, 3, 5]
+const morePrimes = [7, ...primeNumbers, 11]
+console.log(morePrimes) // [7, 2, 3, 5, 11]
 ```
 
 ### Additional Number Properties and Methods
@@ -1187,15 +1187,15 @@ Essential guide to JavaScript's Math object, covering basic constants and mathem
 
 ## [🔝 Back to Top](#top)
 
-## 4.4 Leveraging Randomness with Math.random()
+## 4.4 LEVEREGING RANDOMNESS WITH Math.random()
 
 `Math.random()` is a powerful JavaScript function that generates a pseudo-random number between 0 (inclusive) and 1 (exclusive). This function is widely used in various programming scenarios, from simple tasks like randomizing UI elements to complex simulations and algorithms. Understanding how to effectively use `Math.random()` can add a dynamic and unpredictable element to your applications.
 
 #### Generating a Random Number
 
 ```javascript
-const randomNumber = Math.random();
-console.log(randomNumber); // Any number between 0 and 1
+const randomNumber = Math.random()
+console.log(randomNumber) // Any number between 0 and 1
 ```
 
 ### Selecting a Random Item from an Array
@@ -1203,15 +1203,15 @@ console.log(randomNumber); // Any number between 0 and 1
 Often, you need to pick an item randomly from a list. Here's how you can do it:
 
 ```javascript
-const items = ['Apple', 'Banana', 'Cherry', 'Date'];
-const randomIndex = Math.floor(Math.random() * items.length);
-const randomItem = items[randomIndex];
-console.log(randomItem); // Randomly selected item
+const items = ['Apple', 'Banana', 'Cherry', 'Date']
+const randomIndex = Math.floor(Math.random() * items.length)
+const randomItem = items[randomIndex]
+console.log(randomItem) // Randomly selected item
 ```
 
 ### Generating an integer with Math.random()
 
-When it comes to generating a random integer between you can use either `Math.trunc()` or `Math.floor()`. The distinction between the two only matters for negative numbers, as `Math.random()` always returns a positive number.
+When it comes to generating a random integer between two values you can use either `Math.trunc()` or `Math.floor()`. The distinction between the two only matters for negative numbers, as `Math.random()` always returns a positive number.
 
 ### Math.trunc
 
@@ -1231,9 +1231,9 @@ To generate a random number within a specific range, you can modify the output o
 
 ```javascript
 function getRandomInRange(min, max) {
-  return Math.random() * (max - min) + min;
+  return Math.random() * (max - min) + min
 }
-console.log(getRandomInRange(1, 100)); // Random number between 1 and 100
+console.log(getRandomInRange(1, 100)) // Random number between 1 and 100
 ```
 
 ### Weighted Random Selection
@@ -1244,19 +1244,34 @@ In situations where options have different probabilities of being chosen, a weig
 function weightedRandom(options) {
   let i,
     sum = 0,
-    r = Math.random();
+    r = Math.random()
   for (i in options) {
-    sum += options[i];
-    if (r <= sum) return i;
+    sum += options[i]
+    if (r <= sum) return i
   }
 }
-const choices = { A: 0.1, B: 0.3, C: 0.6 };
-console.log(weightedRandom(choices)); // "C" has a higher chance of being selected
+const choices = { A: 0.1, B: 0.3, C: 0.6 }
+console.log(weightedRandom(choices)) // "C" has a higher chance of being selected
 ```
 
 ### Dynamic Randomness
 
 `Math.random()` can be particularly useful in scenarios where the data is dynamic or the exact values are not known in advance. For example, in game development for spawning items at random locations or in simulations where random factors influence outcomes.
+
+```javascript
+// Function to simulate rolling a six-sided die
+function rollDice() {
+  // Generate a random number between 1 and 6
+  let result = Math.floor(Math.random() * 6) + 1
+
+  return result
+}
+
+// Example usage
+console.log('Rolling the dice...')
+let rollResult = rollDice()
+console.log('The result is:', rollResult)
+```
 
 ## [🔝 Back to Top](#top)
 
@@ -1308,7 +1323,7 @@ Introduction to JavaScript's Date object, focusing on creating, manipulating, an
 
 ## [🔝 Back to Top](#top)
 
-## 5.1 Understanding DOM & DOM Manipulation
+## 5.1 UNDERSTANDING DOM & DOM MANIPULATION
 
 The DOM (Document Object Model) is a JavaScript programming interface for web documents. It represents web pages as a tree of nodes and objects, allowing you to change their structure, style, and content.
 
@@ -1328,10 +1343,10 @@ To manipulate the DOM, you begin by selecting the desired DOM element(s) using m
 
 ```javascript
 // Access an element by its ID
-const element = document.getElementById('example-element');
+const element = document.getElementById('example-element')
 
 // Modify the element's content
-element.innerHTML = 'This is the new content.';
+element.innerHTML = 'This is the new content.'
 
 // This updates the HTML content of the element.
 ```
@@ -1440,20 +1455,20 @@ Overview of properties and methods specific to DOM nodes.
 ### Example Usage
 
 ```javascript
-const list = document.getElementById('myList');
+const list = document.getElementById('myList')
 
 // Get the text content of the first child node
-const firstChildText = list.firstChild.innerText;
+const firstChildText = list.firstChild.innerText
 
 // Change the HTML content of the list
-list.innerHTML = '<li>New Item 1</li><li>New Item 2</li>';
+list.innerHTML = '<li>New Item 1</li><li>New Item 2</li>'
 
 // Create a new list item element
-const newItem = document.createElement('li');
-newItem.innerText = 'New Item 3';
+const newItem = document.createElement('li')
+newItem.innerText = 'New Item 3'
 
 // Insert the new item at the beginning of the list
-list.insertBefore(newItem, list.firstChild);
+list.insertBefore(newItem, list.firstChild)
 ```
 
 ## [🔝 Back to Top](#top)
@@ -1470,8 +1485,8 @@ For simple, one-time event handling without the need for additional checks or co
 
 ```javascript
 document.getElementById('myButton').addEventListener('click', function () {
-  handleButtonClick();
-});
+  handleButtonClick()
+})
 ```
 
 ### Named Function Event Listener
@@ -1481,7 +1496,7 @@ For additional checks, complex logic, or reusability, using a named function off
 ```javascript
 document
   .getElementById('myButton')
-  .addEventListener('click', buttonClickFunction);
+  .addEventListener('click', buttonClickFunction)
 ```
 
 ### DOMContentLoaded Event Listener
@@ -1489,7 +1504,7 @@ document
 To execute code when the DOM is fully loaded and parsed, use the DOMContentLoaded event.
 
 ```javascript
-document.addEventListener('DOMContentLoaded', function () {});
+document.addEventListener('DOMContentLoaded', function () {})
 ```
 
 ### Removing Event Listeners
@@ -1505,7 +1520,7 @@ document.addEventListener('DOMContentLoaded', function () {});
 
 ```javascript
 function eventHandler(event) {
-  event.stopPropagation(); // Prevents further propagation of the current event.
+  event.stopPropagation() // Prevents further propagation of the current event.
 }
 ```
 
@@ -1513,8 +1528,8 @@ function eventHandler(event) {
 
 ```javascript
 element.addEventListener('click', function (event) {
-  event.preventDefault(); // Cancels the event if it is cancelable, without stopping its propagation.
-});
+  event.preventDefault() // Cancels the event if it is cancelable, without stopping its propagation.
+})
 ```
 
 ### Common Event Types
@@ -1532,7 +1547,7 @@ document.addEventListener('keydown', function (event) {
     // Call your function here
     // Example: handleEnterKey();
   }
-});
+})
 ```
 
 ## [🔝 Back to Top](#top)
@@ -1586,18 +1601,18 @@ In more complex applications, Promises or async/await can provide a more structu
 function fetchDataFromServer(callback) {
   // Simulate a network request delay
   setTimeout(() => {
-    const responseData = { message: 'Data from the server' };
-    callback(responseData);
-  }, 2000); // Simulated 2-second delay
+    const responseData = { message: 'Data from the server' }
+    callback(responseData)
+  }, 2000) // Simulated 2-second delay
 }
 
 // Callback function to handle the fetched data
 function handleFetchedData(data) {
-  console.log('Received data:', data.message);
+  console.log('Received data:', data.message)
 }
 
 // Usage: Fetch data from the server and handle it with the callback
-fetchDataFromServer(handleFetchedData);
+fetchDataFromServer(handleFetchedData)
 ```
 
 ## [🔝 Back to Top](#top)
@@ -1634,19 +1649,19 @@ function fetchDataFromServer() {
   return new Promise((resolve, reject) => {
     // Simulate a network request delay
     setTimeout(() => {
-      const responseData = { message: 'Data from the server' };
-      resolve(responseData); // Resolve the Promise with the fetched data
-    }, 2000); // Simulated 2-second delay
-  });
+      const responseData = { message: 'Data from the server' }
+      resolve(responseData) // Resolve the Promise with the fetched data
+    }, 2000) // Simulated 2-second delay
+  })
 }
 // Usage: Fetch data from the server using the Promise
 fetchDataFromServer()
   .then((data) => {
-    console.log('Received data:', data.message);
+    console.log('Received data:', data.message)
   })
   .catch((error) => {
-    console.error('Error:', error);
-  });
+    console.error('Error:', error)
+  })
 ```
 
 ## [🔝 Back to Top](#top)
@@ -1684,11 +1699,11 @@ async function fetchData() {
 ```javascript
 fetchData()
   .then((data) => {
-    console.log(data); // Handle the fetched data
+    console.log(data) // Handle the fetched data
   })
   .catch((error) => {
-    console.error(error.message); // Handle errors
-  });
+    console.error(error.message) // Handle errors
+  })
 ```
 
 ## [🔝 Back to Top](#top)
@@ -1699,7 +1714,7 @@ Exploring the fundamentals of APIs, JSON and the importance of API keys in web d
 
 ### APIs at a Glance
 
-APIs (Application Programming Interfaces) connect your code to external services for data and functions.
+APIs (Application Programming Interface) serve as foundational elements in modern development, enabling the seamless exchange of data between different applications, platforms, and services. Through APIs, developers can collect, transfer, and manipulate data in standardized formats such as JSON (JavaScript Object Notation). This allows for efficient communication and integration across diverse systems, facilitating tasks like data collection, processing, and presentation.
 
 ### API Keys
 
@@ -1711,7 +1726,9 @@ For many APIs, you'll need an API key for authentication and usage tracking:
 
 ### JSON Simplified
 
-JSON (JavaScript Object Notation) is a straightforward, human-readable data format commonly used in APIs for data exchange.
+JSON (JavaScript Object Notation) is a lightweight data-interchange format that is widely used for transmitting data between a server and a web application, and for storing data. JSON is a text-based format and is language-independent, meaning it can be easily parsed and generated by various programming languages, not just JavaScript.
+
+In JavaScript, JSON data is displayed as objects using key-value pairs enclosed in curly braces {} or it can also represent arrays, which are ordered collections of values enclosed in square brackets [].
 
 ### Handling JSON
 
@@ -1724,7 +1741,7 @@ When working with JSON data, remember to:
 
 ## [🔝 Back to Top](#top)
 
-## 7.2 API Key Management
+## 7.2 API KEY MANAGEMENT
 
 API Key Management involves securely storing keys server-side and regulating their use to prevent unauthorized access, crucial for protecting applications from security breaches.
 
@@ -1760,114 +1777,131 @@ Using Fetch() API facilitates asynchronous data fetching, enhancing user experie
 
 ```javascript
 // DOM elements initialization
-const userInput = document.getElementById('userInput');
-const dataContainer = document.getElementById('dataContainer');
-const errorMessage = document.getElementById('errorMessage');
-const searchButton = document.getElementById('searchButton');
+const userInput = document.getElementById('userInput')
+const dataContainer = document.getElementById('dataContainer')
+const errorMessage = document.getElementById('errorMessage')
+const searchButton = document.getElementById('searchButton')
 
 // Function to fetch data from API asynchronously
 async function fetchData() {
   try {
     // Encode user input for URL parameter
-    const encodedInput = encodeURIComponent(userInput.value);
+    const encodedInput = encodeURIComponent(userInput.value)
 
     // Fetch request to a public API without API key requirement
     const response = await fetch(
       `https://api.example.com/data?search=${encodedInput}`
-    );
+    )
 
     // Check response status
     if (!response.ok) {
       // Throw error for unsuccessful response
-      throw new Error(`HTTP error! Status: ${response.status}`);
+      throw new Error(`HTTP error! Status: ${response.status}`)
     }
 
     // Parse response to JSON
-    const data = await response.json();
+    const data = await response.json()
 
     // Display the entered user input
-    userInput.textContent = `User Input: ${userInput.value}`;
+    userInput.textContent = `User Input: ${userInput.value}`
 
     // Extract values from response
-    const value1 = data.property1; // Use actual data property names
-    const value2 = data.property2; // Use actual data property names
+    const value1 = data.property1 // Use actual data property names
+    const value2 = data.property2 // Use actual data property names
 
     // Update DOM with response data
-    dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
+    dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`
   } catch (error) {
     // Handle and display error
-    errorMessage.textContent = `Error: ${error.message}`;
+    errorMessage.textContent = `Error: ${error.message}`
   }
 }
 // Attach an event listener to the search button
-searchButton.addEventListener('click', fetchData);
+searchButton.addEventListener('click', fetchData)
 ```
 
 ### Fetch API using Async/Await (With API Key)
 
 ```javascript
 // DOM element references
-const userInput = document.getElementById('userInput');
-const dataContainer = document.getElementById('dataContainer');
-const errorMessage = document.getElementById('errorMessage');
-const searchButton = document.getElementById('searchButton');
+const userInput = document.getElementById('userInput')
+const dataContainer = document.getElementById('dataContainer')
+const errorMessage = document.getElementById('errorMessage')
+const searchButton = document.getElementById('searchButton')
 
 // API key (note: secure it properly in real-world apps)
-const apiKey = 'YOUR_API_KEY_HERE';
+const apiKey = 'YOUR_API_KEY_HERE'
 
 // Async function to fetch data from API
 async function fetchData() {
   try {
     // Encode user input for URL inclusion
-    const encodedInput = encodeURIComponent(userInput.value);
+    const encodedInput = encodeURIComponent(userInput.value)
 
     // Fetch data from API with encoded input
     const response = await fetch(
       `https://api.example.com/data?api_key=${apiKey}&search=${encodedInput}`
-    );
+    )
 
     // Check for successful response
     if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+      throw new Error(`HTTP error! Status: ${response.status}`)
     }
 
     // Parse JSON response
-    const data = await response.json();
+    const data = await response.json()
 
     // Display user input
-    userInput.textContent = `User Input: ${userInput.value}`;
+    userInput.textContent = `User Input: ${userInput.value}`
 
     // Extract and display values from response
-    const value1 = data.property1; // Adjust property names
-    const value2 = data.property2; // Adjust property names
+    const value1 = data.property1 // Adjust property names
+    const value2 = data.property2 // Adjust property names
 
-    dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`;
+    dataContainer.textContent = `Value 1: ${value1}, Value 2: ${value2}`
   } catch (error) {
     // Handle and display errors
-    errorMessage.textContent = `Error: ${error.message}`;
+    errorMessage.textContent = `Error: ${error.message}`
   }
 }
 
 // Attach an event listener to the search button
-searchButton.addEventListener('click', fetchData);
+searchButton.addEventListener('click', fetchData)
 ```
 
 ## [🔝 Back to Top](#top)
 
 ## 7.4 HANDLING JSON DATA
+Handling JSON data in JavaScript involves parsing JSON strings into JavaScript objects and serializing JavaScript objects into JSON strings. Understanding the correct sequence and the factors that affect it is crucial for effective data manipulation.
 
-Working with JSON (JavaScript Object Notation) data in JavaScript.
+### Sequence and Factors Affecting Sequence
+
+The sequence of operations in handling JSON data is essential for smooth data management. Factors such as the source of data, its intended use, and any required transformations dictate the order of operations. By adhering to this sequence and considering these factors, developers ensure efficient and reliable JSON data management in their applications.
+
+1. **Parsing JSON Data**:
+
+   - Use `JSON.parse()` to convert a JSON string into a JavaScript object.
+   - This step is typically performed when receiving data from an external source, such as an API response or reading from a file.
+
+2. **Converting JavaScript Objects to JSON**:
+
+   - Utilize `JSON.stringify()` to convert a JavaScript object into a JSON-formatted string.
+   - This is commonly done when preparing data for storage or transmission, such as sending it to a server or saving it locally.
+
+3. **JSON Data Manipulation**:
+   - Access and modify JSON data as needed, using JavaScript object notation.
+   - Operations like accessing nested properties, adding or removing elements, and updating values are performed directly on the JavaScript object.
 
 ### Parsing JSON Data
 
 ```javascript
-const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+const jsonString = '{"name": "John", "age": 30, "city": "New York"}'
 
 try {
-  const jsonData = JSON.parse(jsonString);
-  const result = jsonData; // Use 'result' for further processing
+  const jsonData = JSON.parse(jsonString)
+  const result = jsonData // Use 'result' for further processing
 } catch (error) {
-  console.error('JSON Parsing Error:', error);
+  console.error('JSON Parsing Error:', error)
 }
 ```
 
@@ -1878,10 +1912,10 @@ const person = {
   name: 'Alice',
   age: 25,
   city: 'San Francisco',
-};
+}
 
-const jsonPerson = JSON.stringify(person);
-const result = jsonPerson; // Use 'result' for further processing
+const jsonPerson = JSON.stringify(person)
+const result = jsonPerson // Use 'result' for further processing
 ```
 
 ### JSON Data Manipulation
@@ -1893,30 +1927,29 @@ const data = {
     { id: 2, name: 'Alice' },
     { id: 3, name: 'Bob' },
   ],
-};
+}
 
 // Accessing JSON Data
-const userName = data.users[0].name;
-const result1 = userName; // Use 'result1' for further processing
+const userName = data.users[0].name
+const result1 = userName // Use 'result1' for further processing
 
 // Modifying JSON Data
-data.users.push({ id: 4, name: 'Eve' });
+data.users.push({ id: 4, name: 'Eve' })
 
 // Converting Back to JSON
-const updatedJsonData = JSON.stringify(data);
-const result2 = updatedJsonData; // Use 'result2' for further processing
+const updatedJsonData = JSON.stringify(data)
+const result2 = updatedJsonData // Use 'result2' for further processing
 ```
+
+This sequence ensures smooth handling of JSON data, from parsing to manipulation and serialization. Adjustments may be made based on specific requirements and data flow within your application.
 
 ## [🔝 Back to Top](#top)
 
 ## 8.1 OBJECT-ORIENTED PROGRAMMING (OOP) IN JAVASCRIPT
 
-Overview of Object-Oriented Programming (OOP) concepts in JavaScript.
+OOP is a programming paradigm that focuses on organizing code into objects that encapsulate data and behavior. In JavaScript, OOP is supported through the use of objects, classes (introduced in ES6), and prototypes.
 
-### Object-Oriented Programming (OOP)
-
-OOP is a programming paradigm that uses objects and classes to organize code.
-In JavaScript, objects are at the core of OOP.
+In JavaScript, arrays and objects (including instances of classes) are both considered objects in terms of the programming paradigm. However, they serve different purposes: while both objects and arrays are considered objects in JavaScript, they serve different purposes within the context of Object-Oriented Programming. Arrays are commonly used for handling ordered collections of data, while objects are used to represent entities with properties and behaviors. JavaScript is considered an OOP language because it supports the creation and manipulation of objects, including classes and inheritance, in addition to arrays.
 
 ### Objects
 
@@ -1929,17 +1962,15 @@ const person = {
   name: 'John',
   age: 30,
   sayHello: function () {
-    console.log(
-      `Hello, my name is ${this.name} and I'm ${this.age} years old.`
-    );
+    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`)
   },
-};
+}
 
 // Accessing Object Properties
-console.log(person.name); // Output: "John"
+console.log(person.name) // Output: "John"
 
 // Calling Object Methods
-person.sayHello(); // Output: "Hello, my name is John and I'm 30 years old."
+person.sayHello() // Output: "Hello, my name is John and I'm 30 years old."
 ```
 
 ### Classes
@@ -1951,24 +1982,22 @@ They define the structure and behavior of objects.
 // Creating a Class
 class Person {
   constructor(name, age) {
-    this.name = name;
-    this.age = age;
+    this.name = name
+    this.age = age
   }
 
   sayHello() {
-    console.log(
-      `Hello, my name is ${this.name} and I'm ${this.age} years old.`
-    );
+    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`)
   }
 }
 
 // Creating Objects from a Class
-const person1 = new Person('Alice', 25);
-const person2 = new Person('Bob', 35);
+const person1 = new Person('Alice', 25)
+const person2 = new Person('Bob', 35)
 
 // Calling Class Methods
-person1.sayHello(); // Output: "Hello, my name is Alice and I'm 25 years old."
-person2.sayHello(); // Output: "Hello, my name is Bob and I'm 35 years old."
+person1.sayHello() // Output: "Hello, my name is Alice and I'm 25 years old."
+person2.sayHello() // Output: "Hello, my name is Bob and I'm 35 years old."
 ```
 
 ### Constructor Method
@@ -1985,26 +2014,26 @@ This promotes code reusability and the creation of class hierarchies.
 // Inheritance Example
 class Animal {
   constructor(name) {
-    this.name = name;
+    this.name = name
   }
 
   speak() {
-    console.log(`${this.name} makes a sound.`);
+    console.log(`${this.name} makes a sound.`)
   }
 }
 
 class Dog extends Animal {
   constructor(name, breed) {
-    super(name); // Calls the parent class constructor
-    this.breed = breed;
+    super(name) // Calls the parent class constructor
+    this.breed = breed
   }
 
   speak() {
-    console.log(`${this.name} (a ${this.breed} dog) barks.`);
+    console.log(`${this.name} (a ${this.breed} dog) barks.`)
   }
 }
 
-const dog1 = new Dog('Buddy', 'Golden Retriever');
+const dog1 = new Dog('Buddy', 'Golden Retriever')
 ```
 
 ### Polymorphism
@@ -2015,10 +2044,10 @@ It enables flexibility and dynamic behavior based on the specific object type.
 ### Polymorphism Example
 
 ```javascript
-const animals = [new Dog('Buddy', 'Golden Retriever'), new Animal('Kitty')];
+const animals = [new Dog('Buddy', 'Golden Retriever'), new Animal('Kitty')]
 
 for (const animal of animals) {
-  animal.speak();
+  animal.speak()
 }
 ```
 
@@ -2037,18 +2066,18 @@ const address = {
   street: '123 Main St',
   city: 'Exampleville',
   zipCode: '12345',
-};
+}
 
 const person = {
   name: 'John Doe',
   age: 30,
   address: address, // Object composition
-};
+}
 ```
 
 ## [🔝 Back to Top](#top)
 
-## 9.1 Using HTML Elements in JavaScript
+## 9.1 USING HTML ELEMENTS IN JAVASCRIPT
 
 JavaScript enhances web pages by interacting with HTML elements to create dynamic content and user interfaces. Understanding the role of different HTML elements and their use cases in JavaScript is crucial for effective web development. This section provides a concise overview of common HTML elements used in JavaScript and their intended applications.
 
@@ -2109,7 +2138,7 @@ JavaScript enhances web pages by interacting with HTML elements to create dynami
 
 ## [🔝 Back to Top](#top)
 
-## 9.2 Choosing Between Objects and Arrays
+## 9.2 CHOOSING BETWEEN OBJECTS AND ARRAYS
 
 In JavaScript, both objects and arrays are used to store collections of data. However, choosing the right type of data structure for your data can significantly impact the readability, efficiency, and simplicity of your code. This section aims to provide guidance on when to use objects and when to use arrays.
 
@@ -2130,7 +2159,7 @@ const userProfile = {
   name: 'John Doe',
   age: 30,
   email: 'johndoe@example.com',
-};
+}
 ```
 
 ### Understanding Arrays
@@ -2146,7 +2175,7 @@ Arrays are ordered collections of values. They are best suited for storing lists
 **Example:**
 
 ```javascript
-const taskList = ['Buy groceries', 'Call Alice', 'Read a book'];
+const taskList = ['Buy groceries', 'Call Alice', 'Read a book']
 ```
 
 ### Making the Choice
@@ -2157,9 +2186,30 @@ const taskList = ['Buy groceries', 'Call Alice', 'Read a book'];
 
 Choosing between objects and arrays depends on the nature of the data you're dealing with and how you plan to use it. Understanding these differences allows you to write more efficient, readable, and maintainable JavaScript code.
 
+### Visual Comparison of an Object Vs. an Array
+```javascript
+// Basic Object
+const person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+console.log(person.name); // Output: John
+console.log(person.age); // Output: 30
+console.log(person.city); // Output: New York
+
+// Basic Array
+const numbers = [1, 2, 3, 4, 5];
+
+console.log(numbers[0]); // Output: 1
+console.log(numbers[2]); // Output: 3
+console.log(numbers.length); // Output: 5
+```
+
 ## [🔝 Back to Top](#top)
 
-## 9.3 Managing User Input
+## 9.3 MANAGING USER INPUT
 
 Handling user input effectively is crucial for creating interactive and user-friendly web applications. JavaScript provides several methods and practices to manage user input efficiently, ensuring data integrity and enhancing user experience. This section covers useful tips and techniques for managing user input in fundamental JavaScript, focusing on aspects other than form validation.
 
@@ -2182,20 +2232,20 @@ JavaScript provides various methods for converting user input to the correct dat
 - **Converting String Input to Numbers:**
 
 ```javascript
-const userInput = document.getElementById('quantity').value;
-const quantity = parseInt(userInput, 10);
+const userInput = document.getElementById('quantity').value
+const quantity = parseInt(userInput, 10)
 ```
 
 **Standardizing String Input for Comparison:**
 
 ```javascript
-const userInput = document.getElementById('searchQuery').value.toLowerCase();
+const userInput = document.getElementById('searchQuery').value.toLowerCase()
 ```
 
 **Removing Whitespace from String Input:**
 
 ```javascript
-const userInput = document.getElementById('username').value.trim();
+const userInput = document.getElementById('username').value.trim()
 ```
 
 ### Differences Between Internal Calculations and Display Logic
@@ -2222,7 +2272,7 @@ When managing user input, it's crucial to distinguish between internal calculati
 
 ## [🔝 Back to Top](#top)
 
-## 9.4 Form Validation
+## 9.4 FORM VALIDATION
 
 Form validation is a critical aspect of web development, ensuring that the data submitted by users meets specific criteria before being processed. Effective validation improves data quality, enhances security, and provides a better user experience by preventing errors and guiding users through the input process.
 
@@ -2243,8 +2293,7 @@ Client-side validation occurs in the browser before the data is submitted to the
   type="email"
   id="email"
   required
-  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
-/>
+  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" />
 ```
 
 #### JavaScript Custom Validation
@@ -2257,12 +2306,12 @@ Client-side validation occurs in the browser before the data is submitted to the
 
 ```javascript
 document.getElementById('form').addEventListener('submit', function (event) {
-  const email = document.getElementById('email').value;
+  const email = document.getElementById('email').value
   if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
-    event.preventDefault();
+    event.preventDefault()
     // Display an error message or highlight the input field
   }
-});
+})
 ```
 
 ### Providing Feedback
@@ -2276,8 +2325,8 @@ document.getElementById('form').addEventListener('submit', function (event) {
 ```javascript
 if (!isValidEmail(email)) {
   document.getElementById('email-error').innerText =
-    'Please enter a valid email address.';
-  event.preventDefault();
+    'Please enter a valid email address.'
+  event.preventDefault()
 }
 ```
 
@@ -2285,7 +2334,7 @@ Separating form validation into its own section emphasizes its importance in web
 
 ## [🔝 Back to Top](#top)
 
-## 9.5 Persisting Data with Web Storage
+## 9.5 PERSISTING DATA WITH WEB STORAGE 
 
 Web Storage allows web applications to store data locally within the user's browser, offering two main mechanisms: `localStorage` and `sessionStorage`. This section delves into practical applications of both, showcasing how they can be utilized in real-world web development scenarios.
 
@@ -2303,18 +2352,18 @@ Web Storage allows web applications to store data locally within the user's brow
 ```javascript
 // Saving the selected theme
 function saveTheme(theme) {
-  localStorage.setItem('theme', theme);
+  localStorage.setItem('theme', theme)
 }
 
 // Applying the saved theme on page load
 function applySavedTheme() {
-  const theme = localStorage.getItem('theme');
+  const theme = localStorage.getItem('theme')
   if (theme) {
-    document.body.classList.add(theme);
+    document.body.classList.add(theme)
   }
 }
 
-applySavedTheme();
+applySavedTheme()
 ```
 
 #### Example 2: Storing Session Data with sessionStorage
@@ -2324,13 +2373,13 @@ applySavedTheme();
 ```javascript
 // Saving form data to sessionStorage
 function saveFormData(step, data) {
-  sessionStorage.setItem(`formStep${step}`, JSON.stringify(data));
+  sessionStorage.setItem(`formStep${step}`, JSON.stringify(data))
 }
 
 // Retrieving form data on page load to restore state
 function retrieveFormData(step) {
-  const data = sessionStorage.getItem(`formStep${step}`);
-  return data ? JSON.parse(data) : null;
+  const data = sessionStorage.getItem(`formStep${step}`)
+  return data ? JSON.parse(data) : null
 }
 ```
 
@@ -2341,14 +2390,14 @@ function retrieveFormData(step) {
 ```javascript
 // Adding item to cart and saving to localStorage
 function addToCart(item) {
-  let cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
-  cart.push(item);
-  localStorage.setItem('shoppingCart', JSON.stringify(cart));
+  let cart = JSON.parse(localStorage.getItem('shoppingCart')) || []
+  cart.push(item)
+  localStorage.setItem('shoppingCart', JSON.stringify(cart))
 }
 
 // Loading the cart contents on page load
 function loadCart() {
-  const cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
+  const cart = JSON.parse(localStorage.getItem('shoppingCart')) || []
   // Code to render cart items goes here
 }
 ```
@@ -2357,7 +2406,7 @@ Web Storage, encompassing both localStorage and sessionStorage, offers robust so
 
 ## [🔝 Back to Top](#top)
 
-## 9.6 Coding Logic vs Data Retrieval & Execution
+## 9.6 CODING LOGIC VS DATA RETRIEVAL & EXECUTION
 
 Understanding the distinction between coding logic and data retrieval & execution in JavaScript is crucial for effective programming.
 
@@ -2385,7 +2434,7 @@ function functionName(parameters) {
   // Function body
   // Compute value or perform operations
 
-  return value; // Value to be returned
+  return value // Value to be returned
 }
 ```
 
