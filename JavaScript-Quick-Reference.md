@@ -21,6 +21,7 @@ A comprehensive yet concise quick-reference and overview of JavaScript fundament
 - [2.2 Basic Data Types](#22-basic-data-types)
 - [2.3 Syntax and Examples](#23-syntax-and-examples)
 - [2.4 Operators](#24-operators)
+- [2.5 Type Conversion and Coercion](#25-type-conversion-and-coercion)
 
 ## Fundamental Programming Concepts
 
@@ -275,7 +276,35 @@ Operators allow you to perform various tasks, such as assigning values to variab
 - `-` Subtracts the second operand from the first operand.
 - `*` Multiplies two operands.
 - `/` Divides the first operand by the second operand.
-- `%` Returns the remainder when the first operand is divided by the second operand.
+- `%` Returns the remainder when the first operand is divided by the second operand
+
+## [🔝 Back to Top](#top)
+
+## 2.5 TYPE CONVERSION AND COERCION
+
+In JavaScript, the conversion and interpretation of values between different types are critical concepts that enable the effective writing and understanding of code. This section focuses on explicit type conversion, also known as type casting, and implicit type coercion, providing insights into their mechanisms and use cases.
+
+### Explicit Type Conversion
+
+Explicit type conversion, or type casting, involves converting values from one type to another using built-in functions, allowing for controlled and intentional data type changes.
+
+- **String Conversion**: To convert a value to a string, use the `String()` function. For example, `String(123)` converts the number `123` into the string `"123"`.
+
+- **Number Conversion**: The `Number()` function is used to convert strings and other types to numbers. For instance, `Number("123")` turns the string `"123"` into the number `123`. Inputs that cannot be converted to a number yield `NaN` (Not-a-Number).
+
+- **Boolean Conversion**: Using `Boolean()` converts values to booleans. Truthy values (values that are not `0`, `null`, `undefined`, `NaN`, `''`, or `false`) convert to `true`, while falsy values convert to `false`.
+
+### Implicit Type Coercion
+
+Implicit type coercion happens when JavaScript automatically converts types behind the scenes in the context of an operation.
+
+- **Numeric String and Number**: When a numeric string and a number are used in an operation, the string is coerced into a number. For example, `"5" - 2` results in `3`.
+
+- **Boolean and Number**: In arithmetic operations, `true` is treated as `1` and `false` as `0`. Thus, `true + 2` equals `3`.
+
+- **String Concatenation**: When a number is added to a string, the number is converted into a string. For instance, `5 + "3"` yields `"53"`.
+
+Understanding these conversion and coercion rules is essential for debugging and for writing clear, predictable JavaScript code.
 
 ## [🔝 Back to Top](#top)
 
