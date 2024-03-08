@@ -306,6 +306,26 @@ Implicit type coercion happens when JavaScript automatically converts types behi
 
 Understanding these conversion and coercion rules is essential for debugging and for writing clear, predictable JavaScript code.
 
+### Examples of Type Conversion and Coercion
+
+```javascript
+// Explicit Type Conversion
+console.log(String(123)); // "123" - Number to string
+console.log(Number("123")); // 123 - String to number
+console.log(Boolean(1)); // true - Number to boolean
+
+// Implicit Type Coercion
+console.log("6" - 2); // 4 - Numeric string and number in subtraction operation
+console.log("6" + 2); // "62" - Number is converted to string in concatenation
+console.log(true + false); // 1 - true is treated as 1, false as 0 in addition
+
+// More examples
+console.log("5" * "4"); // 20 - Strings coerced to numbers in multiplication
+console.log("5" * true); // 5 - true is treated as 1 in multiplication
+console.log(null + 1); // 1 - null is treated as 0 in addition
+console.log(undefined + 1); // NaN - undefined is not converted in numeric operations
+```
+
 ## [🔝 Back to Top](#top)
 
 ## 3.1 FUNCTIONS
