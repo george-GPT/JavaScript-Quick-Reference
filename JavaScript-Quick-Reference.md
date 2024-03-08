@@ -306,8 +306,6 @@ Implicit type coercion happens when JavaScript automatically converts types behi
 
 Understanding these conversion and coercion rules is essential for debugging and for writing clear, predictable JavaScript code.
 
-### Examples of Type Conversion and Coercion
-
 ```javascript
 // Explicit Type Conversion
 console.log(String(123)); // "123" - Number to string
